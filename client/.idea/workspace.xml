@@ -1,0 +1,709 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="verbose" />
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+  </component>
+  <component name="AvailableLibraryUpdateStorage">
+    <library-updates>
+      <library-update>
+        <group-id>io.socket</group-id>
+        <name>socket.io-client</name>
+        <version>1.0.0</version>
+        <repository>JCenter</repository>
+      </library-update>
+    </library-updates>
+    <last-search-timestamp>1566851843099</last-search-timestamp>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="64c00a71-a44b-49ea-9615-52bf78f9491f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LICENSE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Screenshots/apk_builder.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Screenshots/call_log.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Screenshots/clipboard.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Screenshots/contacts.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Screenshots/devices.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Screenshots/downloads.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Screenshots/event_log.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Screenshots/file_explorer.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Screenshots/gps_log.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Screenshots/gps_now.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Screenshots/gps_settings.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Screenshots/installed_apps.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Screenshots/login.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Screenshots/microphone.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Screenshots/notification_log.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Screenshots/permissions.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Screenshots/sms_log.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Screenshots/sms_send.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Screenshots/wifi_manager.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/5.1.1/fileChanges/last-build.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/5.1.1/fileContent/fileContent.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/5.1.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/5.1.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/5.1.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/5.1.1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/taskHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/vcs-1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_core_common_1_1_1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_common_1_1_1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_runtime_1_1_1_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_collections_28_0_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_annotations_28_0_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_compat_28_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_test_espresso_espresso_core_2_2_2_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_test_espresso_espresso_idling_resource_2_2_2_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_test_exposed_instrumentation_api_publish_0_5_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_test_rules_0_5_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_test_runner_0_5_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_versionedparcelable_28_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_code_findbugs_jsr305_2_0_1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_javawriter_2_1_1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_okhttp3_okhttp_3_5_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_okio_okio_1_11_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__io_socket_engine_io_client_0_8_3_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__io_socket_socket_io_client_0_8_3_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_annotation_javax_annotation_api_1_2_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_inject_javax_inject_1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__junit_junit_4_12_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_3_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_integration_1_3_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_library_1_3_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/proguard-rules.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/release/app-release.apk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/release/output.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/values-w820dp/dimens.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/app/factory/apktool.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/app/factory/app-release.apk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/app/factory/decompiled/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/app/factory/decompiled/apktool.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/app/factory/decompiled/build/apk/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/app/factory/decompiled/build/apk/classes.dex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/app/factory/decompiled/build/apk/res/layout-v17/activity_main.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/app/factory/decompiled/build/apk/res/layout/activity_main.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/app/factory/decompiled/build/apk/res/mipmap-hdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/app/factory/decompiled/build/apk/res/mipmap-mdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/app/factory/decompiled/build/apk/res/mipmap-xhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/app/factory/decompiled/build/apk/res/mipmap-xxhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/app/factory/decompiled/build/apk/res/mipmap-xxxhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/app/factory/decompiled/build/apk/resources.arsc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/app/factory/decompiled/original/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/app/factory/decompiled/original/META-INF/CERT.RSA" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/app/factory/decompiled/original/META-INF/CERT.SF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/app/factory/decompiled/original/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/app/factory/decompiled/res/layout-v17/activity_main.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/app/factory/decompiled/res/layout/activity_main.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/app/factory/decompiled/res/mipmap-hdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/app/factory/decompiled/res/mipmap-mdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/app/factory/decompiled/res/mipmap-xhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/app/factory/decompiled/res/mipmap-xxhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/app/factory/decompiled/res/mipmap-xxxhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/app/factory/decompiled/res/values/colors.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/app/factory/decompiled/res/values/dimens.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/app/factory/decompiled/res/values/ids.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/app/factory/decompiled/res/values/public.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/app/factory/decompiled/res/values/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/app/factory/decompiled/res/values/styles.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/app/factory/decompiled/smali/com/remote/app/MainActivity.smali" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/app/factory/decompiled/smali/com/remote/app/MainService.smali" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/app/factory/decompiled/smali/com/remote/app/MyReceiver.smali" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/app/factory/decompiled/smali/com/remote/app/NotificationListener.smali" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/app/factory/decompiled/smali/com/remote/app/ServiceReciever.smali" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/app/factory/testkey.pk8" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/app/factory/testkey.x509.pem" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/app/factory/uber-apk-signer-1.1.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/assets/views/builder.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/assets/views/deviceManager.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/assets/views/deviceManagerPages/apps.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/assets/views/deviceManagerPages/call_log.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/assets/views/deviceManagerPages/clipboard_log.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/assets/views/deviceManagerPages/contacts.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/assets/views/deviceManagerPages/deviceNotFound.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/assets/views/deviceManagerPages/downloads.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/assets/views/deviceManagerPages/file_manager.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/assets/views/deviceManagerPages/gps.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/assets/views/deviceManagerPages/info.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/assets/views/deviceManagerPages/microphone.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/assets/views/deviceManagerPages/noPage.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/assets/views/deviceManagerPages/notification_log.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/assets/views/deviceManagerPages/permissions.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/assets/views/deviceManagerPages/sms_manager.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/assets/views/deviceManagerPages/wifi_manager.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/assets/views/index.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/assets/views/login.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/assets/views/logs.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/assets/views/partials/deviceManagerMenu.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/assets/views/partials/footer.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/assets/views/partials/head.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/assets/views/partials/header.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/assets/webpublic/build-aligned-signed.apk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/assets/webpublic/build.apk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/assets/webpublic/build.s.apk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/assets/webpublic/client_downloads/blank" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/assets/webpublic/css/custom.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/assets/webpublic/css/custom.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/assets/webpublic/css/custom.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/assets/webpublic/css/images/layers-2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/assets/webpublic/css/images/layers.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/assets/webpublic/css/images/marker-icon-2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/assets/webpublic/css/images/marker-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/assets/webpublic/css/images/marker-shadow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/assets/webpublic/css/leaflet.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/assets/webpublic/css/semantic.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/assets/webpublic/css/snackbar.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/assets/webpublic/css/themes/default/assets/fonts/brand-icons.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/assets/webpublic/css/themes/default/assets/fonts/brand-icons.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/assets/webpublic/css/themes/default/assets/fonts/brand-icons.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/assets/webpublic/css/themes/default/assets/fonts/brand-icons.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/assets/webpublic/css/themes/default/assets/fonts/brand-icons.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/assets/webpublic/css/themes/default/assets/fonts/icons.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/assets/webpublic/css/themes/default/assets/fonts/icons.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/assets/webpublic/css/themes/default/assets/fonts/icons.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/assets/webpublic/css/themes/default/assets/fonts/icons.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/assets/webpublic/css/themes/default/assets/fonts/icons.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/assets/webpublic/css/themes/default/assets/fonts/icons.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/assets/webpublic/css/themes/default/assets/fonts/outline-icons.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/assets/webpublic/css/themes/default/assets/fonts/outline-icons.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/assets/webpublic/css/themes/default/assets/fonts/outline-icons.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/assets/webpublic/css/themes/default/assets/fonts/outline-icons.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/assets/webpublic/css/themes/default/assets/fonts/outline-icons.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/assets/webpublic/css/themes/default/assets/images/flags.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/assets/webpublic/js/jquery-3.4.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/assets/webpublic/js/leaflet.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/assets/webpublic/js/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/assets/webpublic/js/semantic.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/assets/webpublic/js/snackbar.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/assets/webpublic/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/clientData/blank" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/includes/apkBuilder.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/includes/clientManager.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/includes/const.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/includes/databaseGateway.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/includes/expressRoutes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/includes/logManager.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/maindb.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xwizer.jks" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="Nexus_5X_API_29_x86" />
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view />
+      </state>
+    </system>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="414">
+              <caret line="48" column="34" selection-start-line="48" selection-start-column="34" selection-end-line="48" selection-end-column="34" />
+            </state>
+          </provider>
+          <provider editor-type-id="android-manifest" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/build.gradle">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>http://</find>
+      <find>com.etechd.l3mon</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>com.process.android</replace>
+    </replaceStrings>
+  </component>
+  <component name="GenerateSignedApkSettings">
+    <option name="KEY_STORE_PATH" value="C:\Users\Chris\Documents\Private\L3MON\xwizer.jks" />
+    <option name="KEY_ALIAS" value="key0" />
+    <option name="REMEMBER_PASSWORDS" value="true" />
+    <option name="BUILD_TARGET_KEY" value="apk" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/app/src/main/java/com/etechd/l3mon/ConnectionManager.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/etechd/l3mon/MicManager.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/etechd/l3mon/CameraManager.java" />
+        <option value="$PROJECT_DIR$/L3MON-Client.iml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
+        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/etechd/l3mon/MainService.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/etechd/l3mon/MainActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/etechd/l3mon/MyReceiver.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/etechd/l3mon/IOSocket.java" />
+        <option value="$PROJECT_DIR$/app/build/generated/source/buildConfig/debug/com/etechd/l3mon/BuildConfig.java" />
+        <option value="$PROJECT_DIR$/app/build.gradle" />
+        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="490" />
+    <option name="y" value="-10" />
+    <option name="width" value="790" />
+    <option name="height" value="1000" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="AndroidView">
+        <subPane>
+          <expand>
+            <path>
+              <item name="client" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+            </path>
+            <path>
+              <item name="client" type="1abcf292:AndroidViewProjectNode" />
+              <item name="Gradle Scripts" type="ae0cef3a:AndroidBuildScriptsGroupNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="ProjectPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ExportApk.ApkPath" value="C:\Users\Chris\Documents\Private\L3MON\client\app" />
+    <property name="ExportApk.BuildVariants" value="release" />
+    <property name="ExportApk.SignV1" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
+    <property name="device.picker.selection" value="8fad6827" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../xwizer.jks" />
+    <property name="project.structure.last.edited" value="Dependencies" />
+    <property name="project.structure.proportion" value="0.17" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="PsdUISettings">
+    <option name="LAST_EDITED_BUILD_TYPE" value="release" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+      <module name="app" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="64c00a71-a44b-49ea-9615-52bf78f9491f" name="Default Changelist" comment="" />
+      <created>1566593319597</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1566593319597</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.49807692" visible="true" weight="0.13154362" />
+      <window_info id="Structure" order="2" side_tool="true" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info id="Build Variants" order="4" sideWeight="0.5019231" side_tool="true" weight="0.13154362" />
+      <window_info id="Image Layers" order="5" />
+      <window_info id="Designer" order="6" />
+      <window_info id="Resources Explorer" order="7" />
+      <window_info id="Capture Tool" order="8" />
+      <window_info anchor="bottom" id="Run" order="0" sideWeight="0.4968017" weight="0.32827735" />
+      <window_info anchor="bottom" id="Logcat" order="1" sideWeight="0.49840087" weight="0.21235102" />
+      <window_info anchor="bottom" id="TODO" order="2" sideWeight="0.4989339" weight="0.32936078" />
+      <window_info anchor="bottom" id="Debug" order="3" />
+      <window_info anchor="bottom" id="Terminal" order="4" sideWeight="0.4989339" weight="0.32936078" />
+      <window_info anchor="bottom" id="Event Log" order="5" sideWeight="0.50319827" side_tool="true" weight="0.26435536" />
+      <window_info anchor="bottom" id="Version Control" order="6" />
+      <window_info anchor="bottom" id="Build" order="7" sideWeight="0.4968017" visible="true" weight="0.26203966" />
+      <window_info anchor="bottom" id="Android Profiler" order="8" show_stripe_button="false" weight="0.32936078" />
+      <window_info anchor="bottom" id="Find" order="9" weight="0.3286119" />
+      <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
+      <window_info anchor="right" id="Capture Analysis" order="1" />
+      <window_info anchor="right" id="Gradle" order="2" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info anchor="right" id="Preview" order="4" weight="0.15618336" />
+      <window_info anchor="right" id="Palette&#9;" order="5" />
+    </layout>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/etechd/l3mon/CameraManager.java</url>
+          <line>26</line>
+          <properties />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/styles.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/colors.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/dimens.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/etechd/l3mon/CameraManager.java" />
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="321" column="41" selection-start-line="321" selection-start-column="41" selection-end-line="321" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/L3MON.iml" />
+    <entry file="file://$PROJECT_DIR$/L3MON-Client.iml" />
+    <entry file="file://$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client - Copy.iml" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values-w820dp/dimens.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gradle/vcs-1/gc.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/settings.gradle">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gradle.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gradlew">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gradlew.bat">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/local.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/etechd/l3mon/ConnectionManager.java" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/etechd/l3mon/ServiceReciever.java" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/etechd/l3mon/SMSManager.java" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/etechd/l3mon/MicManager.java" />
+    <entry file="file://$PROJECT_DIR$/app/app.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/etechd/l3mon/MyReceiver.java" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/etechd/l3mon/NotificationListener.java" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/etechd/l3mon/PermissionManager.java" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/etechd/l3mon/MainActivity.java" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/etechd/l3mon/MainService.java" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/etechd/l3mon/IOSocket.java" />
+    <entry file="file://$PROJECT_DIR$/app/build/generated/source/buildConfig/debug/com/etechd/l3mon/BuildConfig.java" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/remote/app/AppInstaller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/remote/app/CallsManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-187">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/remote/app/WifiScanner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-221">
+          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/AppData/Local/Android/Sdk/platforms/android-24/android.jar!/android/provider/Settings.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="49" column="31" selection-start-line="49" selection-start-column="31" selection-end-line="49" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/remote/app/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="40" column="64" selection-start-line="40" selection-start-column="64" selection-end-line="40" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/remote/app/CameraManager.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/remote/app/AppList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/remote/app/IOSocket.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="8" column="15" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/remote/app/FileManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="15" column="19" lean-forward="true" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/remote/app/ConnectionManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="11" column="23" lean-forward="true" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/remote/app/MainService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="884">
+          <caret line="62" column="8" selection-start-line="62" selection-start-column="8" selection-end-line="62" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build/generated/source/buildConfig/debug/com/remote/app/BuildConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="48" column="34" selection-start-line="48" selection-start-column="34" selection-end-line="48" selection-end-column="34" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-manifest" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/remote/app/AppInstaller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/remote/app/AppList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="20" column="39" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

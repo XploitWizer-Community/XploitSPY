@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html>
+
+<% include partials/head.ejs %>
+
+
+    <body>
+
+        <style type="text/css">
+            body {
+                background: #000000;
+            }
+            
+            body>.grid {
+                height: 100%;
+            }
+            
+            .image {
+                margin-top: -100px;
+            }
+            
+            .column {
+                max-width: 450px;
+            }
+        </style>
+        <script>
+            $(document).ready(function() {
+                $('.ui.form').form({
+                    fields: {
+                        email: {
+                            identifier: 'username',
+                            rules: [{
+                                type: 'empty',
+                                prompt: 'Please enter your username'
+                            }]
+                        },
+                        password: {
+                            identifier: 'password',
+                            rules: [{
+                                type: 'empty',
+                                prompt: 'Please enter your password'
+                            }]
+                        }
+                    }
+                });
+            });
+        </script>
+
+        <div class="ui middle aligned center aligned grid">
+
+            <div class="column">
+
+                <form class="ui large form" method="POST">
+                    <div class="ui stacked segment" style="background-color: #000000; color: azure;">
+                        <h2 class="ui image header">
+                            <div class="content">
+                                <img src="/logo.png" style="height: 70px;">
+                            </div>
+                        </h2>
+                        <div class="field">
+                            <div class="ui left icon input">
+                                <i class="user icon"></i>
+                                <input type="text" name="username" placeholder="Username">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="ui left icon input">
+                                <i class="lock icon"></i>
+                                <input type="password" name="password" placeholder="Password">
+                            </div>
+                        </div>
+                        <div class="ui fluid large teal submit button">Login</div>
+                        <div class="ui error message"></div>
+
+                    </div>
+
+                </form>
+                <% include partials/footer.ejs %>
+            </div>
+        </div>
+    </body>
+
+</html>
