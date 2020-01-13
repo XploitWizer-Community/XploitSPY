@@ -25526,7 +25526,7 @@
      margin: .5em 0 0;
      background: 0 0;
      padding: 0;
-     color: rgba(0, 0, 0, .87)
+     color: white;
  }
  
  .ui.feed>.event>.content .extra.images img {
