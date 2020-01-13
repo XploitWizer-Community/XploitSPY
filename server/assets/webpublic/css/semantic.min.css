@@ -23039,14 +23039,14 @@
  
  .ui.table {
      width: 100%;
-     background: #fff;
+     background: #000000;
      margin: 1em 0;
      border: 1px solid rgba(34, 36, 38, .15);
      -webkit-box-shadow: none;
      box-shadow: none;
      border-radius: .28571429rem;
      text-align: left;
-     color: rgba(0, 0, 0, .87);
+     color: #fff;
      border-collapse: separate;
      border-spacing: 0
  }
@@ -23072,9 +23072,9 @@
  
  .ui.table thead th {
      cursor: auto;
-     background: #f9fafb;
+     background: #000000;
      text-align: inherit;
-     color: rgba(0, 0, 0, .87);
+     color: #fff;
      padding: .92857143em .78571429em;
      vertical-align: inherit;
      font-style: none;
