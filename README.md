@@ -42,7 +42,7 @@ A cloud based Android Spying or Monitoring Tool, powered by NodeJS
     - `npm install pm2 -g`
 
 4. Clone this repository
-    - `git clone https://gihub.com/XploitWizer/XploitSPY.git`
+    - `git clone https://github.com/XploitWizer/XploitSPY.git`
 
 5. Now change to the server directory and run these commands
     - `npm install` <- install dependencies
