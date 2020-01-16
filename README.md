@@ -25,7 +25,7 @@ A cloud based Android Spying or Monitoring Tool, powered by NodeJS
  - Java Runtime Environment 9+
     - See [installation](#Installation) for OS specifics
  - NodeJs 
- - A Server e.g: aws, azure, google cloud, digital ocean ( Get server in Lowest Price 2$/month Contact :  <a href="https://t.me/fire_night">F!RE N!GHT</a>)
+ - A Server e.g: aws, azure, google cloud, digital ocean
 
 ## Installation 
 1. Install JRE 9+ 
