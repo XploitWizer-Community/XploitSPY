@@ -4,12 +4,12 @@ android {
     lintOptions {
         checkReleaseBuilds false
     }
-    compileSdkVersion 24
+    compileSdkVersion 28
     buildToolsVersion '28.0.3'
     defaultConfig {
         applicationId 'com.remote.app'
         minSdkVersion 11
-        targetSdkVersion 24
+        targetSdkVersion 28
         versionCode 1
         versionName "1.0"
     }

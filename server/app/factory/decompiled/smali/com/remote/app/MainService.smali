@@ -7,11 +7,23 @@
 .field private static a:Landroid/content/Context;
 
 
+# instance fields
+.field b:Z
+
+.field c:Landroid/os/PowerManager;
+
+.field d:Landroid/os/PowerManager$WakeLock;
+
+
 # direct methods
 .method public constructor <init>()V
-    .locals 0
+    .locals 1
 
     invoke-direct {p0}, Landroid/app/Service;-><init>()V
+
+    const/4 v0, 0x0
+
+    iput-boolean v0, p0, Lcom/remote/app/MainService;->b:Z
 
     return-void
 .end method
@@ -26,6 +38,86 @@
 
 
 # virtual methods
+.method public b()V
+    .locals 3
+
+    iget-boolean v0, p0, Lcom/remote/app/MainService;->b:Z
+
+    if-eqz v0, :cond_0
+
+    return-void
+
+    :cond_0
+    const/4 v0, 0x1
+
+    iput-boolean v0, p0, Lcom/remote/app/MainService;->b:Z
+
+    :try_start_0
+    const-string v0, "power"
+
+    invoke-virtual {p0, v0}, Landroid/app/Service;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/os/PowerManager;
+
+    iput-object v0, p0, Lcom/remote/app/MainService;->c:Landroid/os/PowerManager;
+
+    iget-object v0, p0, Lcom/remote/app/MainService;->c:Landroid/os/PowerManager;
+
+    invoke-virtual {v0}, Landroid/os/PowerManager;->isScreenOn()Z
+
+    move-result v0
+
+    if-nez v0, :cond_1
+
+    iget-object v0, p0, Lcom/remote/app/MainService;->c:Landroid/os/PowerManager;
+
+    const v1, 0x20000001
+
+    const-string v2, "ProcessManger:CollectData"
+
+    invoke-virtual {v0, v1, v2}, Landroid/os/PowerManager;->newWakeLock(ILjava/lang/String;)Landroid/os/PowerManager$WakeLock;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lcom/remote/app/MainService;->d:Landroid/os/PowerManager$WakeLock;
+
+    iget-object v0, p0, Lcom/remote/app/MainService;->d:Landroid/os/PowerManager$WakeLock;
+
+    const-wide/16 v1, 0x12c
+
+    invoke-virtual {v0, v1, v2}, Landroid/os/PowerManager$WakeLock;->acquire(J)V
+
+    goto :goto_0
+
+    :cond_1
+    iget-object v0, p0, Lcom/remote/app/MainService;->d:Landroid/os/PowerManager$WakeLock;
+
+    invoke-virtual {v0}, Landroid/os/PowerManager$WakeLock;->isHeld()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_2
+
+    iget-object v0, p0, Lcom/remote/app/MainService;->d:Landroid/os/PowerManager$WakeLock;
+
+    invoke-virtual {v0}, Landroid/os/PowerManager$WakeLock;->release()V
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    goto :goto_0
+
+    :catch_0
+    move-exception v0
+
+    invoke-virtual {v0}, Ljava/lang/Exception;->printStackTrace()V
+
+    :cond_2
+    :goto_0
+    return-void
+.end method
+
 .method public onBind(Landroid/content/Intent;)Landroid/os/IBinder;
     .locals 0
 
@@ -36,6 +128,10 @@
 
 .method public onDestroy()V
     .locals 2
+
+    const/4 v0, 0x0
+
+    iput-boolean v0, p0, Lcom/remote/app/MainService;->b:Z
 
     invoke-super {p0}, Landroid/app/Service;->onDestroy()V
 
@@ -52,6 +148,8 @@
 
 .method public onStartCommand(Landroid/content/Intent;II)I
     .locals 1
+
+    invoke-virtual {p0}, Lcom/remote/app/MainService;->b()V
 
     invoke-virtual {p0}, Landroid/app/Service;->getPackageManager()Landroid/content/pm/PackageManager;
 
