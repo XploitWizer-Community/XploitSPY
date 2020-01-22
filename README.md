@@ -30,9 +30,9 @@ A cloud based Android Spying or Monitoring Tool, powered by NodeJS
 ## Installation 
 1. Install JRE 9+ 
     - Debian, Ubuntu, Etc
-        - `sudo apt-get install openjdk-9-jre`
+        - `sudo apt install openjdk-11-jre-headless`
     - Fedora, Oracle, Red Hat, etc
-        -  `su -c "yum install java-1.9.0-openjdk"`
+        -  `sudo yum install java-11-openjdk-devel"`
     - Windows 
         - click [HERE](https://www.oracle.com/technetwork/java/javase/downloads/jre9-downloads-3848532.html) for downloads
 
@@ -48,8 +48,10 @@ A cloud based Android Spying or Monitoring Tool, powered by NodeJS
     - `npm install` <- install dependencies
     - `pm2 start index.js` <-- start the script
     - `pm2 startup` <- to run XploitSPY on startup
+    
+6. Default Username : admin & Default Password : password
 
-6. Set a Username & Password
+7. Change the Username & Password
     1. Stop XploitSPY `pm2 stop index`
     2. Open `maindb.json` in a text editor
     3. under `admin` 
@@ -58,7 +60,7 @@ A cloud based Android Spying or Monitoring Tool, powered by NodeJS
     4. save the file
     5. run `pm2 restart all`
 
-7. in your browser navigate to `http://<SERVER IP>:22533`
+8. in your browser navigate to `http://<SERVER IP or URL>:22533`
     
 It's recommended to run XploitSPY behind a reverse proxy such as [NGINX](https://www.nginx.com/resources/wiki/start/topics/tutorials/install/)
 
