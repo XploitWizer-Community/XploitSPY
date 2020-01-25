@@ -26,8 +26,11 @@ A cloud based Android Spying or Monitoring Tool, powered by NodeJS
     - See [installation](#Installation) for OS specifics
  - NodeJs 
  - A Server e.g: aws, azure, google cloud, digital ocean
+   Get Free Server from https://www.heroku.com/
 
 ## Installation 
+0. Connect to your server via SSH
+
 1. Install JRE 9+ 
     - Debian, Ubuntu, Etc
         - `sudo apt install openjdk-11-jre-headless`
@@ -39,7 +42,7 @@ A cloud based Android Spying or Monitoring Tool, powered by NodeJS
 2. Install NodeJS [Instructions Here](https://nodejs.org/en/download/package-manager/) (If you can't figure this out, you shouldn't really be using this)
 
 3. install PM2 
-    - `npm install pm2 -g`
+    - `sudo npm install pm2 -g`
 
 4. Clone this repository
     - `git clone https://github.com/XploitWizer/XploitSPY.git`
