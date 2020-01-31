@@ -29,6 +29,9 @@ A cloud based Android Spying or Monitoring Tool, powered by NodeJS
    Get Free Server from https://www.heroku.com/
 
 ## Installation 
+
+## Video Tutorial : https://youtu.be/6bRs7-0AD04
+
 0. Connect to your server via SSH
 
 1. Install JRE 9+ 
@@ -75,4 +78,4 @@ XploitSPY is built for Educational Purpose. Use at your own Risk.</b>
 
 <br>
 <p align="center">Made with ❤️ By <a href="https://xploitwizer.com">XploitWizer</a></p>
-<p align="center" style="font-size: 8px">v1.0.0</p>
+
