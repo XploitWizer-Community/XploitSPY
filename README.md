@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://github.com/XploitWizer/XploitSPY/raw/master/server/assets/webpublic/logo.png" height="60"><br>
+<img src="https://github.com/XploitWizer/XploitSPY/raw/master/assets/webpublic/logo.png" height="60"><br>
 A cloud based Android Spying or Monitoring Tool, powered by NodeJS
 </p>
 
@@ -50,7 +50,7 @@ A cloud based Android Spying or Monitoring Tool, powered by NodeJS
 4. Clone this repository
     - `git clone https://github.com/XploitWizer/XploitSPY.git`
 
-5. Now change to the server directory and run these commands
+5. Now change to the XploitSPY directory and run these commands
     - `npm install` <- install dependencies
     - `pm2 start index.js` <-- start the script
     - `pm2 startup` <- to run XploitSPY on startup
