@@ -1,7 +1,6 @@
 const
     express = require('express'),
     routes = express.Router(),
-    result = require('dotenv').config()
     cookieParser = require('cookie-parser'),
     bodyParser = require('body-parser'),
     crypto = require('crypto');
@@ -67,7 +66,7 @@ routes.get('/logout', isAllowed, (req, res) => {
 routes.get('/builder', isAllowed, (req, res) => {
     res.render('builder', {
         // myPort: CONST.control_port
-        myPort: process.env.PORT || CONST.control_port
+        myPort: process.env.PORT
     });
 });
 
