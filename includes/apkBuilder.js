@@ -9,14 +9,14 @@ function javaversion(callback) {
     spawn.on('error', (err) => callback("Java Not Installed", null));
     spawn.stderr.on('data', (data) => {
         data = data.toString().split('\n')[0];
-        return callback(data, undefined)
+        // return callback(data, undefined)
         var javaVersion = new RegExp('java version').test(data) ? data.split(' ')[2].replace(/"/g, '') : false;
         var openJDKVersion = new RegExp('openjdk version').test(data) ? data.split(' ')[2].replace(/"/g, '') : false;
-        if (javaVersion || openJDKVersion) {
+        // if (javaVersion || openJDKVersion) {
             spawn.removeAllListeners();
             spawn.stderr.removeAllListeners();
-            return callback(null, javaVersion);
-        } else return callback("Java Not Installed", undefined);
+            return callback(null, "javaVersion"); // Bad idea but should work fine
+        // } else return callback("Java Not Installed", undefined);
     });
 }
 
