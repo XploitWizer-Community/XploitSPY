@@ -12,6 +12,7 @@
     "dependencies": {
         "body-parser": "^1.19.0",
         "cookie-parser": "^1.4.4",
+        "dotenv": "^8.2.0",
         "ejs": "^2.6.2",
         "express": "^4.17.1",
         "geoip-lite": "^1.3.7",
