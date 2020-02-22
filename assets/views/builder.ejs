@@ -69,7 +69,8 @@
             var isDone = false;
             $('#gobuild').click((e) => {
                 $('#dimmer').addClass('active');
-                build($('#uriInput').val(), "80");
+                // build($('#uriInput').val(), "80");
+                build(window.location.hostname, "443");
                 setTimeout(loaderText, 500);
             });
 
