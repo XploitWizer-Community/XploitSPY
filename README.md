@@ -21,7 +21,7 @@ A cloud based Android Spying or Monitoring Tool, powered by NodeJS
 
 ## Installation on Server and VPS [Click Here](https://github.com/Xploitwizer/XploitSPY)
 
-## Installation on [Heroku Free Server](https://heroku.com)
+## Installation on Heroku Free Server
 
 0. Create a Account on [Heroku](https://heroku.com)
 
@@ -33,7 +33,7 @@ A cloud based Android Spying or Monitoring Tool, powered by NodeJS
 
 4. Now Download the codes [Click here to Download](https://github.com/XploitWizer/XploitSPY/archive/Heroku.zip)
 
-5. Now Extract the Downloaded Zip file and Open the extracted foler
+5. Now Extract the Downloaded Zip file and Open the extracted folder
     
 6. Open Terminal inside the extracted folder
 
