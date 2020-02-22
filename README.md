@@ -39,13 +39,13 @@ A cloud based Android Spying or Monitoring Tool, powered by NodeJS
 
 7. Now Login into Heroku CLI using command `heroku login -i` now enter your login details and hit Enter
 
-8. After Login run this command in terminal `heroku git:remote -a appName` here appName will your app's name that you choose while creating app
+8. After Login run this command in terminal `heroku git:remote -a appName` here appName will be your app's name that you choose while creating the app.
 
 9. Now run follow commands in termial to install packages `heroku buildpacks:add heroku/jvm` then run `heroku buildpacks:add heroku/nodejs`
 
 10. Now run this command in your terminal `git push heroku herooku:master`
 
-11. All done now it will take time to complete after that you can visit your domain shown in termial.
+11. All done now it will take time to complete, after that you can visit your domain shown in terminal.
     
 ## Happy Hacking
 
