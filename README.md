@@ -4,7 +4,6 @@ A cloud based Android Spying or Monitoring Tool, powered by NodeJS
 </p>
 
 
-
 ## Features
 - GPS Logging
 - Microphone Recording
@@ -25,12 +24,13 @@ A cloud based Android Spying or Monitoring Tool, powered by NodeJS
  - Java Runtime Environment 9+
     - See [installation](#Installation) for OS specifics
  - NodeJs 
- - A Server e.g: aws, azure, google cloud, digital ocean
-   Get Free Server from https://www.heroku.com/
+ - A Server 
 
-## Installation 
+## Installation on Heroku [Click Here](https://github.com/XploitWizer/XploitSPY/blob/herooku/README.md)
 
-## Video Tutorial : https://youtu.be/6bRs7-0AD04
+## Installion on VPS or Server
+ 
+ Video Tutorial for VPS or Server [Click Here](https://youtu.be/6bRs7-0AD04)
 
 0. Connect to your server via SSH
 
@@ -70,7 +70,7 @@ A cloud based Android Spying or Monitoring Tool, powered by NodeJS
     
 It's recommended to run XploitSPY behind a reverse proxy such as [NGINX](https://www.nginx.com/resources/wiki/start/topics/tutorials/install/)
 
-
+## Happy Hacking
 
 ## Disclaimer
 <b>XploitWizer Provides no warranty with this software and will not be responsible for any direct or indirect damage caused due to the usage of this tool.<br>
