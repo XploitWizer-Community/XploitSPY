@@ -43,7 +43,7 @@ A cloud based Android Spying or Monitoring Tool, powered by NodeJS
 
 9. Now run follow commands in termial to install packages `heroku buildpacks:add heroku/jvm` then run `heroku buildpacks:add heroku/nodejs`
 
-10. Now run this command in your terminal `git push heroku herooku`
+10. Now run this command in your terminal `git push heroku herooku:master`
 
 11. All done now it will take time to complete after that you can visit your domain shown in termial.
     
