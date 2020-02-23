@@ -31,11 +31,11 @@ A cloud based Android Spying or Monitoring Tool, powered by NodeJS
 
 3. Now install Heroku CLI on your Computer [Instuctions](https://devcenter.heroku.com/articles/heroku-cli)
 
-4. Now Download the codes [Click here to Download](https://github.com/XploitWizer/XploitSPY/archive/Heroku.zip)
+4. Now open your terminal and run command `git clone -b herooku https://github.com/XploitWizer/XploitSPY`
 
-5. Now Extract the Downloaded Zip file and Open the extracted folder
+5. It will download Latest codes for you in your PC
     
-6. Open Terminal inside the extracted folder
+6. Now change the directory to XploitSPY using command `cd XploitSPY`
 
 7. Now Login into Heroku CLI using command `heroku login -i` now enter your login details and hit Enter
 
