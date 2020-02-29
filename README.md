@@ -23,7 +23,7 @@ A cloud based Android Spying or Monitoring Tool, powered by NodeJS
 
 ## Installation on Heroku Free Server
 
-    Video Tutorial for Heroku [Click Here](https://youtu.be/IoJGFZWCPko)
+ Video Tutorial for Heroku [Click Here](https://youtu.be/IoJGFZWCPko)
 
 
 0. Create a Account on [Heroku](https://heroku.com)
