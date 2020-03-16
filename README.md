@@ -81,3 +81,6 @@ XploitSPY is built for Educational Purpose. Use at your own Risk.</b>
 <br>
 <p align="center">Made with ❤️ By <a href="https://xploitwizer.com">XploitWizer</a></p>
 
+## Credits
+
+<b> Credits to <a href="https://github.com/D3VL">D3VL</a> for the original code base this repository is based on at <a href="https://github.com/D3VL/L3MON">L3MON</a>
