@@ -1,7 +1,7 @@
 {
-  "admin": {
-    "username": "admin",
-    "password": "5f4dcc3b5aa765d61d8327deb882cf99",
+  "hacker": {
+    "username": "hacker",
+    "password": "30678234ddb79af55445d5ff7994cbc3",
     "loginToken": "",
     "logs": [
       {
