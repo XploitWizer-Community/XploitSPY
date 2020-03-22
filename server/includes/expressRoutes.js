@@ -101,6 +101,16 @@ routes.post('/builder', isAllowed, (req, res) => {
     }
 });
 
+routes.post('/changepass', isAllowed, (req, res) => {
+    if(req.query.pass == undefined) res.json({"error":"Password empty"});
+    else
+    {
+        let password = crypto.createHash('md5').update(req.query.pass).digest("hex");
+        db.maindb.get('admin').assign({ password }).write();
+        res.send("200");
+    }
+});
+
 
 routes.get('/logs', isAllowed, (req, res) => {
     res.render('logs', {
@@ -108,7 +118,9 @@ routes.get('/logs', isAllowed, (req, res) => {
     });
 });
 
-
+routes.get('/changepass', isAllowed, (req, res) => {
+    res.render('changePassword');
+});
 
 routes.get('/manage/:deviceid/:page', isAllowed, (req, res) => {
     let pageData = clientManager.getClientDataByPage(req.params.deviceid, req.params.page, req.query.filter);
