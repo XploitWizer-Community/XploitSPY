@@ -1,14 +1,14 @@
-.class final Lb/b;
+.class final Lc/b;
 .super Ljava/lang/Object;
 .source ""
 
 # interfaces
-.implements Lb/c;
+.implements Lc/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lb/c;
+    value = Lc/c;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -28,7 +28,7 @@
 
 
 # virtual methods
-.method public a(Lb/J;Lb/G;)Lb/D;
+.method public a(Lc/J;Lc/G;)Lc/D;
     .locals 0
 
     const/4 p1, 0x0

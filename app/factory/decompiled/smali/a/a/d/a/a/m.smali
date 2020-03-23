@@ -1,4 +1,4 @@
-.class La/a/d/a/a/m;
+.class Lb/a/d/a/a/m;
 .super Ljava/lang/Object;
 .source ""
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = La/a/d/a/a/n;->a([Ljava/lang/Object;)V
+    value = Lb/a/d/a/a/n;->a([Ljava/lang/Object;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field final synthetic a:La/a/d/a/a/n;
+.field final synthetic a:Lb/a/d/a/a/n;
 
 
 # direct methods
-.method constructor <init>(La/a/d/a/a/n;)V
+.method constructor <init>(Lb/a/d/a/a/n;)V
     .locals 0
 
-    iput-object p1, p0, La/a/d/a/a/m;->a:La/a/d/a/a/n;
+    iput-object p1, p0, Lb/a/d/a/a/m;->a:Lb/a/d/a/a/n;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -37,9 +37,9 @@
 .method public run()V
     .locals 1
 
-    iget-object v0, p0, La/a/d/a/a/m;->a:La/a/d/a/a/n;
+    iget-object v0, p0, Lb/a/d/a/a/m;->a:Lb/a/d/a/a/n;
 
-    iget-object v0, v0, La/a/d/a/a/n;->a:Ljava/lang/Runnable;
+    iget-object v0, v0, Lb/a/d/a/a/n;->a:Ljava/lang/Runnable;
 
     invoke-interface {v0}, Ljava/lang/Runnable;->run()V
 

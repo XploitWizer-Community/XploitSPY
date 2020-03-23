@@ -1,11 +1,11 @@
-.class final Lb/h$b;
+.class final Lc/h$b;
 .super Ljava/lang/Object;
 .source ""
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lb/h;
+    value = Lc/h;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -21,14 +21,14 @@
 
 .field final c:Ljava/lang/String;
 
-.field final d:Lc/h;
+.field final d:Ld/h;
 
 
 # virtual methods
 .method a(Ljava/lang/String;)Z
     .locals 7
 
-    iget-object v0, p0, Lb/h$b;->a:Ljava/lang/String;
+    iget-object v0, p0, Lc/h$b;->a:Ljava/lang/String;
 
     const-string v1, "*."
 
@@ -48,7 +48,7 @@
 
     add-int/lit8 v3, v0, 0x1
 
-    iget-object v4, p0, Lb/h$b;->b:Ljava/lang/String;
+    iget-object v4, p0, Lc/h$b;->b:Ljava/lang/String;
 
     const/4 v5, 0x0
 
@@ -65,7 +65,7 @@
     return p1
 
     :cond_0
-    iget-object v0, p0, Lb/h$b;->b:Ljava/lang/String;
+    iget-object v0, p0, Lc/h$b;->b:Ljava/lang/String;
 
     invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -77,15 +77,15 @@
 .method public equals(Ljava/lang/Object;)Z
     .locals 2
 
-    instance-of v0, p1, Lb/h$b;
+    instance-of v0, p1, Lc/h$b;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lb/h$b;->a:Ljava/lang/String;
+    iget-object v0, p0, Lc/h$b;->a:Ljava/lang/String;
 
-    check-cast p1, Lb/h$b;
+    check-cast p1, Lc/h$b;
 
-    iget-object v1, p1, Lb/h$b;->a:Ljava/lang/String;
+    iget-object v1, p1, Lc/h$b;->a:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -93,9 +93,9 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lb/h$b;->c:Ljava/lang/String;
+    iget-object v0, p0, Lc/h$b;->c:Ljava/lang/String;
 
-    iget-object v1, p1, Lb/h$b;->c:Ljava/lang/String;
+    iget-object v1, p1, Lc/h$b;->c:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -103,11 +103,11 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lb/h$b;->d:Lc/h;
+    iget-object v0, p0, Lc/h$b;->d:Ld/h;
 
-    iget-object p1, p1, Lb/h$b;->d:Lc/h;
+    iget-object p1, p1, Lc/h$b;->d:Ld/h;
 
-    invoke-virtual {v0, p1}, Lc/h;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v0, p1}, Ld/h;->equals(Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -127,7 +127,7 @@
 .method public hashCode()I
     .locals 2
 
-    iget-object v0, p0, Lb/h$b;->a:Ljava/lang/String;
+    iget-object v0, p0, Lc/h$b;->a:Ljava/lang/String;
 
     invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
 
@@ -139,7 +139,7 @@
 
     mul-int/lit8 v1, v1, 0x1f
 
-    iget-object v0, p0, Lb/h$b;->c:Ljava/lang/String;
+    iget-object v0, p0, Lc/h$b;->c:Ljava/lang/String;
 
     invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
 
@@ -149,9 +149,9 @@
 
     mul-int/lit8 v1, v1, 0x1f
 
-    iget-object v0, p0, Lb/h$b;->d:Lc/h;
+    iget-object v0, p0, Lc/h$b;->d:Ld/h;
 
-    invoke-virtual {v0}, Lc/h;->hashCode()I
+    invoke-virtual {v0}, Ld/h;->hashCode()I
 
     move-result v0
 
@@ -167,13 +167,13 @@
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    iget-object v1, p0, Lb/h$b;->c:Ljava/lang/String;
+    iget-object v1, p0, Lc/h$b;->c:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lb/h$b;->d:Lc/h;
+    iget-object v1, p0, Lc/h$b;->d:Ld/h;
 
-    invoke-virtual {v1}, Lc/h;->a()Ljava/lang/String;
+    invoke-virtual {v1}, Ld/h;->a()Ljava/lang/String;
 
     move-result-object v1
 

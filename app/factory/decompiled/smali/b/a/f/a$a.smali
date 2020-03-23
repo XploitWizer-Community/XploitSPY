@@ -1,11 +1,11 @@
-.class final Lb/a/f/a$a;
-.super Lb/a/g/b;
+.class final Lc/a/f/a$a;
+.super Lc/a/g/b;
 .source ""
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lb/a/f/a;
+    value = Lc/a/f/a;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -24,11 +24,11 @@
 .method constructor <init>(Ljava/lang/Object;Ljava/lang/reflect/Method;)V
     .locals 0
 
-    invoke-direct {p0}, Lb/a/g/b;-><init>()V
+    invoke-direct {p0}, Lc/a/g/b;-><init>()V
 
-    iput-object p1, p0, Lb/a/f/a$a;->a:Ljava/lang/Object;
+    iput-object p1, p0, Lc/a/f/a$a;->a:Ljava/lang/Object;
 
-    iput-object p2, p0, Lb/a/f/a$a;->b:Ljava/lang/reflect/Method;
+    iput-object p2, p0, Lc/a/f/a$a;->b:Ljava/lang/reflect/Method;
 
     return-void
 .end method
@@ -64,9 +64,9 @@
 
     check-cast p1, [Ljava/security/cert/X509Certificate;
 
-    iget-object v0, p0, Lb/a/f/a$a;->b:Ljava/lang/reflect/Method;
+    iget-object v0, p0, Lc/a/f/a$a;->b:Ljava/lang/reflect/Method;
 
-    iget-object v1, p0, Lb/a/f/a$a;->a:Ljava/lang/Object;
+    iget-object v1, p0, Lc/a/f/a$a;->a:Ljava/lang/Object;
 
     const/4 v2, 0x3
 
@@ -125,7 +125,7 @@
 .method public equals(Ljava/lang/Object;)Z
     .locals 0
 
-    instance-of p1, p1, Lb/a/f/a$a;
+    instance-of p1, p1, Lc/a/f/a$a;
 
     return p1
 .end method

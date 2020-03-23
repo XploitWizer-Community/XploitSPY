@@ -1,22 +1,22 @@
-.class public final Lb/a;
+.class public final Lc/a;
 .super Ljava/lang/Object;
 .source ""
 
 
 # instance fields
-.field final a:Lb/w;
+.field final a:Lc/w;
 
-.field final b:Lb/t;
+.field final b:Lc/t;
 
 .field final c:Ljavax/net/SocketFactory;
 
-.field final d:Lb/c;
+.field final d:Lc/c;
 
 .field final e:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
-            "Lb/B;",
+            "Lc/B;",
             ">;"
         }
     .end annotation
@@ -26,7 +26,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
-            "Lb/m;",
+            "Lc/m;",
             ">;"
         }
     .end annotation
@@ -40,29 +40,29 @@
 
 .field final j:Ljavax/net/ssl/HostnameVerifier;
 
-.field final k:Lb/h;
+.field final k:Lc/h;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;ILb/t;Ljavax/net/SocketFactory;Ljavax/net/ssl/SSLSocketFactory;Ljavax/net/ssl/HostnameVerifier;Lb/h;Lb/c;Ljava/net/Proxy;Ljava/util/List;Ljava/util/List;Ljava/net/ProxySelector;)V
+.method public constructor <init>(Ljava/lang/String;ILc/t;Ljavax/net/SocketFactory;Ljavax/net/ssl/SSLSocketFactory;Ljavax/net/ssl/HostnameVerifier;Lc/h;Lc/c;Ljava/net/Proxy;Ljava/util/List;Ljava/util/List;Ljava/net/ProxySelector;)V
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Ljava/lang/String;",
             "I",
-            "Lb/t;",
+            "Lc/t;",
             "Ljavax/net/SocketFactory;",
             "Ljavax/net/ssl/SSLSocketFactory;",
             "Ljavax/net/ssl/HostnameVerifier;",
-            "Lb/h;",
-            "Lb/c;",
+            "Lc/h;",
+            "Lc/c;",
             "Ljava/net/Proxy;",
             "Ljava/util/List<",
-            "Lb/B;",
+            "Lc/B;",
             ">;",
             "Ljava/util/List<",
-            "Lb/m;",
+            "Lc/m;",
             ">;",
             "Ljava/net/ProxySelector;",
             ")V"
@@ -71,9 +71,9 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    new-instance v0, Lb/w$a;
+    new-instance v0, Lc/w$a;
 
-    invoke-direct {v0}, Lb/w$a;-><init>()V
+    invoke-direct {v0}, Lc/w$a;-><init>()V
 
     if-eqz p5, :cond_0
 
@@ -85,57 +85,57 @@
     const-string v1, "http"
 
     :goto_0
-    invoke-virtual {v0, v1}, Lb/w$a;->d(Ljava/lang/String;)Lb/w$a;
+    invoke-virtual {v0, v1}, Lc/w$a;->d(Ljava/lang/String;)Lc/w$a;
 
-    invoke-virtual {v0, p1}, Lb/w$a;->b(Ljava/lang/String;)Lb/w$a;
+    invoke-virtual {v0, p1}, Lc/w$a;->b(Ljava/lang/String;)Lc/w$a;
 
-    invoke-virtual {v0, p2}, Lb/w$a;->a(I)Lb/w$a;
+    invoke-virtual {v0, p2}, Lc/w$a;->a(I)Lc/w$a;
 
-    invoke-virtual {v0}, Lb/w$a;->a()Lb/w;
+    invoke-virtual {v0}, Lc/w$a;->a()Lc/w;
 
     move-result-object p1
 
-    iput-object p1, p0, Lb/a;->a:Lb/w;
+    iput-object p1, p0, Lc/a;->a:Lc/w;
 
     if-eqz p3, :cond_6
 
-    iput-object p3, p0, Lb/a;->b:Lb/t;
+    iput-object p3, p0, Lc/a;->b:Lc/t;
 
     if-eqz p4, :cond_5
 
-    iput-object p4, p0, Lb/a;->c:Ljavax/net/SocketFactory;
+    iput-object p4, p0, Lc/a;->c:Ljavax/net/SocketFactory;
 
     if-eqz p8, :cond_4
 
-    iput-object p8, p0, Lb/a;->d:Lb/c;
+    iput-object p8, p0, Lc/a;->d:Lc/c;
 
     if-eqz p10, :cond_3
 
-    invoke-static {p10}, Lb/a/d;->a(Ljava/util/List;)Ljava/util/List;
+    invoke-static {p10}, Lc/a/d;->a(Ljava/util/List;)Ljava/util/List;
 
     move-result-object p1
 
-    iput-object p1, p0, Lb/a;->e:Ljava/util/List;
+    iput-object p1, p0, Lc/a;->e:Ljava/util/List;
 
     if-eqz p11, :cond_2
 
-    invoke-static {p11}, Lb/a/d;->a(Ljava/util/List;)Ljava/util/List;
+    invoke-static {p11}, Lc/a/d;->a(Ljava/util/List;)Ljava/util/List;
 
     move-result-object p1
 
-    iput-object p1, p0, Lb/a;->f:Ljava/util/List;
+    iput-object p1, p0, Lc/a;->f:Ljava/util/List;
 
     if-eqz p12, :cond_1
 
-    iput-object p12, p0, Lb/a;->g:Ljava/net/ProxySelector;
+    iput-object p12, p0, Lc/a;->g:Ljava/net/ProxySelector;
 
-    iput-object p9, p0, Lb/a;->h:Ljava/net/Proxy;
+    iput-object p9, p0, Lc/a;->h:Ljava/net/Proxy;
 
-    iput-object p5, p0, Lb/a;->i:Ljavax/net/ssl/SSLSocketFactory;
+    iput-object p5, p0, Lc/a;->i:Ljavax/net/ssl/SSLSocketFactory;
 
-    iput-object p6, p0, Lb/a;->j:Ljavax/net/ssl/HostnameVerifier;
+    iput-object p6, p0, Lc/a;->j:Ljavax/net/ssl/HostnameVerifier;
 
-    iput-object p7, p0, Lb/a;->k:Lb/h;
+    iput-object p7, p0, Lc/a;->k:Lc/h;
 
     return-void
 
@@ -196,10 +196,10 @@
 
 
 # virtual methods
-.method public a()Lb/h;
+.method public a()Lc/h;
     .locals 1
 
-    iget-object v0, p0, Lb/a;->k:Lb/h;
+    iget-object v0, p0, Lc/a;->k:Lc/h;
 
     return-object v0
 .end method
@@ -210,20 +210,20 @@
         value = {
             "()",
             "Ljava/util/List<",
-            "Lb/m;",
+            "Lc/m;",
             ">;"
         }
     .end annotation
 
-    iget-object v0, p0, Lb/a;->f:Ljava/util/List;
+    iget-object v0, p0, Lc/a;->f:Ljava/util/List;
 
     return-object v0
 .end method
 
-.method public c()Lb/t;
+.method public c()Lc/t;
     .locals 1
 
-    iget-object v0, p0, Lb/a;->b:Lb/t;
+    iget-object v0, p0, Lc/a;->b:Lc/t;
 
     return-object v0
 .end method
@@ -231,7 +231,7 @@
 .method public d()Ljavax/net/ssl/HostnameVerifier;
     .locals 1
 
-    iget-object v0, p0, Lb/a;->j:Ljavax/net/ssl/HostnameVerifier;
+    iget-object v0, p0, Lc/a;->j:Ljavax/net/ssl/HostnameVerifier;
 
     return-object v0
 .end method
@@ -242,12 +242,12 @@
         value = {
             "()",
             "Ljava/util/List<",
-            "Lb/B;",
+            "Lc/B;",
             ">;"
         }
     .end annotation
 
-    iget-object v0, p0, Lb/a;->e:Ljava/util/List;
+    iget-object v0, p0, Lc/a;->e:Ljava/util/List;
 
     return-object v0
 .end method
@@ -255,27 +255,27 @@
 .method public equals(Ljava/lang/Object;)Z
     .locals 3
 
-    instance-of v0, p1, Lb/a;
+    instance-of v0, p1, Lc/a;
 
     const/4 v1, 0x0
 
     if-eqz v0, :cond_0
 
-    check-cast p1, Lb/a;
+    check-cast p1, Lc/a;
 
-    iget-object v0, p0, Lb/a;->a:Lb/w;
+    iget-object v0, p0, Lc/a;->a:Lc/w;
 
-    iget-object v2, p1, Lb/a;->a:Lb/w;
+    iget-object v2, p1, Lc/a;->a:Lc/w;
 
-    invoke-virtual {v0, v2}, Lb/w;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v0, v2}, Lc/w;->equals(Ljava/lang/Object;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lb/a;->b:Lb/t;
+    iget-object v0, p0, Lc/a;->b:Lc/t;
 
-    iget-object v2, p1, Lb/a;->b:Lb/t;
+    iget-object v2, p1, Lc/a;->b:Lc/t;
 
     invoke-virtual {v0, v2}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
@@ -283,9 +283,9 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lb/a;->d:Lb/c;
+    iget-object v0, p0, Lc/a;->d:Lc/c;
 
-    iget-object v2, p1, Lb/a;->d:Lb/c;
+    iget-object v2, p1, Lc/a;->d:Lc/c;
 
     invoke-virtual {v0, v2}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
@@ -293,9 +293,9 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lb/a;->e:Ljava/util/List;
+    iget-object v0, p0, Lc/a;->e:Ljava/util/List;
 
-    iget-object v2, p1, Lb/a;->e:Ljava/util/List;
+    iget-object v2, p1, Lc/a;->e:Ljava/util/List;
 
     invoke-interface {v0, v2}, Ljava/util/List;->equals(Ljava/lang/Object;)Z
 
@@ -303,9 +303,9 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lb/a;->f:Ljava/util/List;
+    iget-object v0, p0, Lc/a;->f:Ljava/util/List;
 
-    iget-object v2, p1, Lb/a;->f:Ljava/util/List;
+    iget-object v2, p1, Lc/a;->f:Ljava/util/List;
 
     invoke-interface {v0, v2}, Ljava/util/List;->equals(Ljava/lang/Object;)Z
 
@@ -313,9 +313,9 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lb/a;->g:Ljava/net/ProxySelector;
+    iget-object v0, p0, Lc/a;->g:Ljava/net/ProxySelector;
 
-    iget-object v2, p1, Lb/a;->g:Ljava/net/ProxySelector;
+    iget-object v2, p1, Lc/a;->g:Ljava/net/ProxySelector;
 
     invoke-virtual {v0, v2}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
@@ -323,41 +323,41 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lb/a;->h:Ljava/net/Proxy;
+    iget-object v0, p0, Lc/a;->h:Ljava/net/Proxy;
 
-    iget-object v2, p1, Lb/a;->h:Ljava/net/Proxy;
+    iget-object v2, p1, Lc/a;->h:Ljava/net/Proxy;
 
-    invoke-static {v0, v2}, Lb/a/d;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    iget-object v0, p0, Lb/a;->i:Ljavax/net/ssl/SSLSocketFactory;
-
-    iget-object v2, p1, Lb/a;->i:Ljavax/net/ssl/SSLSocketFactory;
-
-    invoke-static {v0, v2}, Lb/a/d;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v2}, Lc/a/d;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lb/a;->j:Ljavax/net/ssl/HostnameVerifier;
+    iget-object v0, p0, Lc/a;->i:Ljavax/net/ssl/SSLSocketFactory;
 
-    iget-object v2, p1, Lb/a;->j:Ljavax/net/ssl/HostnameVerifier;
+    iget-object v2, p1, Lc/a;->i:Ljavax/net/ssl/SSLSocketFactory;
 
-    invoke-static {v0, v2}, Lb/a/d;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v2}, Lc/a/d;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lb/a;->k:Lb/h;
+    iget-object v0, p0, Lc/a;->j:Ljavax/net/ssl/HostnameVerifier;
 
-    iget-object p1, p1, Lb/a;->k:Lb/h;
+    iget-object v2, p1, Lc/a;->j:Ljavax/net/ssl/HostnameVerifier;
 
-    invoke-static {v0, p1}, Lb/a/d;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v2}, Lc/a/d;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    iget-object v0, p0, Lc/a;->k:Lc/h;
+
+    iget-object p1, p1, Lc/a;->k:Lc/h;
+
+    invoke-static {v0, p1}, Lc/a/d;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -372,15 +372,15 @@
 .method public f()Ljava/net/Proxy;
     .locals 1
 
-    iget-object v0, p0, Lb/a;->h:Ljava/net/Proxy;
+    iget-object v0, p0, Lc/a;->h:Ljava/net/Proxy;
 
     return-object v0
 .end method
 
-.method public g()Lb/c;
+.method public g()Lc/c;
     .locals 1
 
-    iget-object v0, p0, Lb/a;->d:Lb/c;
+    iget-object v0, p0, Lc/a;->d:Lc/c;
 
     return-object v0
 .end method
@@ -388,7 +388,7 @@
 .method public h()Ljava/net/ProxySelector;
     .locals 1
 
-    iget-object v0, p0, Lb/a;->g:Ljava/net/ProxySelector;
+    iget-object v0, p0, Lc/a;->g:Ljava/net/ProxySelector;
 
     return-object v0
 .end method
@@ -396,9 +396,9 @@
 .method public hashCode()I
     .locals 3
 
-    iget-object v0, p0, Lb/a;->a:Lb/w;
+    iget-object v0, p0, Lc/a;->a:Lc/w;
 
-    invoke-virtual {v0}, Lb/w;->hashCode()I
+    invoke-virtual {v0}, Lc/w;->hashCode()I
 
     move-result v0
 
@@ -408,7 +408,7 @@
 
     mul-int/lit8 v1, v1, 0x1f
 
-    iget-object v0, p0, Lb/a;->b:Lb/t;
+    iget-object v0, p0, Lc/a;->b:Lc/t;
 
     invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
 
@@ -418,7 +418,7 @@
 
     mul-int/lit8 v1, v1, 0x1f
 
-    iget-object v0, p0, Lb/a;->d:Lb/c;
+    iget-object v0, p0, Lc/a;->d:Lc/c;
 
     invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
 
@@ -428,7 +428,7 @@
 
     mul-int/lit8 v1, v1, 0x1f
 
-    iget-object v0, p0, Lb/a;->e:Ljava/util/List;
+    iget-object v0, p0, Lc/a;->e:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->hashCode()I
 
@@ -438,7 +438,7 @@
 
     mul-int/lit8 v1, v1, 0x1f
 
-    iget-object v0, p0, Lb/a;->f:Ljava/util/List;
+    iget-object v0, p0, Lc/a;->f:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->hashCode()I
 
@@ -448,7 +448,7 @@
 
     mul-int/lit8 v1, v1, 0x1f
 
-    iget-object v0, p0, Lb/a;->g:Ljava/net/ProxySelector;
+    iget-object v0, p0, Lc/a;->g:Ljava/net/ProxySelector;
 
     invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
 
@@ -458,7 +458,7 @@
 
     mul-int/lit8 v1, v1, 0x1f
 
-    iget-object v0, p0, Lb/a;->h:Ljava/net/Proxy;
+    iget-object v0, p0, Lc/a;->h:Ljava/net/Proxy;
 
     const/4 v2, 0x0
 
@@ -478,7 +478,7 @@
 
     mul-int/lit8 v1, v1, 0x1f
 
-    iget-object v0, p0, Lb/a;->i:Ljavax/net/ssl/SSLSocketFactory;
+    iget-object v0, p0, Lc/a;->i:Ljavax/net/ssl/SSLSocketFactory;
 
     if-eqz v0, :cond_1
 
@@ -496,7 +496,7 @@
 
     mul-int/lit8 v1, v1, 0x1f
 
-    iget-object v0, p0, Lb/a;->j:Ljavax/net/ssl/HostnameVerifier;
+    iget-object v0, p0, Lc/a;->j:Ljavax/net/ssl/HostnameVerifier;
 
     if-eqz v0, :cond_2
 
@@ -514,11 +514,11 @@
 
     mul-int/lit8 v1, v1, 0x1f
 
-    iget-object v0, p0, Lb/a;->k:Lb/h;
+    iget-object v0, p0, Lc/a;->k:Lc/h;
 
     if-eqz v0, :cond_3
 
-    invoke-virtual {v0}, Lb/h;->hashCode()I
+    invoke-virtual {v0}, Lc/h;->hashCode()I
 
     move-result v2
 
@@ -531,7 +531,7 @@
 .method public i()Ljavax/net/SocketFactory;
     .locals 1
 
-    iget-object v0, p0, Lb/a;->c:Ljavax/net/SocketFactory;
+    iget-object v0, p0, Lc/a;->c:Ljavax/net/SocketFactory;
 
     return-object v0
 .end method
@@ -539,15 +539,15 @@
 .method public j()Ljavax/net/ssl/SSLSocketFactory;
     .locals 1
 
-    iget-object v0, p0, Lb/a;->i:Ljavax/net/ssl/SSLSocketFactory;
+    iget-object v0, p0, Lc/a;->i:Ljavax/net/ssl/SSLSocketFactory;
 
     return-object v0
 .end method
 
-.method public k()Lb/w;
+.method public k()Lc/w;
     .locals 1
 
-    iget-object v0, p0, Lb/a;->a:Lb/w;
+    iget-object v0, p0, Lc/a;->a:Lc/w;
 
     return-object v0
 .end method

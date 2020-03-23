@@ -1,4 +1,4 @@
-.class La/a/d/a/a/g;
+.class Lb/a/d/a/a/g;
 .super Ljava/lang/Object;
 .source ""
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = La/a/d/a/a/i;->b([La/a/d/b/b;)V
+    value = Lb/a/d/a/a/i;->b([Lb/a/d/b/b;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,18 +18,18 @@
 
 
 # instance fields
-.field final synthetic a:La/a/d/a/a/i;
+.field final synthetic a:Lb/a/d/a/a/i;
 
-.field final synthetic b:La/a/d/a/a/i;
+.field final synthetic b:Lb/a/d/a/a/i;
 
 
 # direct methods
-.method constructor <init>(La/a/d/a/a/i;La/a/d/a/a/i;)V
+.method constructor <init>(Lb/a/d/a/a/i;Lb/a/d/a/a/i;)V
     .locals 0
 
-    iput-object p1, p0, La/a/d/a/a/g;->b:La/a/d/a/a/i;
+    iput-object p1, p0, Lb/a/d/a/a/g;->b:Lb/a/d/a/a/i;
 
-    iput-object p2, p0, La/a/d/a/a/g;->a:La/a/d/a/a/i;
+    iput-object p2, p0, Lb/a/d/a/a/g;->a:Lb/a/d/a/a/i;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -41,11 +41,11 @@
 .method public run()V
     .locals 3
 
-    iget-object v0, p0, La/a/d/a/a/g;->a:La/a/d/a/a/i;
+    iget-object v0, p0, Lb/a/d/a/a/g;->a:Lb/a/d/a/a/i;
 
     const/4 v1, 0x1
 
-    iput-boolean v1, v0, La/a/d/a/K;->b:Z
+    iput-boolean v1, v0, Lb/a/d/a/K;->b:Z
 
     const/4 v1, 0x0
 
@@ -53,7 +53,7 @@
 
     const-string v2, "drain"
 
-    invoke-virtual {v0, v2, v1}, La/a/c/a;->a(Ljava/lang/String;[Ljava/lang/Object;)La/a/c/a;
+    invoke-virtual {v0, v2, v1}, Lb/a/c/a;->a(Ljava/lang/String;[Ljava/lang/Object;)Lb/a/c/a;
 
     return-void
 .end method

@@ -1,4 +1,4 @@
-.class public final Lb/h;
+.class public final Lc/h;
 .super Ljava/lang/Object;
 .source ""
 
@@ -6,14 +6,14 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lb/h$a;,
-        Lb/h$b;
+        Lc/h$a;,
+        Lc/h$b;
     }
 .end annotation
 
 
 # static fields
-.field public static final a:Lb/h;
+.field public static final a:Lc/h;
 
 
 # instance fields
@@ -21,55 +21,55 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Set<",
-            "Lb/h$b;",
+            "Lc/h$b;",
             ">;"
         }
     .end annotation
 .end field
 
-.field private final c:Lb/a/g/b;
+.field private final c:Lc/a/g/b;
 
 
 # direct methods
 .method static constructor <clinit>()V
     .locals 1
 
-    new-instance v0, Lb/h$a;
+    new-instance v0, Lc/h$a;
 
-    invoke-direct {v0}, Lb/h$a;-><init>()V
+    invoke-direct {v0}, Lc/h$a;-><init>()V
 
-    invoke-virtual {v0}, Lb/h$a;->a()Lb/h;
+    invoke-virtual {v0}, Lc/h$a;->a()Lc/h;
 
     move-result-object v0
 
-    sput-object v0, Lb/h;->a:Lb/h;
+    sput-object v0, Lc/h;->a:Lc/h;
 
     return-void
 .end method
 
-.method constructor <init>(Ljava/util/Set;Lb/a/g/b;)V
+.method constructor <init>(Ljava/util/Set;Lc/a/g/b;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Ljava/util/Set<",
-            "Lb/h$b;",
+            "Lc/h$b;",
             ">;",
-            "Lb/a/g/b;",
+            "Lc/a/g/b;",
             ")V"
         }
     .end annotation
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lb/h;->b:Ljava/util/Set;
+    iput-object p1, p0, Lc/h;->b:Ljava/util/Set;
 
-    iput-object p2, p0, Lb/h;->c:Lb/a/g/b;
+    iput-object p2, p0, Lc/h;->c:Lc/a/g/b;
 
     return-void
 .end method
 
-.method static a(Ljava/security/cert/X509Certificate;)Lc/h;
+.method static a(Ljava/security/cert/X509Certificate;)Ld/h;
     .locals 0
 
     invoke-virtual {p0}, Ljava/security/cert/X509Certificate;->getPublicKey()Ljava/security/PublicKey;
@@ -80,11 +80,11 @@
 
     move-result-object p0
 
-    invoke-static {p0}, Lc/h;->a([B)Lc/h;
+    invoke-static {p0}, Ld/h;->a([B)Ld/h;
 
     move-result-object p0
 
-    invoke-virtual {p0}, Lc/h;->c()Lc/h;
+    invoke-virtual {p0}, Ld/h;->c()Ld/h;
 
     move-result-object p0
 
@@ -108,11 +108,11 @@
 
     check-cast p0, Ljava/security/cert/X509Certificate;
 
-    invoke-static {p0}, Lb/h;->b(Ljava/security/cert/X509Certificate;)Lc/h;
+    invoke-static {p0}, Lc/h;->b(Ljava/security/cert/X509Certificate;)Ld/h;
 
     move-result-object p0
 
-    invoke-virtual {p0}, Lc/h;->a()Ljava/lang/String;
+    invoke-virtual {p0}, Ld/h;->a()Ljava/lang/String;
 
     move-result-object p0
 
@@ -134,7 +134,7 @@
     throw p0
 .end method
 
-.method static b(Ljava/security/cert/X509Certificate;)Lc/h;
+.method static b(Ljava/security/cert/X509Certificate;)Ld/h;
     .locals 0
 
     invoke-virtual {p0}, Ljava/security/cert/X509Certificate;->getPublicKey()Ljava/security/PublicKey;
@@ -145,11 +145,11 @@
 
     move-result-object p0
 
-    invoke-static {p0}, Lc/h;->a([B)Lc/h;
+    invoke-static {p0}, Ld/h;->a([B)Ld/h;
 
     move-result-object p0
 
-    invoke-virtual {p0}, Lc/h;->d()Lc/h;
+    invoke-virtual {p0}, Ld/h;->d()Ld/h;
 
     move-result-object p0
 
@@ -158,12 +158,12 @@
 
 
 # virtual methods
-.method a(Lb/a/g/b;)Lb/h;
+.method a(Lc/a/g/b;)Lc/h;
     .locals 2
 
-    iget-object v0, p0, Lb/h;->c:Lb/a/g/b;
+    iget-object v0, p0, Lc/h;->c:Lc/a/g/b;
 
-    invoke-static {v0, p1}, Lb/a/d;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, p1}, Lc/a/d;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -174,11 +174,11 @@
     goto :goto_0
 
     :cond_0
-    new-instance v0, Lb/h;
+    new-instance v0, Lc/h;
 
-    iget-object v1, p0, Lb/h;->b:Ljava/util/Set;
+    iget-object v1, p0, Lc/h;->b:Ljava/util/Set;
 
-    invoke-direct {v0, v1, p1}, Lb/h;-><init>(Ljava/util/Set;Lb/a/g/b;)V
+    invoke-direct {v0, v1, p1}, Lc/h;-><init>(Ljava/util/Set;Lc/a/g/b;)V
 
     :goto_0
     return-object v0
@@ -192,7 +192,7 @@
             "Ljava/lang/String;",
             ")",
             "Ljava/util/List<",
-            "Lb/h$b;",
+            "Lc/h$b;",
             ">;"
         }
     .end annotation
@@ -201,7 +201,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lb/h;->b:Ljava/util/Set;
+    iget-object v1, p0, Lc/h;->b:Ljava/util/Set;
 
     invoke-interface {v1}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
 
@@ -219,9 +219,9 @@
 
     move-result-object v2
 
-    check-cast v2, Lb/h$b;
+    check-cast v2, Lc/h$b;
 
-    invoke-virtual {v2, p1}, Lb/h$b;->a(Ljava/lang/String;)Z
+    invoke-virtual {v2, p1}, Lc/h$b;->a(Ljava/lang/String;)Z
 
     move-result v3
 
@@ -258,7 +258,7 @@
         }
     .end annotation
 
-    invoke-virtual {p0, p1}, Lb/h;->a(Ljava/lang/String;)Ljava/util/List;
+    invoke-virtual {p0, p1}, Lc/h;->a(Ljava/lang/String;)Ljava/util/List;
 
     move-result-object v0
 
@@ -271,11 +271,11 @@
     return-void
 
     :cond_0
-    iget-object v1, p0, Lb/h;->c:Lb/a/g/b;
+    iget-object v1, p0, Lc/h;->c:Lc/a/g/b;
 
     if-eqz v1, :cond_1
 
-    invoke-virtual {v1, p2, p1}, Lb/a/g/b;->a(Ljava/util/List;Ljava/lang/String;)Ljava/util/List;
+    invoke-virtual {v1, p2, p1}, Lc/a/g/b;->a(Ljava/util/List;Ljava/lang/String;)Ljava/util/List;
 
     move-result-object p2
 
@@ -316,9 +316,9 @@
 
     move-result-object v9
 
-    check-cast v9, Lb/h$b;
+    check-cast v9, Lc/h$b;
 
-    iget-object v10, v9, Lb/h$b;->c:Ljava/lang/String;
+    iget-object v10, v9, Lc/h$b;->c:Ljava/lang/String;
 
     const-string v11, "sha256/"
 
@@ -330,14 +330,14 @@
 
     if-nez v7, :cond_2
 
-    invoke-static {v4}, Lb/h;->b(Ljava/security/cert/X509Certificate;)Lc/h;
+    invoke-static {v4}, Lc/h;->b(Ljava/security/cert/X509Certificate;)Ld/h;
 
     move-result-object v7
 
     :cond_2
-    iget-object v9, v9, Lb/h$b;->d:Lc/h;
+    iget-object v9, v9, Lc/h$b;->d:Ld/h;
 
-    invoke-virtual {v9, v7}, Lc/h;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v9, v7}, Ld/h;->equals(Ljava/lang/Object;)Z
 
     move-result v9
 
@@ -346,7 +346,7 @@
     return-void
 
     :cond_3
-    iget-object v10, v9, Lb/h$b;->c:Ljava/lang/String;
+    iget-object v10, v9, Lc/h$b;->c:Ljava/lang/String;
 
     const-string v11, "sha1/"
 
@@ -358,14 +358,14 @@
 
     if-nez v8, :cond_4
 
-    invoke-static {v4}, Lb/h;->a(Ljava/security/cert/X509Certificate;)Lc/h;
+    invoke-static {v4}, Lc/h;->a(Ljava/security/cert/X509Certificate;)Ld/h;
 
     move-result-object v8
 
     :cond_4
-    iget-object v9, v9, Lb/h$b;->d:Lc/h;
+    iget-object v9, v9, Lc/h$b;->d:Ld/h;
 
-    invoke-virtual {v9, v8}, Lc/h;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v9, v8}, Ld/h;->equals(Ljava/lang/Object;)Z
 
     move-result v9
 
@@ -422,7 +422,7 @@
 
     invoke-virtual {v1, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-static {v6}, Lb/h;->a(Ljava/security/cert/Certificate;)Ljava/lang/String;
+    invoke-static {v6}, Lc/h;->a(Ljava/security/cert/Certificate;)Ljava/lang/String;
 
     move-result-object v5
 
@@ -468,7 +468,7 @@
 
     move-result-object p2
 
-    check-cast p2, Lb/h$b;
+    check-cast p2, Lc/h$b;
 
     invoke-virtual {v1, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -506,25 +506,25 @@
     return v0
 
     :cond_0
-    instance-of v1, p1, Lb/h;
+    instance-of v1, p1, Lc/h;
 
     if-eqz v1, :cond_1
 
-    iget-object v1, p0, Lb/h;->c:Lb/a/g/b;
+    iget-object v1, p0, Lc/h;->c:Lc/a/g/b;
 
-    check-cast p1, Lb/h;
+    check-cast p1, Lc/h;
 
-    iget-object v2, p1, Lb/h;->c:Lb/a/g/b;
+    iget-object v2, p1, Lc/h;->c:Lc/a/g/b;
 
-    invoke-static {v1, v2}, Lb/a/d;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v2}, Lc/a/d;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
     if-eqz v1, :cond_1
 
-    iget-object v1, p0, Lb/h;->b:Ljava/util/Set;
+    iget-object v1, p0, Lc/h;->b:Ljava/util/Set;
 
-    iget-object p1, p1, Lb/h;->b:Ljava/util/Set;
+    iget-object p1, p1, Lc/h;->b:Ljava/util/Set;
 
     invoke-interface {v1, p1}, Ljava/util/Set;->equals(Ljava/lang/Object;)Z
 
@@ -544,7 +544,7 @@
 .method public hashCode()I
     .locals 2
 
-    iget-object v0, p0, Lb/h;->c:Lb/a/g/b;
+    iget-object v0, p0, Lc/h;->c:Lc/a/g/b;
 
     if-eqz v0, :cond_0
 
@@ -560,7 +560,7 @@
     :goto_0
     mul-int/lit8 v0, v0, 0x1f
 
-    iget-object v1, p0, Lb/h;->b:Ljava/util/Set;
+    iget-object v1, p0, Lc/h;->b:Ljava/util/Set;
 
     invoke-interface {v1}, Ljava/util/Set;->hashCode()I
 

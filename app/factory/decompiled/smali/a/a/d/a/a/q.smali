@@ -1,4 +1,4 @@
-.class La/a/d/a/a/q;
+.class Lb/a/d/a/a/q;
 .super Ljava/lang/Object;
 .source ""
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = La/a/d/a/a/r;->a([Ljava/lang/Object;)V
+    value = Lb/a/d/a/a/r;->a([Ljava/lang/Object;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -20,16 +20,16 @@
 # instance fields
 .field final synthetic a:[Ljava/lang/Object;
 
-.field final synthetic b:La/a/d/a/a/r;
+.field final synthetic b:Lb/a/d/a/a/r;
 
 
 # direct methods
-.method constructor <init>(La/a/d/a/a/r;[Ljava/lang/Object;)V
+.method constructor <init>(Lb/a/d/a/a/r;[Ljava/lang/Object;)V
     .locals 0
 
-    iput-object p1, p0, La/a/d/a/a/q;->b:La/a/d/a/a/r;
+    iput-object p1, p0, Lb/a/d/a/a/q;->b:Lb/a/d/a/a/r;
 
-    iput-object p2, p0, La/a/d/a/a/q;->a:[Ljava/lang/Object;
+    iput-object p2, p0, Lb/a/d/a/a/q;->a:[Ljava/lang/Object;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -41,7 +41,7 @@
 .method public run()V
     .locals 2
 
-    iget-object v0, p0, La/a/d/a/a/q;->a:[Ljava/lang/Object;
+    iget-object v0, p0, Lb/a/d/a/a/q;->a:[Ljava/lang/Object;
 
     array-length v1, v0
 
@@ -61,13 +61,13 @@
 
     if-eqz v1, :cond_1
 
-    iget-object v1, p0, La/a/d/a/a/q;->b:La/a/d/a/a/r;
+    iget-object v1, p0, Lb/a/d/a/a/q;->b:Lb/a/d/a/a/r;
 
-    iget-object v1, v1, La/a/d/a/a/r;->a:La/a/d/a/a/v;
+    iget-object v1, v1, Lb/a/d/a/a/r;->a:Lb/a/d/a/a/v;
 
     check-cast v0, Ljava/lang/String;
 
-    invoke-virtual {v1, v0}, La/a/d/a/a/i;->b(Ljava/lang/String;)V
+    invoke-virtual {v1, v0}, Lb/a/d/a/a/i;->b(Ljava/lang/String;)V
 
     goto :goto_1
 
@@ -76,13 +76,13 @@
 
     if-eqz v1, :cond_2
 
-    iget-object v1, p0, La/a/d/a/a/q;->b:La/a/d/a/a/r;
+    iget-object v1, p0, Lb/a/d/a/a/q;->b:Lb/a/d/a/a/r;
 
-    iget-object v1, v1, La/a/d/a/a/r;->a:La/a/d/a/a/v;
+    iget-object v1, v1, Lb/a/d/a/a/r;->a:Lb/a/d/a/a/v;
 
     check-cast v0, [B
 
-    invoke-virtual {v1, v0}, La/a/d/a/a/i;->a([B)V
+    invoke-virtual {v1, v0}, Lb/a/d/a/a/i;->a([B)V
 
     :cond_2
     :goto_1

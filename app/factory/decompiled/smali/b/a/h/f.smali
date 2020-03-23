@@ -1,4 +1,4 @@
-.class final Lb/a/h/f;
+.class final Lc/a/h/f;
 .super Ljava/lang/Object;
 .source ""
 
@@ -6,7 +6,7 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lb/a/h/f$a;
+        Lc/a/h/f$a;
     }
 .end annotation
 
@@ -16,13 +16,13 @@
 
 .field final b:Ljava/util/Random;
 
-.field final c:Lc/f;
+.field final c:Ld/f;
 
 .field d:Z
 
-.field final e:Lc/e;
+.field final e:Ld/e;
 
-.field final f:Lb/a/h/f$a;
+.field final f:Lc/a/h/f$a;
 
 .field g:Z
 
@@ -32,32 +32,32 @@
 
 
 # direct methods
-.method constructor <init>(ZLc/f;Ljava/util/Random;)V
+.method constructor <init>(ZLd/f;Ljava/util/Random;)V
     .locals 1
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    new-instance v0, Lc/e;
+    new-instance v0, Ld/e;
 
-    invoke-direct {v0}, Lc/e;-><init>()V
+    invoke-direct {v0}, Ld/e;-><init>()V
 
-    iput-object v0, p0, Lb/a/h/f;->e:Lc/e;
+    iput-object v0, p0, Lc/a/h/f;->e:Ld/e;
 
-    new-instance v0, Lb/a/h/f$a;
+    new-instance v0, Lc/a/h/f$a;
 
-    invoke-direct {v0, p0}, Lb/a/h/f$a;-><init>(Lb/a/h/f;)V
+    invoke-direct {v0, p0}, Lc/a/h/f$a;-><init>(Lc/a/h/f;)V
 
-    iput-object v0, p0, Lb/a/h/f;->f:Lb/a/h/f$a;
+    iput-object v0, p0, Lc/a/h/f;->f:Lc/a/h/f$a;
 
     if-eqz p2, :cond_3
 
     if-eqz p3, :cond_2
 
-    iput-boolean p1, p0, Lb/a/h/f;->a:Z
+    iput-boolean p1, p0, Lc/a/h/f;->a:Z
 
-    iput-object p2, p0, Lb/a/h/f;->c:Lc/f;
+    iput-object p2, p0, Lc/a/h/f;->c:Ld/f;
 
-    iput-object p3, p0, Lb/a/h/f;->b:Ljava/util/Random;
+    iput-object p3, p0, Lc/a/h/f;->b:Ljava/util/Random;
 
     const/4 p2, 0x0
 
@@ -73,7 +73,7 @@
     move-object p3, p2
 
     :goto_0
-    iput-object p3, p0, Lb/a/h/f;->h:[B
+    iput-object p3, p0, Lc/a/h/f;->h:[B
 
     if-eqz p1, :cond_1
 
@@ -82,7 +82,7 @@
     new-array p2, p1, [B
 
     :cond_1
-    iput-object p2, p0, Lb/a/h/f;->i:[B
+    iput-object p2, p0, Lc/a/h/f;->i:[B
 
     return-void
 
@@ -105,14 +105,14 @@
     throw p1
 .end method
 
-.method private b(ILc/h;)V
+.method private b(ILd/h;)V
     .locals 7
 
-    iget-boolean v0, p0, Lb/a/h/f;->d:Z
+    iget-boolean v0, p0, Lc/a/h/f;->d:Z
 
     if-nez v0, :cond_2
 
-    invoke-virtual {p2}, Lc/h;->e()I
+    invoke-virtual {p2}, Ld/h;->e()I
 
     move-result v0
 
@@ -126,33 +126,33 @@
 
     or-int/lit16 p1, p1, 0x80
 
-    iget-object v1, p0, Lb/a/h/f;->c:Lc/f;
+    iget-object v1, p0, Lc/a/h/f;->c:Ld/f;
 
-    invoke-interface {v1, p1}, Lc/f;->writeByte(I)Lc/f;
+    invoke-interface {v1, p1}, Ld/f;->writeByte(I)Ld/f;
 
-    iget-boolean p1, p0, Lb/a/h/f;->a:Z
+    iget-boolean p1, p0, Lc/a/h/f;->a:Z
 
     if-eqz p1, :cond_0
 
     or-int/lit16 p1, v0, 0x80
 
-    iget-object v0, p0, Lb/a/h/f;->c:Lc/f;
+    iget-object v0, p0, Lc/a/h/f;->c:Ld/f;
 
-    invoke-interface {v0, p1}, Lc/f;->writeByte(I)Lc/f;
+    invoke-interface {v0, p1}, Ld/f;->writeByte(I)Ld/f;
 
-    iget-object p1, p0, Lb/a/h/f;->b:Ljava/util/Random;
+    iget-object p1, p0, Lc/a/h/f;->b:Ljava/util/Random;
 
-    iget-object v0, p0, Lb/a/h/f;->h:[B
+    iget-object v0, p0, Lc/a/h/f;->h:[B
 
     invoke-virtual {p1, v0}, Ljava/util/Random;->nextBytes([B)V
 
-    iget-object p1, p0, Lb/a/h/f;->c:Lc/f;
+    iget-object p1, p0, Lc/a/h/f;->c:Ld/f;
 
-    iget-object v0, p0, Lb/a/h/f;->h:[B
+    iget-object v0, p0, Lc/a/h/f;->h:[B
 
-    invoke-interface {p1, v0}, Lc/f;->write([B)Lc/f;
+    invoke-interface {p1, v0}, Ld/f;->write([B)Ld/f;
 
-    invoke-virtual {p2}, Lc/h;->g()[B
+    invoke-virtual {p2}, Ld/h;->g()[B
 
     move-result-object p1
 
@@ -160,33 +160,33 @@
 
     int-to-long v2, p2
 
-    iget-object v4, p0, Lb/a/h/f;->h:[B
+    iget-object v4, p0, Lc/a/h/f;->h:[B
 
     const-wide/16 v5, 0x0
 
     move-object v1, p1
 
-    invoke-static/range {v1 .. v6}, Lb/a/h/d;->a([BJ[BJ)V
+    invoke-static/range {v1 .. v6}, Lc/a/h/d;->a([BJ[BJ)V
 
-    iget-object p2, p0, Lb/a/h/f;->c:Lc/f;
+    iget-object p2, p0, Lc/a/h/f;->c:Ld/f;
 
-    invoke-interface {p2, p1}, Lc/f;->write([B)Lc/f;
+    invoke-interface {p2, p1}, Ld/f;->write([B)Ld/f;
 
     goto :goto_0
 
     :cond_0
-    iget-object p1, p0, Lb/a/h/f;->c:Lc/f;
+    iget-object p1, p0, Lc/a/h/f;->c:Ld/f;
 
-    invoke-interface {p1, v0}, Lc/f;->writeByte(I)Lc/f;
+    invoke-interface {p1, v0}, Ld/f;->writeByte(I)Ld/f;
 
-    iget-object p1, p0, Lb/a/h/f;->c:Lc/f;
+    iget-object p1, p0, Lc/a/h/f;->c:Ld/f;
 
-    invoke-interface {p1, p2}, Lc/f;->a(Lc/h;)Lc/f;
+    invoke-interface {p1, p2}, Ld/f;->a(Ld/h;)Ld/f;
 
     :goto_0
-    iget-object p1, p0, Lb/a/h/f;->c:Lc/f;
+    iget-object p1, p0, Lc/a/h/f;->c:Ld/f;
 
-    invoke-interface {p1}, Lc/f;->flush()V
+    invoke-interface {p1}, Ld/f;->flush()V
 
     return-void
 
@@ -211,28 +211,28 @@
 
 
 # virtual methods
-.method a(IJ)Lc/v;
+.method a(IJ)Ld/v;
     .locals 2
 
-    iget-boolean v0, p0, Lb/a/h/f;->g:Z
+    iget-boolean v0, p0, Lc/a/h/f;->g:Z
 
     if-nez v0, :cond_0
 
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lb/a/h/f;->g:Z
+    iput-boolean v0, p0, Lc/a/h/f;->g:Z
 
-    iget-object v1, p0, Lb/a/h/f;->f:Lb/a/h/f$a;
+    iget-object v1, p0, Lc/a/h/f;->f:Lc/a/h/f$a;
 
-    iput p1, v1, Lb/a/h/f$a;->a:I
+    iput p1, v1, Lc/a/h/f$a;->a:I
 
-    iput-wide p2, v1, Lb/a/h/f$a;->b:J
+    iput-wide p2, v1, Lc/a/h/f$a;->b:J
 
-    iput-boolean v0, v1, Lb/a/h/f$a;->c:Z
+    iput-boolean v0, v1, Lc/a/h/f$a;->c:Z
 
     const/4 p1, 0x0
 
-    iput-boolean p1, v1, Lb/a/h/f$a;->d:Z
+    iput-boolean p1, v1, Lc/a/h/f$a;->d:Z
 
     return-object v1
 
@@ -249,7 +249,7 @@
 .method a(IJZZ)V
     .locals 9
 
-    iget-boolean v0, p0, Lb/a/h/f;->d:Z
+    iget-boolean v0, p0, Lc/a/h/f;->d:Z
 
     if-nez v0, :cond_8
 
@@ -268,11 +268,11 @@
     or-int/lit16 p1, p1, 0x80
 
     :cond_1
-    iget-object p4, p0, Lb/a/h/f;->c:Lc/f;
+    iget-object p4, p0, Lc/a/h/f;->c:Ld/f;
 
-    invoke-interface {p4, p1}, Lc/f;->writeByte(I)Lc/f;
+    invoke-interface {p4, p1}, Ld/f;->writeByte(I)Ld/f;
 
-    iget-boolean p1, p0, Lb/a/h/f;->a:Z
+    iget-boolean p1, p0, Lc/a/h/f;->a:Z
 
     if-eqz p1, :cond_2
 
@@ -294,9 +294,9 @@
 
     or-int/2addr p1, p4
 
-    iget-object p4, p0, Lb/a/h/f;->c:Lc/f;
+    iget-object p4, p0, Lc/a/h/f;->c:Ld/f;
 
-    invoke-interface {p4, p1}, Lc/f;->writeByte(I)Lc/f;
+    invoke-interface {p4, p1}, Ld/f;->writeByte(I)Ld/f;
 
     goto :goto_2
 
@@ -309,45 +309,45 @@
 
     or-int/lit8 p1, p1, 0x7e
 
-    iget-object p4, p0, Lb/a/h/f;->c:Lc/f;
+    iget-object p4, p0, Lc/a/h/f;->c:Ld/f;
 
-    invoke-interface {p4, p1}, Lc/f;->writeByte(I)Lc/f;
+    invoke-interface {p4, p1}, Ld/f;->writeByte(I)Ld/f;
 
-    iget-object p1, p0, Lb/a/h/f;->c:Lc/f;
+    iget-object p1, p0, Lc/a/h/f;->c:Ld/f;
 
     long-to-int p4, p2
 
-    invoke-interface {p1, p4}, Lc/f;->writeShort(I)Lc/f;
+    invoke-interface {p1, p4}, Ld/f;->writeShort(I)Ld/f;
 
     goto :goto_2
 
     :cond_4
     or-int/lit8 p1, p1, 0x7f
 
-    iget-object p4, p0, Lb/a/h/f;->c:Lc/f;
+    iget-object p4, p0, Lc/a/h/f;->c:Ld/f;
 
-    invoke-interface {p4, p1}, Lc/f;->writeByte(I)Lc/f;
+    invoke-interface {p4, p1}, Ld/f;->writeByte(I)Ld/f;
 
-    iget-object p1, p0, Lb/a/h/f;->c:Lc/f;
+    iget-object p1, p0, Lc/a/h/f;->c:Ld/f;
 
-    invoke-interface {p1, p2, p3}, Lc/f;->writeLong(J)Lc/f;
+    invoke-interface {p1, p2, p3}, Ld/f;->writeLong(J)Ld/f;
 
     :goto_2
-    iget-boolean p1, p0, Lb/a/h/f;->a:Z
+    iget-boolean p1, p0, Lc/a/h/f;->a:Z
 
     if-eqz p1, :cond_6
 
-    iget-object p1, p0, Lb/a/h/f;->b:Ljava/util/Random;
+    iget-object p1, p0, Lc/a/h/f;->b:Ljava/util/Random;
 
-    iget-object p4, p0, Lb/a/h/f;->h:[B
+    iget-object p4, p0, Lc/a/h/f;->h:[B
 
     invoke-virtual {p1, p4}, Ljava/util/Random;->nextBytes([B)V
 
-    iget-object p1, p0, Lb/a/h/f;->c:Lc/f;
+    iget-object p1, p0, Lc/a/h/f;->c:Ld/f;
 
-    iget-object p4, p0, Lb/a/h/f;->h:[B
+    iget-object p4, p0, Lc/a/h/f;->h:[B
 
-    invoke-interface {p1, p4}, Lc/f;->write([B)Lc/f;
+    invoke-interface {p1, p4}, Ld/f;->write([B)Ld/f;
 
     const-wide/16 p4, 0x0
 
@@ -356,7 +356,7 @@
 
     if-gez p1, :cond_7
 
-    iget-object p1, p0, Lb/a/h/f;->i:[B
+    iget-object p1, p0, Lc/a/h/f;->i:[B
 
     array-length p1, p1
 
@@ -368,11 +368,11 @@
 
     long-to-int p1, v1
 
-    iget-object v1, p0, Lb/a/h/f;->e:Lc/e;
+    iget-object v1, p0, Lc/a/h/f;->e:Ld/e;
 
-    iget-object v2, p0, Lb/a/h/f;->i:[B
+    iget-object v2, p0, Lc/a/h/f;->i:[B
 
-    invoke-virtual {v1, v2, v0, p1}, Lc/e;->read([BII)I
+    invoke-virtual {v1, v2, v0, p1}, Ld/e;->read([BII)I
 
     move-result p1
 
@@ -380,23 +380,23 @@
 
     if-eq p1, v1, :cond_5
 
-    iget-object v1, p0, Lb/a/h/f;->i:[B
+    iget-object v1, p0, Lc/a/h/f;->i:[B
 
     int-to-long v7, p1
 
-    iget-object v4, p0, Lb/a/h/f;->h:[B
+    iget-object v4, p0, Lc/a/h/f;->h:[B
 
     move-wide v2, v7
 
     move-wide v5, p4
 
-    invoke-static/range {v1 .. v6}, Lb/a/h/d;->a([BJ[BJ)V
+    invoke-static/range {v1 .. v6}, Lc/a/h/d;->a([BJ[BJ)V
 
-    iget-object v1, p0, Lb/a/h/f;->c:Lc/f;
+    iget-object v1, p0, Lc/a/h/f;->c:Ld/f;
 
-    iget-object v2, p0, Lb/a/h/f;->i:[B
+    iget-object v2, p0, Lc/a/h/f;->i:[B
 
-    invoke-interface {v1, v2, v0, p1}, Lc/f;->write([BII)Lc/f;
+    invoke-interface {v1, v2, v0, p1}, Ld/f;->write([BII)Ld/f;
 
     add-long/2addr p4, v7
 
@@ -410,16 +410,16 @@
     throw p1
 
     :cond_6
-    iget-object p1, p0, Lb/a/h/f;->c:Lc/f;
+    iget-object p1, p0, Lc/a/h/f;->c:Ld/f;
 
-    iget-object p4, p0, Lb/a/h/f;->e:Lc/e;
+    iget-object p4, p0, Lc/a/h/f;->e:Ld/e;
 
-    invoke-interface {p1, p4, p2, p3}, Lc/v;->c(Lc/e;J)V
+    invoke-interface {p1, p4, p2, p3}, Ld/v;->c(Ld/e;J)V
 
     :cond_7
-    iget-object p1, p0, Lb/a/h/f;->c:Lc/f;
+    iget-object p1, p0, Lc/a/h/f;->c:Ld/f;
 
-    invoke-interface {p1}, Lc/f;->h()Lc/f;
+    invoke-interface {p1}, Ld/f;->h()Ld/f;
 
     return-void
 
@@ -439,10 +439,10 @@
     goto :goto_4
 .end method
 
-.method a(ILc/h;)V
+.method a(ILd/h;)V
     .locals 1
 
-    sget-object v0, Lc/h;->b:Lc/h;
+    sget-object v0, Ld/h;->b:Ld/h;
 
     if-nez p1, :cond_0
 
@@ -451,21 +451,21 @@
     :cond_0
     if-eqz p1, :cond_1
 
-    invoke-static {p1}, Lb/a/h/d;->b(I)V
+    invoke-static {p1}, Lc/a/h/d;->b(I)V
 
     :cond_1
-    new-instance v0, Lc/e;
+    new-instance v0, Ld/e;
 
-    invoke-direct {v0}, Lc/e;-><init>()V
+    invoke-direct {v0}, Ld/e;-><init>()V
 
-    invoke-virtual {v0, p1}, Lc/e;->writeShort(I)Lc/e;
+    invoke-virtual {v0, p1}, Ld/e;->writeShort(I)Ld/e;
 
     if-eqz p2, :cond_2
 
-    invoke-virtual {v0, p2}, Lc/e;->a(Lc/h;)Lc/e;
+    invoke-virtual {v0, p2}, Ld/e;->a(Ld/h;)Ld/e;
 
     :cond_2
-    invoke-virtual {v0}, Lc/e;->m()Lc/h;
+    invoke-virtual {v0}, Ld/e;->m()Ld/h;
 
     move-result-object v0
 
@@ -477,12 +477,12 @@
     const/4 p2, 0x1
 
     :try_start_0
-    invoke-direct {p0, p1, v0}, Lb/a/h/f;->b(ILc/h;)V
+    invoke-direct {p0, p1, v0}, Lc/a/h/f;->b(ILd/h;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
     :try_start_1
-    iput-boolean p2, p0, Lb/a/h/f;->d:Z
+    iput-boolean p2, p0, Lc/a/h/f;->d:Z
 
     monitor-exit p0
 
@@ -496,7 +496,7 @@
     :catchall_1
     move-exception p1
 
-    iput-boolean p2, p0, Lb/a/h/f;->d:Z
+    iput-boolean p2, p0, Lc/a/h/f;->d:Z
 
     throw p1
 
@@ -508,7 +508,7 @@
     throw p1
 .end method
 
-.method a(Lc/h;)V
+.method a(Ld/h;)V
     .locals 1
 
     monitor-enter p0
@@ -516,7 +516,7 @@
     const/16 v0, 0x9
 
     :try_start_0
-    invoke-direct {p0, v0, p1}, Lb/a/h/f;->b(ILc/h;)V
+    invoke-direct {p0, v0, p1}, Lc/a/h/f;->b(ILd/h;)V
 
     monitor-exit p0
 
@@ -532,7 +532,7 @@
     throw p1
 .end method
 
-.method b(Lc/h;)V
+.method b(Ld/h;)V
     .locals 1
 
     monitor-enter p0
@@ -540,7 +540,7 @@
     const/16 v0, 0xa
 
     :try_start_0
-    invoke-direct {p0, v0, p1}, Lb/a/h/f;->b(ILc/h;)V
+    invoke-direct {p0, v0, p1}, Lc/a/h/f;->b(ILd/h;)V
 
     monitor-exit p0
 

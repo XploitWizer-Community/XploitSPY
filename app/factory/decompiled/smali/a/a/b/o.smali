@@ -1,14 +1,14 @@
-.class La/a/b/o;
+.class Lb/a/b/o;
 .super Ljava/lang/Object;
 .source ""
 
 # interfaces
-.implements La/a/c/a$a;
+.implements Lb/a/c/a$a;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = La/a/b/w;->j()V
+    value = Lb/a/b/w;->j()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field final synthetic a:La/a/b/w;
+.field final synthetic a:Lb/a/b/w;
 
 
 # direct methods
-.method constructor <init>(La/a/b/w;)V
+.method constructor <init>(Lb/a/b/w;)V
     .locals 0
 
-    iput-object p1, p0, La/a/b/o;->a:La/a/b/w;
+    iput-object p1, p0, Lb/a/b/o;->a:Lb/a/b/w;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -45,11 +45,11 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, La/a/b/o;->a:La/a/b/w;
+    iget-object v0, p0, Lb/a/b/o;->a:Lb/a/b/w;
 
     check-cast p1, Ljava/lang/String;
 
-    invoke-static {v0, p1}, La/a/b/w;->a(La/a/b/w;Ljava/lang/String;)V
+    invoke-static {v0, p1}, Lb/a/b/w;->a(Lb/a/b/w;Ljava/lang/String;)V
 
     goto :goto_0
 
@@ -58,11 +58,11 @@
 
     if-eqz v0, :cond_1
 
-    iget-object v0, p0, La/a/b/o;->a:La/a/b/w;
+    iget-object v0, p0, Lb/a/b/o;->a:Lb/a/b/w;
 
     check-cast p1, [B
 
-    invoke-static {v0, p1}, La/a/b/w;->a(La/a/b/w;[B)V
+    invoke-static {v0, p1}, Lb/a/b/w;->a(Lb/a/b/w;[B)V
 
     :cond_1
     :goto_0

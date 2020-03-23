@@ -1,5 +1,5 @@
-.class final Lb/a/f/b;
-.super Lb/a/f/e;
+.class final Lc/a/f/b;
+.super Lc/a/f/e;
 .source ""
 
 
@@ -13,16 +13,16 @@
 .method public constructor <init>(Ljava/lang/reflect/Method;Ljava/lang/reflect/Method;)V
     .locals 0
 
-    invoke-direct {p0}, Lb/a/f/e;-><init>()V
+    invoke-direct {p0}, Lc/a/f/e;-><init>()V
 
-    iput-object p1, p0, Lb/a/f/b;->c:Ljava/lang/reflect/Method;
+    iput-object p1, p0, Lc/a/f/b;->c:Ljava/lang/reflect/Method;
 
-    iput-object p2, p0, Lb/a/f/b;->d:Ljava/lang/reflect/Method;
+    iput-object p2, p0, Lc/a/f/b;->d:Ljava/lang/reflect/Method;
 
     return-void
 .end method
 
-.method public static b()Lb/a/f/b;
+.method public static b()Lc/a/f/b;
     .locals 5
 
     :try_start_0
@@ -54,9 +54,9 @@
 
     move-result-object v1
 
-    new-instance v2, Lb/a/f/b;
+    new-instance v2, Lc/a/f/b;
 
-    invoke-direct {v2, v0, v1}, Lb/a/f/b;-><init>(Ljava/lang/reflect/Method;Ljava/lang/reflect/Method;)V
+    invoke-direct {v2, v0, v1}, Lc/a/f/b;-><init>(Ljava/lang/reflect/Method;Ljava/lang/reflect/Method;)V
     :try_end_0
     .catch Ljava/lang/NoSuchMethodException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -90,7 +90,7 @@
             "Ljavax/net/ssl/SSLSocket;",
             "Ljava/lang/String;",
             "Ljava/util/List<",
-            "Lb/B;",
+            "Lc/B;",
             ">;)V"
         }
     .end annotation
@@ -100,11 +100,11 @@
 
     move-result-object p2
 
-    invoke-static {p3}, Lb/a/f/e;->a(Ljava/util/List;)Ljava/util/List;
+    invoke-static {p3}, Lc/a/f/e;->a(Ljava/util/List;)Ljava/util/List;
 
     move-result-object p3
 
-    iget-object v0, p0, Lb/a/f/b;->c:Ljava/lang/reflect/Method;
+    iget-object v0, p0, Lc/a/f/b;->c:Ljava/lang/reflect/Method;
 
     const/4 v1, 0x1
 
@@ -145,7 +145,7 @@
     .locals 2
 
     :try_start_0
-    iget-object v0, p0, Lb/a/f/b;->d:Ljava/lang/reflect/Method;
+    iget-object v0, p0, Lc/a/f/b;->d:Ljava/lang/reflect/Method;
 
     const/4 v1, 0x0
 

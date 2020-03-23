@@ -1,11 +1,11 @@
-.class Lb/a/d/b$f;
-.super Lb/a/d/b$a;
+.class Lc/a/d/b$f;
+.super Lc/a/d/b$a;
 .source ""
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lb/a/d/b;
+    value = Lc/a/d/b;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -17,25 +17,25 @@
 # instance fields
 .field private d:Z
 
-.field final synthetic e:Lb/a/d/b;
+.field final synthetic e:Lc/a/d/b;
 
 
 # direct methods
-.method constructor <init>(Lb/a/d/b;)V
+.method constructor <init>(Lc/a/d/b;)V
     .locals 1
 
-    iput-object p1, p0, Lb/a/d/b$f;->e:Lb/a/d/b;
+    iput-object p1, p0, Lc/a/d/b$f;->e:Lc/a/d/b;
 
     const/4 v0, 0x0
 
-    invoke-direct {p0, p1, v0}, Lb/a/d/b$a;-><init>(Lb/a/d/b;Lb/a/d/a;)V
+    invoke-direct {p0, p1, v0}, Lc/a/d/b$a;-><init>(Lc/a/d/b;Lc/a/d/a;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public b(Lc/e;J)J
+.method public b(Ld/e;J)J
     .locals 3
 
     const-wide/16 v0, 0x0
@@ -44,11 +44,11 @@
 
     if-ltz v2, :cond_3
 
-    iget-boolean v0, p0, Lb/a/d/b$a;->b:Z
+    iget-boolean v0, p0, Lc/a/d/b$a;->b:Z
 
     if-nez v0, :cond_2
 
-    iget-boolean v0, p0, Lb/a/d/b$f;->d:Z
+    iget-boolean v0, p0, Lc/a/d/b$f;->d:Z
 
     const-wide/16 v1, -0x1
 
@@ -57,11 +57,11 @@
     return-wide v1
 
     :cond_0
-    iget-object v0, p0, Lb/a/d/b$f;->e:Lb/a/d/b;
+    iget-object v0, p0, Lc/a/d/b$f;->e:Lc/a/d/b;
 
-    iget-object v0, v0, Lb/a/d/b;->c:Lc/g;
+    iget-object v0, v0, Lc/a/d/b;->c:Ld/g;
 
-    invoke-interface {v0, p1, p2, p3}, Lc/w;->b(Lc/e;J)J
+    invoke-interface {v0, p1, p2, p3}, Ld/w;->b(Ld/e;J)J
 
     move-result-wide p1
 
@@ -71,9 +71,9 @@
 
     const/4 p1, 0x1
 
-    iput-boolean p1, p0, Lb/a/d/b$f;->d:Z
+    iput-boolean p1, p0, Lc/a/d/b$f;->d:Z
 
-    invoke-virtual {p0, p1}, Lb/a/d/b$a;->a(Z)V
+    invoke-virtual {p0, p1}, Lc/a/d/b$a;->a(Z)V
 
     return-wide v1
 
@@ -114,25 +114,25 @@
 .method public close()V
     .locals 1
 
-    iget-boolean v0, p0, Lb/a/d/b$a;->b:Z
+    iget-boolean v0, p0, Lc/a/d/b$a;->b:Z
 
     if-eqz v0, :cond_0
 
     return-void
 
     :cond_0
-    iget-boolean v0, p0, Lb/a/d/b$f;->d:Z
+    iget-boolean v0, p0, Lc/a/d/b$f;->d:Z
 
     if-nez v0, :cond_1
 
     const/4 v0, 0x0
 
-    invoke-virtual {p0, v0}, Lb/a/d/b$a;->a(Z)V
+    invoke-virtual {p0, v0}, Lc/a/d/b$a;->a(Z)V
 
     :cond_1
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lb/a/d/b$a;->b:Z
+    iput-boolean v0, p0, Lc/a/d/b$a;->b:Z
 
     return-void
 .end method

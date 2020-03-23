@@ -1,11 +1,11 @@
-.class final Lb/a/g/e$a;
-.super Lb/a/g/e;
+.class final Lc/a/g/e$a;
+.super Lc/a/g/e;
 .source ""
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lb/a/g/e;
+    value = Lc/a/g/e;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -24,11 +24,11 @@
 .method constructor <init>(Ljavax/net/ssl/X509TrustManager;Ljava/lang/reflect/Method;)V
     .locals 0
 
-    invoke-direct {p0}, Lb/a/g/e;-><init>()V
+    invoke-direct {p0}, Lc/a/g/e;-><init>()V
 
-    iput-object p2, p0, Lb/a/g/e$a;->b:Ljava/lang/reflect/Method;
+    iput-object p2, p0, Lc/a/g/e$a;->b:Ljava/lang/reflect/Method;
 
-    iput-object p1, p0, Lb/a/g/e$a;->a:Ljavax/net/ssl/X509TrustManager;
+    iput-object p1, p0, Lc/a/g/e$a;->a:Ljavax/net/ssl/X509TrustManager;
 
     return-void
 .end method
@@ -41,9 +41,9 @@
     const/4 v0, 0x0
 
     :try_start_0
-    iget-object v1, p0, Lb/a/g/e$a;->b:Ljava/lang/reflect/Method;
+    iget-object v1, p0, Lc/a/g/e$a;->b:Ljava/lang/reflect/Method;
 
-    iget-object v2, p0, Lb/a/g/e$a;->a:Ljavax/net/ssl/X509TrustManager;
+    iget-object v2, p0, Lc/a/g/e$a;->a:Ljavax/net/ssl/X509TrustManager;
 
     const/4 v3, 0x1
 
@@ -90,7 +90,7 @@
     return v0
 
     :cond_0
-    instance-of v1, p1, Lb/a/g/e$a;
+    instance-of v1, p1, Lc/a/g/e$a;
 
     const/4 v2, 0x0
 
@@ -99,11 +99,11 @@
     return v2
 
     :cond_1
-    check-cast p1, Lb/a/g/e$a;
+    check-cast p1, Lc/a/g/e$a;
 
-    iget-object v1, p0, Lb/a/g/e$a;->a:Ljavax/net/ssl/X509TrustManager;
+    iget-object v1, p0, Lc/a/g/e$a;->a:Ljavax/net/ssl/X509TrustManager;
 
-    iget-object v3, p1, Lb/a/g/e$a;->a:Ljavax/net/ssl/X509TrustManager;
+    iget-object v3, p1, Lc/a/g/e$a;->a:Ljavax/net/ssl/X509TrustManager;
 
     invoke-virtual {v1, v3}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
@@ -111,9 +111,9 @@
 
     if-eqz v1, :cond_2
 
-    iget-object v1, p0, Lb/a/g/e$a;->b:Ljava/lang/reflect/Method;
+    iget-object v1, p0, Lc/a/g/e$a;->b:Ljava/lang/reflect/Method;
 
-    iget-object p1, p1, Lb/a/g/e$a;->b:Ljava/lang/reflect/Method;
+    iget-object p1, p1, Lc/a/g/e$a;->b:Ljava/lang/reflect/Method;
 
     invoke-virtual {v1, p1}, Ljava/lang/reflect/Method;->equals(Ljava/lang/Object;)Z
 
@@ -133,13 +133,13 @@
 .method public hashCode()I
     .locals 2
 
-    iget-object v0, p0, Lb/a/g/e$a;->a:Ljavax/net/ssl/X509TrustManager;
+    iget-object v0, p0, Lc/a/g/e$a;->a:Ljavax/net/ssl/X509TrustManager;
 
     invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
 
     move-result v0
 
-    iget-object v1, p0, Lb/a/g/e$a;->b:Ljava/lang/reflect/Method;
+    iget-object v1, p0, Lc/a/g/e$a;->b:Ljava/lang/reflect/Method;
 
     invoke-virtual {v1}, Ljava/lang/reflect/Method;->hashCode()I
 

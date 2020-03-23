@@ -1,11 +1,11 @@
-.class public La/a/h/a$a;
+.class public Lb/a/h/a$a;
 .super Ljava/lang/Object;
 .source ""
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = La/a/h/a;
+    value = Lb/a/h/a;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field public a:La/a/h/b;
+.field public a:Lb/a/h/b;
 
 .field public b:[[B
 

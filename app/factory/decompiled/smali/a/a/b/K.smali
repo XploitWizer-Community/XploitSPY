@@ -1,4 +1,4 @@
-.class public La/a/b/K;
+.class public Lb/a/b/K;
 .super Ljava/lang/Object;
 .source ""
 
@@ -19,7 +19,7 @@
 
     move-result-object v0
 
-    sput-object v0, La/a/b/K;->a:Ljava/util/regex/Pattern;
+    sput-object v0, Lb/a/b/K;->a:Ljava/util/regex/Pattern;
 
     const-string v0, "^(http|ws)s$"
 
@@ -27,7 +27,7 @@
 
     move-result-object v0
 
-    sput-object v0, La/a/b/K;->b:Ljava/util/regex/Pattern;
+    sput-object v0, Lb/a/b/K;->b:Ljava/util/regex/Pattern;
 
     return-void
 .end method
@@ -47,7 +47,7 @@
 
     if-ne v1, v2, :cond_1
 
-    sget-object v2, La/a/b/K;->a:Ljava/util/regex/Pattern;
+    sget-object v2, Lb/a/b/K;->a:Ljava/util/regex/Pattern;
 
     invoke-virtual {v2, v0}, Ljava/util/regex/Pattern;->matcher(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
 
@@ -64,7 +64,7 @@
     goto :goto_0
 
     :cond_0
-    sget-object v2, La/a/b/K;->b:Ljava/util/regex/Pattern;
+    sget-object v2, Lb/a/b/K;->b:Ljava/util/regex/Pattern;
 
     invoke-virtual {v2, v0}, Ljava/util/regex/Pattern;->matcher(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
 
@@ -138,7 +138,7 @@
 
     if-ne v1, v2, :cond_3
 
-    sget-object v3, La/a/b/K;->a:Ljava/util/regex/Pattern;
+    sget-object v3, Lb/a/b/K;->a:Ljava/util/regex/Pattern;
 
     invoke-virtual {v3, v0}, Ljava/util/regex/Pattern;->matcher(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
 
@@ -155,7 +155,7 @@
     goto :goto_0
 
     :cond_2
-    sget-object v3, La/a/b/K;->b:Ljava/util/regex/Pattern;
+    sget-object v3, Lb/a/b/K;->b:Ljava/util/regex/Pattern;
 
     invoke-virtual {v3, v0}, Ljava/util/regex/Pattern;->matcher(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
 

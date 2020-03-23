@@ -1,10 +1,10 @@
-.class public final Lb/a/c/l;
+.class public final Lc/a/c/l;
 .super Ljava/lang/Object;
 .source ""
 
 
 # instance fields
-.field public final a:Lb/B;
+.field public final a:Lc/B;
 
 .field public final b:I
 
@@ -12,21 +12,21 @@
 
 
 # direct methods
-.method public constructor <init>(Lb/B;ILjava/lang/String;)V
+.method public constructor <init>(Lc/B;ILjava/lang/String;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lb/a/c/l;->a:Lb/B;
+    iput-object p1, p0, Lc/a/c/l;->a:Lc/B;
 
-    iput p2, p0, Lb/a/c/l;->b:I
+    iput p2, p0, Lc/a/c/l;->b:I
 
-    iput-object p3, p0, Lb/a/c/l;->c:Ljava/lang/String;
+    iput-object p3, p0, Lc/a/c/l;->c:Ljava/lang/String;
 
     return-void
 .end method
 
-.method public static a(Ljava/lang/String;)Lb/a/c/l;
+.method public static a(Ljava/lang/String;)Lc/a/c/l;
     .locals 8
 
     const-string v0, "HTTP/1."
@@ -69,7 +69,7 @@
 
     if-nez v0, :cond_0
 
-    sget-object v0, Lb/B;->a:Lb/B;
+    sget-object v0, Lc/B;->a:Lc/B;
 
     goto :goto_0
 
@@ -78,7 +78,7 @@
 
     if-ne v0, v5, :cond_1
 
-    sget-object v0, Lb/B;->b:Lb/B;
+    sget-object v0, Lc/B;->b:Lc/B;
 
     goto :goto_0
 
@@ -129,7 +129,7 @@
 
     if-eqz v0, :cond_7
 
-    sget-object v0, Lb/B;->a:Lb/B;
+    sget-object v0, Lc/B;->a:Lc/B;
 
     const/4 v3, 0x4
 
@@ -196,9 +196,9 @@
     const-string p0, ""
 
     :goto_1
-    new-instance v1, Lb/a/c/l;
+    new-instance v1, Lc/a/c/l;
 
-    invoke-direct {v1, v0, v5, p0}, Lb/a/c/l;-><init>(Lb/B;ILjava/lang/String;)V
+    invoke-direct {v1, v0, v5, p0}, Lc/a/c/l;-><init>(Lc/B;ILjava/lang/String;)V
 
     return-object v1
 
@@ -269,9 +269,9 @@
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    iget-object v1, p0, Lb/a/c/l;->a:Lb/B;
+    iget-object v1, p0, Lc/a/c/l;->a:Lc/B;
 
-    sget-object v2, Lb/B;->a:Lb/B;
+    sget-object v2, Lc/B;->a:Lc/B;
 
     if-ne v1, v2, :cond_0
 
@@ -289,17 +289,17 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    iget v2, p0, Lb/a/c/l;->b:I
+    iget v2, p0, Lc/a/c/l;->b:I
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    iget-object v2, p0, Lb/a/c/l;->c:Ljava/lang/String;
+    iget-object v2, p0, Lc/a/c/l;->c:Ljava/lang/String;
 
     if-eqz v2, :cond_1
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lb/a/c/l;->c:Ljava/lang/String;
+    iget-object v1, p0, Lc/a/c/l;->c:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 

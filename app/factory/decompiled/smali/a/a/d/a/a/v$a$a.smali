@@ -1,11 +1,11 @@
-.class public La/a/d/a/a/v$a$a;
+.class public Lb/a/d/a/a/v$a$a;
 .super Ljava/lang/Object;
 .source ""
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = La/a/d/a/a/v$a;
+    value = Lb/a/d/a/a/v$a;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;

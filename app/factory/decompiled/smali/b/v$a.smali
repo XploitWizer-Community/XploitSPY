@@ -1,11 +1,11 @@
-.class public final Lb/v$a;
+.class public final Lc/v$a;
 .super Ljava/lang/Object;
 .source ""
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lb/v;
+    value = Lc/v;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -38,7 +38,7 @@
 
     invoke-direct {v0, v1}, Ljava/util/ArrayList;-><init>(I)V
 
-    iput-object v0, p0, Lb/v$a;->a:Ljava/util/List;
+    iput-object v0, p0, Lc/v$a;->a:Ljava/util/List;
 
     return-void
 .end method
@@ -108,7 +108,7 @@
 
     const-string p1, "Unexpected char %#04x at %d in header name: %s"
 
-    invoke-static {p1, v0}, Lb/a/d;->a(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+    invoke-static {p1, v0}, Lc/a/d;->a(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -170,7 +170,7 @@
 
     const-string p1, "Unexpected char %#04x at %d in %s value: %s"
 
-    invoke-static {p1, v3}, Lb/a/d;->a(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+    invoke-static {p1, v3}, Lc/a/d;->a(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -217,7 +217,7 @@
 
 
 # virtual methods
-.method a(Ljava/lang/String;)Lb/v$a;
+.method a(Ljava/lang/String;)Lc/v$a;
     .locals 4
 
     const-string v0, ":"
@@ -244,7 +244,7 @@
 
     move-result-object p1
 
-    invoke-virtual {p0, v0, p1}, Lb/v$a;->b(Ljava/lang/String;Ljava/lang/String;)Lb/v$a;
+    invoke-virtual {p0, v0, p1}, Lc/v$a;->b(Ljava/lang/String;Ljava/lang/String;)Lc/v$a;
 
     return-object p0
 
@@ -261,43 +261,43 @@
 
     move-result-object p1
 
-    invoke-virtual {p0, v2, p1}, Lb/v$a;->b(Ljava/lang/String;Ljava/lang/String;)Lb/v$a;
+    invoke-virtual {p0, v2, p1}, Lc/v$a;->b(Ljava/lang/String;Ljava/lang/String;)Lc/v$a;
 
     return-object p0
 
     :cond_1
-    invoke-virtual {p0, v2, p1}, Lb/v$a;->b(Ljava/lang/String;Ljava/lang/String;)Lb/v$a;
+    invoke-virtual {p0, v2, p1}, Lc/v$a;->b(Ljava/lang/String;Ljava/lang/String;)Lc/v$a;
 
     return-object p0
 .end method
 
-.method public a(Ljava/lang/String;Ljava/lang/String;)Lb/v$a;
+.method public a(Ljava/lang/String;Ljava/lang/String;)Lc/v$a;
     .locals 0
 
-    invoke-direct {p0, p1, p2}, Lb/v$a;->d(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {p0, p1, p2}, Lc/v$a;->d(Ljava/lang/String;Ljava/lang/String;)V
 
-    invoke-virtual {p0, p1, p2}, Lb/v$a;->b(Ljava/lang/String;Ljava/lang/String;)Lb/v$a;
+    invoke-virtual {p0, p1, p2}, Lc/v$a;->b(Ljava/lang/String;Ljava/lang/String;)Lc/v$a;
 
     return-object p0
 .end method
 
-.method public a()Lb/v;
+.method public a()Lc/v;
     .locals 1
 
-    new-instance v0, Lb/v;
+    new-instance v0, Lc/v;
 
-    invoke-direct {v0, p0}, Lb/v;-><init>(Lb/v$a;)V
+    invoke-direct {v0, p0}, Lc/v;-><init>(Lc/v$a;)V
 
     return-object v0
 .end method
 
-.method public b(Ljava/lang/String;)Lb/v$a;
+.method public b(Ljava/lang/String;)Lc/v$a;
     .locals 2
 
     const/4 v0, 0x0
 
     :goto_0
-    iget-object v1, p0, Lb/v$a;->a:Ljava/util/List;
+    iget-object v1, p0, Lc/v$a;->a:Ljava/util/List;
 
     invoke-interface {v1}, Ljava/util/List;->size()I
 
@@ -305,7 +305,7 @@
 
     if-ge v0, v1, :cond_1
 
-    iget-object v1, p0, Lb/v$a;->a:Ljava/util/List;
+    iget-object v1, p0, Lc/v$a;->a:Ljava/util/List;
 
     invoke-interface {v1, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -319,11 +319,11 @@
 
     if-eqz v1, :cond_0
 
-    iget-object v1, p0, Lb/v$a;->a:Ljava/util/List;
+    iget-object v1, p0, Lc/v$a;->a:Ljava/util/List;
 
     invoke-interface {v1, v0}, Ljava/util/List;->remove(I)Ljava/lang/Object;
 
-    iget-object v1, p0, Lb/v$a;->a:Ljava/util/List;
+    iget-object v1, p0, Lc/v$a;->a:Ljava/util/List;
 
     invoke-interface {v1, v0}, Ljava/util/List;->remove(I)Ljava/lang/Object;
 
@@ -338,14 +338,14 @@
     return-object p0
 .end method
 
-.method b(Ljava/lang/String;Ljava/lang/String;)Lb/v$a;
+.method b(Ljava/lang/String;Ljava/lang/String;)Lc/v$a;
     .locals 1
 
-    iget-object v0, p0, Lb/v$a;->a:Ljava/util/List;
+    iget-object v0, p0, Lc/v$a;->a:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    iget-object p1, p0, Lb/v$a;->a:Ljava/util/List;
+    iget-object p1, p0, Lc/v$a;->a:Ljava/util/List;
 
     invoke-virtual {p2}, Ljava/lang/String;->trim()Ljava/lang/String;
 
@@ -356,14 +356,14 @@
     return-object p0
 .end method
 
-.method public c(Ljava/lang/String;Ljava/lang/String;)Lb/v$a;
+.method public c(Ljava/lang/String;Ljava/lang/String;)Lc/v$a;
     .locals 0
 
-    invoke-direct {p0, p1, p2}, Lb/v$a;->d(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {p0, p1, p2}, Lc/v$a;->d(Ljava/lang/String;Ljava/lang/String;)V
 
-    invoke-virtual {p0, p1}, Lb/v$a;->b(Ljava/lang/String;)Lb/v$a;
+    invoke-virtual {p0, p1}, Lc/v$a;->b(Ljava/lang/String;)Lc/v$a;
 
-    invoke-virtual {p0, p1, p2}, Lb/v$a;->b(Ljava/lang/String;Ljava/lang/String;)Lb/v$a;
+    invoke-virtual {p0, p1, p2}, Lc/v$a;->b(Ljava/lang/String;Ljava/lang/String;)Lc/v$a;
 
     return-object p0
 .end method

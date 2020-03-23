@@ -1,4 +1,4 @@
-.class final Lb/a/e/w;
+.class final Lc/a/e/w;
 .super Ljava/lang/Object;
 .source ""
 
@@ -23,13 +23,13 @@
 
     invoke-direct {v0, v1}, Ljava/util/concurrent/CountDownLatch;-><init>(I)V
 
-    iput-object v0, p0, Lb/a/e/w;->a:Ljava/util/concurrent/CountDownLatch;
+    iput-object v0, p0, Lc/a/e/w;->a:Ljava/util/concurrent/CountDownLatch;
 
     const-wide/16 v0, -0x1
 
-    iput-wide v0, p0, Lb/a/e/w;->b:J
+    iput-wide v0, p0, Lc/a/e/w;->b:J
 
-    iput-wide v0, p0, Lb/a/e/w;->c:J
+    iput-wide v0, p0, Lc/a/e/w;->c:J
 
     return-void
 .end method
@@ -39,7 +39,7 @@
 .method a()V
     .locals 5
 
-    iget-wide v0, p0, Lb/a/e/w;->c:J
+    iget-wide v0, p0, Lc/a/e/w;->c:J
 
     const-wide/16 v2, -0x1
 
@@ -47,7 +47,7 @@
 
     if-nez v4, :cond_0
 
-    iget-wide v0, p0, Lb/a/e/w;->b:J
+    iget-wide v0, p0, Lc/a/e/w;->b:J
 
     cmp-long v4, v0, v2
 
@@ -57,9 +57,9 @@
 
     sub-long/2addr v0, v2
 
-    iput-wide v0, p0, Lb/a/e/w;->c:J
+    iput-wide v0, p0, Lc/a/e/w;->c:J
 
-    iget-object v0, p0, Lb/a/e/w;->a:Ljava/util/concurrent/CountDownLatch;
+    iget-object v0, p0, Lc/a/e/w;->a:Ljava/util/concurrent/CountDownLatch;
 
     invoke-virtual {v0}, Ljava/util/concurrent/CountDownLatch;->countDown()V
 
@@ -76,7 +76,7 @@
 .method b()V
     .locals 5
 
-    iget-wide v0, p0, Lb/a/e/w;->c:J
+    iget-wide v0, p0, Lc/a/e/w;->c:J
 
     const-wide/16 v2, -0x1
 
@@ -84,7 +84,7 @@
 
     if-nez v4, :cond_0
 
-    iget-wide v0, p0, Lb/a/e/w;->b:J
+    iget-wide v0, p0, Lc/a/e/w;->b:J
 
     cmp-long v4, v0, v2
 
@@ -94,9 +94,9 @@
 
     move-result-wide v0
 
-    iput-wide v0, p0, Lb/a/e/w;->c:J
+    iput-wide v0, p0, Lc/a/e/w;->c:J
 
-    iget-object v0, p0, Lb/a/e/w;->a:Ljava/util/concurrent/CountDownLatch;
+    iget-object v0, p0, Lc/a/e/w;->a:Ljava/util/concurrent/CountDownLatch;
 
     invoke-virtual {v0}, Ljava/util/concurrent/CountDownLatch;->countDown()V
 
@@ -113,7 +113,7 @@
 .method c()V
     .locals 5
 
-    iget-wide v0, p0, Lb/a/e/w;->b:J
+    iget-wide v0, p0, Lc/a/e/w;->b:J
 
     const-wide/16 v2, -0x1
 
@@ -125,7 +125,7 @@
 
     move-result-wide v0
 
-    iput-wide v0, p0, Lb/a/e/w;->b:J
+    iput-wide v0, p0, Lc/a/e/w;->b:J
 
     return-void
 

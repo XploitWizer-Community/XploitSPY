@@ -121,7 +121,7 @@
 
     move-result-object p1
 
-    invoke-virtual {p1}, Lcom/remote/app/h;->b()La/a/b/I;
+    invoke-virtual {p1}, Lcom/remote/app/h;->b()Lb/a/b/I;
 
     move-result-object p1
 
@@ -135,7 +135,7 @@
 
     aput-object v6, v1, v2
 
-    invoke-virtual {p1, v0, v1}, La/a/b/I;->a(Ljava/lang/String;[Ljava/lang/Object;)La/a/c/a;
+    invoke-virtual {p1, v0, v1}, Lb/a/b/I;->a(Ljava/lang/String;[Ljava/lang/Object;)Lb/a/c/a;
     :try_end_1
     .catch Lorg/json/JSONException; {:try_start_1 .. :try_end_1} :catch_0
 

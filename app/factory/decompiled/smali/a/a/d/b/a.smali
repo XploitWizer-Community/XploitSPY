@@ -1,4 +1,4 @@
-.class La/a/d/b/a;
+.class Lb/a/d/b/a;
 .super Ljava/lang/Object;
 .source ""
 
@@ -27,7 +27,7 @@
     goto :goto_0
 
     :cond_0
-    invoke-static {p0, v2}, La/a/d/b/a;->a([[BI)[B
+    invoke-static {p0, v2}, Lb/a/d/b/a;->a([[BI)[B
 
     move-result-object p0
 

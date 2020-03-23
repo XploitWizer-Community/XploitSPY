@@ -1,14 +1,14 @@
-.class La/a/b/q;
+.class Lb/a/b/q;
 .super Ljava/lang/Object;
 .source ""
 
 # interfaces
-.implements La/a/c/a$a;
+.implements Lb/a/c/a$a;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = La/a/b/w;->j()V
+    value = Lb/a/b/w;->j()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field final synthetic a:La/a/b/w;
+.field final synthetic a:Lb/a/b/w;
 
 
 # direct methods
-.method constructor <init>(La/a/b/w;)V
+.method constructor <init>(Lb/a/b/w;)V
     .locals 0
 
-    iput-object p1, p0, La/a/b/q;->a:La/a/b/w;
+    iput-object p1, p0, Lb/a/b/q;->a:Lb/a/b/w;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -37,9 +37,9 @@
 .method public varargs a([Ljava/lang/Object;)V
     .locals 0
 
-    iget-object p1, p0, La/a/b/q;->a:La/a/b/w;
+    iget-object p1, p0, Lb/a/b/q;->a:Lb/a/b/w;
 
-    invoke-static {p1}, La/a/b/w;->c(La/a/b/w;)V
+    invoke-static {p1}, Lb/a/b/w;->c(Lb/a/b/w;)V
 
     return-void
 .end method

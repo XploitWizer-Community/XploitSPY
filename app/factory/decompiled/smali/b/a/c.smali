@@ -1,4 +1,4 @@
-.class final Lb/a/c;
+.class final Lc/a/c;
 .super Ljava/lang/Object;
 .source ""
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lb/a/d;->a(Ljava/lang/String;Z)Ljava/util/concurrent/ThreadFactory;
+    value = Lc/a/d;->a(Ljava/lang/String;Z)Ljava/util/concurrent/ThreadFactory;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -27,9 +27,9 @@
 .method constructor <init>(Ljava/lang/String;Z)V
     .locals 0
 
-    iput-object p1, p0, Lb/a/c;->a:Ljava/lang/String;
+    iput-object p1, p0, Lc/a/c;->a:Ljava/lang/String;
 
-    iput-boolean p2, p0, Lb/a/c;->b:Z
+    iput-boolean p2, p0, Lc/a/c;->b:Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -43,11 +43,11 @@
 
     new-instance v0, Ljava/lang/Thread;
 
-    iget-object v1, p0, Lb/a/c;->a:Ljava/lang/String;
+    iget-object v1, p0, Lc/a/c;->a:Ljava/lang/String;
 
     invoke-direct {v0, p1, v1}, Ljava/lang/Thread;-><init>(Ljava/lang/Runnable;Ljava/lang/String;)V
 
-    iget-boolean p1, p0, Lb/a/c;->b:Z
+    iget-boolean p1, p0, Lc/a/c;->b:Z
 
     invoke-virtual {v0, p1}, Ljava/lang/Thread;->setDaemon(Z)V
 

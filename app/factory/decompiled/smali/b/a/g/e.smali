@@ -1,4 +1,4 @@
-.class public abstract Lb/a/g/e;
+.class public abstract Lc/a/g/e;
 .super Ljava/lang/Object;
 .source ""
 
@@ -6,8 +6,8 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lb/a/g/e$b;,
-        Lb/a/g/e$a;
+        Lc/a/g/e$b;,
+        Lc/a/g/e$a;
     }
 .end annotation
 
@@ -21,7 +21,7 @@
     return-void
 .end method
 
-.method public static a(Ljavax/net/ssl/X509TrustManager;)Lb/a/g/e;
+.method public static a(Ljavax/net/ssl/X509TrustManager;)Lc/a/g/e;
     .locals 6
 
     :try_start_0
@@ -47,9 +47,9 @@
 
     invoke-virtual {v0, v2}, Ljava/lang/reflect/Method;->setAccessible(Z)V
 
-    new-instance v1, Lb/a/g/e$a;
+    new-instance v1, Lc/a/g/e$a;
 
-    invoke-direct {v1, p0, v0}, Lb/a/g/e$a;-><init>(Ljavax/net/ssl/X509TrustManager;Ljava/lang/reflect/Method;)V
+    invoke-direct {v1, p0, v0}, Lc/a/g/e$a;-><init>(Ljavax/net/ssl/X509TrustManager;Ljava/lang/reflect/Method;)V
     :try_end_0
     .catch Ljava/lang/NoSuchMethodException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -60,19 +60,19 @@
 
     move-result-object p0
 
-    invoke-static {p0}, Lb/a/g/e;->a([Ljava/security/cert/X509Certificate;)Lb/a/g/e;
+    invoke-static {p0}, Lc/a/g/e;->a([Ljava/security/cert/X509Certificate;)Lc/a/g/e;
 
     move-result-object p0
 
     return-object p0
 .end method
 
-.method public static varargs a([Ljava/security/cert/X509Certificate;)Lb/a/g/e;
+.method public static varargs a([Ljava/security/cert/X509Certificate;)Lc/a/g/e;
     .locals 1
 
-    new-instance v0, Lb/a/g/e$b;
+    new-instance v0, Lc/a/g/e$b;
 
-    invoke-direct {v0, p0}, Lb/a/g/e$b;-><init>([Ljava/security/cert/X509Certificate;)V
+    invoke-direct {v0, p0}, Lc/a/g/e$b;-><init>([Ljava/security/cert/X509Certificate;)V
 
     return-object v0
 .end method

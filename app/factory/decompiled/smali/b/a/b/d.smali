@@ -1,107 +1,84 @@
-.class public final Lb/a/b/d;
-.super Ljava/lang/Object;
+.class Lb/a/b/D;
+.super Ljava/util/LinkedList;
 .source ""
 
 
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lb/a/b/I;->j()V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/util/LinkedList<",
+        "Lb/a/b/y$a;",
+        ">;"
+    }
+.end annotation
+
+
 # instance fields
-.field private final a:Ljava/util/Set;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/Set<",
-            "Lb/J;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field final synthetic a:Lb/a/b/w;
+
+.field final synthetic b:Lb/a/b/I;
 
 
 # direct methods
-.method public constructor <init>()V
+.method constructor <init>(Lb/a/b/I;Lb/a/b/w;)V
     .locals 1
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput-object p1, p0, Lb/a/b/D;->b:Lb/a/b/I;
 
-    new-instance v0, Ljava/util/LinkedHashSet;
+    iput-object p2, p0, Lb/a/b/D;->a:Lb/a/b/w;
 
-    invoke-direct {v0}, Ljava/util/LinkedHashSet;-><init>()V
+    invoke-direct {p0}, Ljava/util/LinkedList;-><init>()V
 
-    iput-object v0, p0, Lb/a/b/d;->a:Ljava/util/Set;
+    iget-object p1, p0, Lb/a/b/D;->a:Lb/a/b/w;
+
+    new-instance p2, Lb/a/b/A;
+
+    invoke-direct {p2, p0}, Lb/a/b/A;-><init>(Lb/a/b/D;)V
+
+    const-string v0, "open"
+
+    invoke-static {p1, v0, p2}, Lb/a/b/y;->a(Lb/a/c/a;Ljava/lang/String;Lb/a/c/a$a;)Lb/a/b/y$a;
+
+    move-result-object p1
+
+    invoke-virtual {p0, p1}, Ljava/util/LinkedList;->add(Ljava/lang/Object;)Z
+
+    iget-object p1, p0, Lb/a/b/D;->a:Lb/a/b/w;
+
+    new-instance p2, Lb/a/b/B;
+
+    invoke-direct {p2, p0}, Lb/a/b/B;-><init>(Lb/a/b/D;)V
+
+    const-string v0, "packet"
+
+    invoke-static {p1, v0, p2}, Lb/a/b/y;->a(Lb/a/c/a;Ljava/lang/String;Lb/a/c/a$a;)Lb/a/b/y$a;
+
+    move-result-object p1
+
+    invoke-virtual {p0, p1}, Ljava/util/LinkedList;->add(Ljava/lang/Object;)Z
+
+    iget-object p1, p0, Lb/a/b/D;->a:Lb/a/b/w;
+
+    new-instance p2, Lb/a/b/C;
+
+    invoke-direct {p2, p0}, Lb/a/b/C;-><init>(Lb/a/b/D;)V
+
+    const-string v0, "close"
+
+    invoke-static {p1, v0, p2}, Lb/a/b/y;->a(Lb/a/c/a;Ljava/lang/String;Lb/a/c/a$a;)Lb/a/b/y$a;
+
+    move-result-object p1
+
+    invoke-virtual {p0, p1}, Ljava/util/LinkedList;->add(Ljava/lang/Object;)Z
 
     return-void
-.end method
-
-
-# virtual methods
-.method public declared-synchronized a(Lb/J;)V
-    .locals 1
-
-    monitor-enter p0
-
-    :try_start_0
-    iget-object v0, p0, Lb/a/b/d;->a:Ljava/util/Set;
-
-    invoke-interface {v0, p1}, Ljava/util/Set;->remove(Ljava/lang/Object;)Z
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    monitor-exit p0
-
-    return-void
-
-    :catchall_0
-    move-exception p1
-
-    monitor-exit p0
-
-    throw p1
-.end method
-
-.method public declared-synchronized b(Lb/J;)V
-    .locals 1
-
-    monitor-enter p0
-
-    :try_start_0
-    iget-object v0, p0, Lb/a/b/d;->a:Ljava/util/Set;
-
-    invoke-interface {v0, p1}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    monitor-exit p0
-
-    return-void
-
-    :catchall_0
-    move-exception p1
-
-    monitor-exit p0
-
-    throw p1
-.end method
-
-.method public declared-synchronized c(Lb/J;)Z
-    .locals 1
-
-    monitor-enter p0
-
-    :try_start_0
-    iget-object v0, p0, Lb/a/b/d;->a:Ljava/util/Set;
-
-    invoke-interface {v0, p1}, Ljava/util/Set;->contains(Ljava/lang/Object;)Z
-
-    move-result p1
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    monitor-exit p0
-
-    return p1
-
-    :catchall_0
-    move-exception p1
-
-    monitor-exit p0
-
-    throw p1
 .end method

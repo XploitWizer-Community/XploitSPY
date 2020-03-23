@@ -1,4 +1,4 @@
-.class public final Lb/a/c/g;
+.class public final Lc/a/c/g;
 .super Ljava/lang/Object;
 .source ""
 
@@ -65,7 +65,7 @@
 .method public static b(Ljava/lang/String;)Z
     .locals 1
 
-    invoke-static {p0}, Lb/a/c/g;->e(Ljava/lang/String;)Z
+    invoke-static {p0}, Lc/a/c/g;->e(Ljava/lang/String;)Z
 
     move-result v0
 

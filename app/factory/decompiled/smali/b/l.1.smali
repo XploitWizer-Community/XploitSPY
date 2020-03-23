@@ -1,4 +1,4 @@
-.class public final Lb/l;
+.class public final Lc/l;
 .super Ljava/lang/Object;
 .source ""
 
@@ -18,13 +18,13 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Deque<",
-            "Lb/a/b/c;",
+            "Lc/a/b/c;",
             ">;"
         }
     .end annotation
 .end field
 
-.field final f:Lb/a/b/d;
+.field final f:Lc/a/b/d;
 
 .field g:Z
 
@@ -51,7 +51,7 @@
 
     const-string v7, "OkHttp ConnectionPool"
 
-    invoke-static {v7, v0}, Lb/a/d;->a(Ljava/lang/String;Z)Ljava/util/concurrent/ThreadFactory;
+    invoke-static {v7, v0}, Lc/a/d;->a(Ljava/lang/String;Z)Ljava/util/concurrent/ThreadFactory;
 
     move-result-object v7
 
@@ -59,7 +59,7 @@
 
     invoke-direct/range {v0 .. v7}, Ljava/util/concurrent/ThreadPoolExecutor;-><init>(IIJLjava/util/concurrent/TimeUnit;Ljava/util/concurrent/BlockingQueue;Ljava/util/concurrent/ThreadFactory;)V
 
-    sput-object v8, Lb/l;->a:Ljava/util/concurrent/Executor;
+    sput-object v8, Lc/l;->a:Ljava/util/concurrent/Executor;
 
     return-void
 .end method
@@ -73,7 +73,7 @@
 
     const-wide/16 v2, 0x5
 
-    invoke-direct {p0, v1, v2, v3, v0}, Lb/l;-><init>(IJLjava/util/concurrent/TimeUnit;)V
+    invoke-direct {p0, v1, v2, v3, v0}, Lc/l;-><init>(IJLjava/util/concurrent/TimeUnit;)V
 
     return-void
 .end method
@@ -83,31 +83,31 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    new-instance v0, Lb/k;
+    new-instance v0, Lc/k;
 
-    invoke-direct {v0, p0}, Lb/k;-><init>(Lb/l;)V
+    invoke-direct {v0, p0}, Lc/k;-><init>(Lc/l;)V
 
-    iput-object v0, p0, Lb/l;->d:Ljava/lang/Runnable;
+    iput-object v0, p0, Lc/l;->d:Ljava/lang/Runnable;
 
     new-instance v0, Ljava/util/ArrayDeque;
 
     invoke-direct {v0}, Ljava/util/ArrayDeque;-><init>()V
 
-    iput-object v0, p0, Lb/l;->e:Ljava/util/Deque;
+    iput-object v0, p0, Lc/l;->e:Ljava/util/Deque;
 
-    new-instance v0, Lb/a/b/d;
+    new-instance v0, Lc/a/b/d;
 
-    invoke-direct {v0}, Lb/a/b/d;-><init>()V
+    invoke-direct {v0}, Lc/a/b/d;-><init>()V
 
-    iput-object v0, p0, Lb/l;->f:Lb/a/b/d;
+    iput-object v0, p0, Lc/l;->f:Lc/a/b/d;
 
-    iput p1, p0, Lb/l;->b:I
+    iput p1, p0, Lc/l;->b:I
 
     invoke-virtual {p4, p2, p3}, Ljava/util/concurrent/TimeUnit;->toNanos(J)J
 
     move-result-wide v0
 
-    iput-wide v0, p0, Lb/l;->c:J
+    iput-wide v0, p0, Lc/l;->c:J
 
     const-wide/16 v0, 0x0
 
@@ -139,10 +139,10 @@
     throw p1
 .end method
 
-.method private a(Lb/a/b/c;J)I
+.method private a(Lc/a/b/c;J)I
     .locals 6
 
-    iget-object v0, p1, Lb/a/b/c;->l:Ljava/util/List;
+    iget-object v0, p1, Lc/a/b/c;->l:Ljava/util/List;
 
     const/4 v1, 0x0
 
@@ -173,7 +173,7 @@
     goto :goto_0
 
     :cond_1
-    check-cast v3, Lb/a/b/g$a;
+    check-cast v3, Lc/a/b/g$a;
 
     new-instance v4, Ljava/lang/StringBuilder;
 
@@ -183,15 +183,15 @@
 
     invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p1}, Lb/a/b/c;->a()Lb/J;
+    invoke-virtual {p1}, Lc/a/b/c;->a()Lc/J;
 
     move-result-object v5
 
-    invoke-virtual {v5}, Lb/J;->a()Lb/a;
+    invoke-virtual {v5}, Lc/J;->a()Lc/a;
 
     move-result-object v5
 
-    invoke-virtual {v5}, Lb/a;->k()Lb/w;
+    invoke-virtual {v5}, Lc/a;->k()Lc/w;
 
     move-result-object v5
 
@@ -205,19 +205,19 @@
 
     move-result-object v4
 
-    invoke-static {}, Lb/a/f/e;->a()Lb/a/f/e;
+    invoke-static {}, Lc/a/f/e;->a()Lc/a/f/e;
 
     move-result-object v5
 
-    iget-object v3, v3, Lb/a/b/g$a;->a:Ljava/lang/Object;
+    iget-object v3, v3, Lc/a/b/g$a;->a:Ljava/lang/Object;
 
-    invoke-virtual {v5, v4, v3}, Lb/a/f/e;->a(Ljava/lang/String;Ljava/lang/Object;)V
+    invoke-virtual {v5, v4, v3}, Lc/a/f/e;->a(Ljava/lang/String;Ljava/lang/Object;)V
 
     invoke-interface {v0, v2}, Ljava/util/List;->remove(I)Ljava/lang/Object;
 
     const/4 v3, 0x1
 
-    iput-boolean v3, p1, Lb/a/b/c;->m:Z
+    iput-boolean v3, p1, Lc/a/b/c;->m:Z
 
     invoke-interface {v0}, Ljava/util/List;->isEmpty()Z
 
@@ -225,11 +225,11 @@
 
     if-eqz v3, :cond_0
 
-    iget-wide v2, p0, Lb/l;->c:J
+    iget-wide v2, p0, Lc/l;->c:J
 
     sub-long/2addr p2, v2
 
-    iput-wide p2, p1, Lb/a/b/c;->n:J
+    iput-wide p2, p1, Lc/a/b/c;->n:J
 
     return v1
 
@@ -249,7 +249,7 @@
     monitor-enter p0
 
     :try_start_0
-    iget-object v0, p0, Lb/l;->e:Ljava/util/Deque;
+    iget-object v0, p0, Lc/l;->e:Ljava/util/Deque;
 
     invoke-interface {v0}, Ljava/util/Deque;->iterator()Ljava/util/Iterator;
 
@@ -279,9 +279,9 @@
 
     move-result-object v7
 
-    check-cast v7, Lb/a/b/c;
+    check-cast v7, Lc/a/b/c;
 
-    invoke-direct {p0, v7, p1, p2}, Lb/l;->a(Lb/a/b/c;J)I
+    invoke-direct {p0, v7, p1, p2}, Lc/l;->a(Lc/a/b/c;J)I
 
     move-result v8
 
@@ -294,7 +294,7 @@
     :cond_1
     add-int/lit8 v2, v2, 0x1
 
-    iget-wide v8, v7, Lb/a/b/c;->n:J
+    iget-wide v8, v7, Lc/a/b/c;->n:J
 
     sub-long v8, p1, v8
 
@@ -309,13 +309,13 @@
     goto :goto_0
 
     :cond_2
-    iget-wide p1, p0, Lb/l;->c:J
+    iget-wide p1, p0, Lc/l;->c:J
 
     cmp-long v0, v3, p1
 
     if-gez v0, :cond_6
 
-    iget p1, p0, Lb/l;->b:I
+    iget p1, p0, Lc/l;->b:I
 
     if-le v2, p1, :cond_3
 
@@ -324,7 +324,7 @@
     :cond_3
     if-lez v2, :cond_4
 
-    iget-wide p1, p0, Lb/l;->c:J
+    iget-wide p1, p0, Lc/l;->c:J
 
     sub-long/2addr p1, v3
 
@@ -335,14 +335,14 @@
     :cond_4
     if-lez v6, :cond_5
 
-    iget-wide p1, p0, Lb/l;->c:J
+    iget-wide p1, p0, Lc/l;->c:J
 
     monitor-exit p0
 
     return-wide p1
 
     :cond_5
-    iput-boolean v1, p0, Lb/l;->g:Z
+    iput-boolean v1, p0, Lc/l;->g:Z
 
     const-wide/16 p1, -0x1
 
@@ -352,7 +352,7 @@
 
     :cond_6
     :goto_1
-    iget-object p1, p0, Lb/l;->e:Ljava/util/Deque;
+    iget-object p1, p0, Lc/l;->e:Ljava/util/Deque;
 
     invoke-interface {p1, v5}, Ljava/util/Deque;->remove(Ljava/lang/Object;)Z
 
@@ -360,11 +360,11 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    invoke-virtual {v5}, Lb/a/b/c;->e()Ljava/net/Socket;
+    invoke-virtual {v5}, Lc/a/b/c;->e()Ljava/net/Socket;
 
     move-result-object p1
 
-    invoke-static {p1}, Lb/a/d;->a(Ljava/net/Socket;)V
+    invoke-static {p1}, Lc/a/d;->a(Ljava/net/Socket;)V
 
     const-wide/16 p1, 0x0
 
@@ -387,10 +387,10 @@
     goto :goto_2
 .end method
 
-.method a(Lb/a;Lb/a/b/g;)Lb/a/b/c;
+.method a(Lc/a;Lc/a/b/g;)Lc/a/b/c;
     .locals 4
 
-    iget-object v0, p0, Lb/l;->e:Ljava/util/Deque;
+    iget-object v0, p0, Lc/l;->e:Ljava/util/Deque;
 
     invoke-interface {v0}, Ljava/util/Deque;->iterator()Ljava/util/Iterator;
 
@@ -407,35 +407,35 @@
 
     move-result-object v1
 
-    check-cast v1, Lb/a/b/c;
+    check-cast v1, Lc/a/b/c;
 
-    iget-object v2, v1, Lb/a/b/c;->l:Ljava/util/List;
+    iget-object v2, v1, Lc/a/b/c;->l:Ljava/util/List;
 
     invoke-interface {v2}, Ljava/util/List;->size()I
 
     move-result v2
 
-    iget v3, v1, Lb/a/b/c;->k:I
+    iget v3, v1, Lc/a/b/c;->k:I
 
     if-ge v2, v3, :cond_0
 
-    invoke-virtual {v1}, Lb/a/b/c;->a()Lb/J;
+    invoke-virtual {v1}, Lc/a/b/c;->a()Lc/J;
 
     move-result-object v2
 
-    iget-object v2, v2, Lb/J;->a:Lb/a;
+    iget-object v2, v2, Lc/J;->a:Lc/a;
 
-    invoke-virtual {p1, v2}, Lb/a;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {p1, v2}, Lc/a;->equals(Ljava/lang/Object;)Z
 
     move-result v2
 
     if-eqz v2, :cond_0
 
-    iget-boolean v2, v1, Lb/a/b/c;->m:Z
+    iget-boolean v2, v1, Lc/a/b/c;->m:Z
 
     if-nez v2, :cond_0
 
-    invoke-virtual {p2, v1}, Lb/a/b/g;->a(Lb/a/b/c;)V
+    invoke-virtual {p2, v1}, Lc/a/b/g;->a(Lc/a/b/c;)V
 
     return-object v1
 
@@ -445,14 +445,14 @@
     return-object p1
 .end method
 
-.method a(Lb/a/b/c;)Z
+.method a(Lc/a/b/c;)Z
     .locals 1
 
-    iget-boolean v0, p1, Lb/a/b/c;->m:Z
+    iget-boolean v0, p1, Lc/a/b/c;->m:Z
 
     if-nez v0, :cond_1
 
-    iget v0, p0, Lb/l;->b:I
+    iget v0, p0, Lc/l;->b:I
 
     if-nez v0, :cond_0
 
@@ -467,7 +467,7 @@
 
     :cond_1
     :goto_0
-    iget-object v0, p0, Lb/l;->e:Ljava/util/Deque;
+    iget-object v0, p0, Lc/l;->e:Ljava/util/Deque;
 
     invoke-interface {v0, p1}, Ljava/util/Deque;->remove(Ljava/lang/Object;)Z
 
@@ -476,25 +476,25 @@
     return p1
 .end method
 
-.method b(Lb/a/b/c;)V
+.method b(Lc/a/b/c;)V
     .locals 2
 
-    iget-boolean v0, p0, Lb/l;->g:Z
+    iget-boolean v0, p0, Lc/l;->g:Z
 
     if-nez v0, :cond_0
 
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lb/l;->g:Z
+    iput-boolean v0, p0, Lc/l;->g:Z
 
-    sget-object v0, Lb/l;->a:Ljava/util/concurrent/Executor;
+    sget-object v0, Lc/l;->a:Ljava/util/concurrent/Executor;
 
-    iget-object v1, p0, Lb/l;->d:Ljava/lang/Runnable;
+    iget-object v1, p0, Lc/l;->d:Ljava/lang/Runnable;
 
     invoke-interface {v0, v1}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
 
     :cond_0
-    iget-object v0, p0, Lb/l;->e:Ljava/util/Deque;
+    iget-object v0, p0, Lc/l;->e:Ljava/util/Deque;
 
     invoke-interface {v0, p1}, Ljava/util/Deque;->add(Ljava/lang/Object;)Z
 

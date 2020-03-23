@@ -1,11 +1,11 @@
-.class public interface abstract Lb/L$a;
+.class public interface abstract Lc/L$a;
 .super Ljava/lang/Object;
 .source ""
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lb/L;
+    value = Lc/L;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;

@@ -1,66 +1,47 @@
-.class public final Lb/a/b/a;
+.class Lb/a/b/A;
 .super Ljava/lang/Object;
 .source ""
 
 # interfaces
-.implements Lb/x;
+.implements Lb/a/c/a$a;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lb/a/b/D;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
 
 
 # instance fields
-.field public final a:Lb/A;
+.field final synthetic a:Lb/a/b/D;
 
 
 # direct methods
-.method public constructor <init>(Lb/A;)V
+.method constructor <init>(Lb/a/b/D;)V
     .locals 0
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput-object p1, p0, Lb/a/b/A;->a:Lb/a/b/D;
 
-    iput-object p1, p0, Lb/a/b/a;->a:Lb/A;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public a(Lb/x$a;)Lb/G;
-    .locals 4
+.method public varargs a([Ljava/lang/Object;)V
+    .locals 0
 
-    check-cast p1, Lb/a/c/h;
+    iget-object p1, p0, Lb/a/b/A;->a:Lb/a/b/D;
 
-    invoke-virtual {p1}, Lb/a/c/h;->a()Lb/D;
+    iget-object p1, p1, Lb/a/b/D;->b:Lb/a/b/I;
 
-    move-result-object v0
+    invoke-static {p1}, Lb/a/b/I;->a(Lb/a/b/I;)V
 
-    invoke-virtual {p1}, Lb/a/c/h;->c()Lb/a/b/g;
-
-    move-result-object v1
-
-    invoke-virtual {v0}, Lb/D;->e()Ljava/lang/String;
-
-    move-result-object v2
-
-    const-string v3, "GET"
-
-    invoke-virtual {v2, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v2
-
-    xor-int/lit8 v2, v2, 0x1
-
-    iget-object v3, p0, Lb/a/b/a;->a:Lb/A;
-
-    invoke-virtual {v1, v3, v2}, Lb/a/b/g;->a(Lb/A;Z)Lb/a/c/c;
-
-    move-result-object v2
-
-    invoke-virtual {v1}, Lb/a/b/g;->c()Lb/a/b/c;
-
-    move-result-object v3
-
-    invoke-virtual {p1, v0, v1, v2, v3}, Lb/a/c/h;->a(Lb/D;Lb/a/b/g;Lb/a/c/c;Lb/j;)Lb/G;
-
-    move-result-object p1
-
-    return-object p1
+    return-void
 .end method

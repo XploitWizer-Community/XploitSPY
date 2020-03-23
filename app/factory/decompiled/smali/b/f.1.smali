@@ -1,4 +1,4 @@
-.class public interface abstract Lb/f;
+.class public interface abstract Lc/f;
 .super Ljava/lang/Object;
 .source ""
 
@@ -9,13 +9,13 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lb/f$a;
+        Lc/f$a;
     }
 .end annotation
 
 
 # virtual methods
-.method public abstract a(Lb/g;)V
+.method public abstract a(Lc/g;)V
 .end method
 
 .method public abstract cancel()V

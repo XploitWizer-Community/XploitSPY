@@ -1,11 +1,11 @@
-.class public La/a/d/a/K$a;
+.class public Lb/a/d/a/K$a;
 .super Ljava/lang/Object;
 .source ""
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = La/a/d/a/K;
+    value = Lb/a/d/a/K;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -44,7 +44,7 @@
 
 .field public j:Ljavax/net/ssl/HostnameVerifier;
 
-.field protected k:La/a/d/a/G;
+.field protected k:Lb/a/d/a/G;
 
 .field public l:Ljava/net/Proxy;
 
@@ -61,9 +61,9 @@
 
     const/4 v0, -0x1
 
-    iput v0, p0, La/a/d/a/K$a;->f:I
+    iput v0, p0, Lb/a/d/a/K$a;->f:I
 
-    iput v0, p0, La/a/d/a/K$a;->g:I
+    iput v0, p0, Lb/a/d/a/K$a;->g:I
 
     return-void
 .end method

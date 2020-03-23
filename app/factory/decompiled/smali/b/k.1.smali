@@ -1,4 +1,4 @@
-.class Lb/k;
+.class Lc/k;
 .super Ljava/lang/Object;
 .source ""
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lb/l;
+    value = Lc/l;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field final synthetic a:Lb/l;
+.field final synthetic a:Lc/l;
 
 
 # direct methods
-.method constructor <init>(Lb/l;)V
+.method constructor <init>(Lc/l;)V
     .locals 0
 
-    iput-object p1, p0, Lb/k;->a:Lb/l;
+    iput-object p1, p0, Lc/k;->a:Lc/l;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -39,13 +39,13 @@
 
     :cond_0
     :goto_0
-    iget-object v0, p0, Lb/k;->a:Lb/l;
+    iget-object v0, p0, Lc/k;->a:Lc/l;
 
     invoke-static {}, Ljava/lang/System;->nanoTime()J
 
     move-result-wide v1
 
-    invoke-virtual {v0, v1, v2}, Lb/l;->a(J)J
+    invoke-virtual {v0, v1, v2}, Lc/l;->a(J)J
 
     move-result-wide v0
 
@@ -72,12 +72,12 @@
 
     sub-long/2addr v0, v2
 
-    iget-object v2, p0, Lb/k;->a:Lb/l;
+    iget-object v2, p0, Lc/k;->a:Lc/l;
 
     monitor-enter v2
 
     :try_start_0
-    iget-object v3, p0, Lb/k;->a:Lb/l;
+    iget-object v3, p0, Lc/k;->a:Lc/l;
 
     long-to-int v1, v0
 

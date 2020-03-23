@@ -1,10 +1,10 @@
-.class public interface abstract Lb/a/a/c;
+.class public interface abstract Lc/a/a/c;
 .super Ljava/lang/Object;
 .source ""
 
 
 # virtual methods
-.method public abstract a()Lc/v;
+.method public abstract a()Ld/v;
 .end method
 
 .method public abstract abort()V

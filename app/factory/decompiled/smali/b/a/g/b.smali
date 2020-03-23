@@ -1,4 +1,4 @@
-.class public abstract Lb/a/g/b;
+.class public abstract Lc/a/g/b;
 .super Ljava/lang/Object;
 .source ""
 
@@ -12,14 +12,14 @@
     return-void
 .end method
 
-.method public static a(Ljavax/net/ssl/X509TrustManager;)Lb/a/g/b;
+.method public static a(Ljavax/net/ssl/X509TrustManager;)Lc/a/g/b;
     .locals 1
 
-    invoke-static {}, Lb/a/f/e;->a()Lb/a/f/e;
+    invoke-static {}, Lc/a/f/e;->a()Lc/a/f/e;
 
     move-result-object v0
 
-    invoke-virtual {v0, p0}, Lb/a/f/e;->a(Ljavax/net/ssl/X509TrustManager;)Lb/a/g/b;
+    invoke-virtual {v0, p0}, Lc/a/f/e;->a(Ljavax/net/ssl/X509TrustManager;)Lc/a/g/b;
 
     move-result-object p0
 

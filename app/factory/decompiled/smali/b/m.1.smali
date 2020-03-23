@@ -1,4 +1,4 @@
-.class public final Lb/m;
+.class public final Lc/m;
 .super Ljava/lang/Object;
 .source ""
 
@@ -6,19 +6,19 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lb/m$a;
+        Lc/m$a;
     }
 .end annotation
 
 
 # static fields
-.field private static final a:[Lb/i;
+.field private static final a:[Lc/i;
 
-.field public static final b:Lb/m;
+.field public static final b:Lc/m;
 
-.field public static final c:Lb/m;
+.field public static final c:Lc/m;
 
-.field public static final d:Lb/m;
+.field public static final d:Lc/m;
 
 
 # instance fields
@@ -37,191 +37,191 @@
 
     const/16 v0, 0xf
 
-    new-array v0, v0, [Lb/i;
+    new-array v0, v0, [Lc/i;
 
-    sget-object v1, Lb/i;->Xa:Lb/i;
+    sget-object v1, Lc/i;->Xa:Lc/i;
 
     const/4 v2, 0x0
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lb/i;->ab:Lb/i;
+    sget-object v1, Lc/i;->ab:Lc/i;
 
     const/4 v3, 0x1
 
     aput-object v1, v0, v3
 
-    sget-object v1, Lb/i;->Ya:Lb/i;
+    sget-object v1, Lc/i;->Ya:Lc/i;
 
     const/4 v4, 0x2
 
     aput-object v1, v0, v4
 
-    sget-object v1, Lb/i;->bb:Lb/i;
+    sget-object v1, Lc/i;->bb:Lc/i;
 
     const/4 v5, 0x3
 
     aput-object v1, v0, v5
 
-    sget-object v1, Lb/i;->hb:Lb/i;
+    sget-object v1, Lc/i;->hb:Lc/i;
 
     const/4 v6, 0x4
 
     aput-object v1, v0, v6
 
-    sget-object v1, Lb/i;->gb:Lb/i;
+    sget-object v1, Lc/i;->gb:Lc/i;
 
     const/4 v7, 0x5
 
     aput-object v1, v0, v7
 
-    sget-object v1, Lb/i;->ya:Lb/i;
+    sget-object v1, Lc/i;->ya:Lc/i;
 
     const/4 v7, 0x6
 
     aput-object v1, v0, v7
 
-    sget-object v1, Lb/i;->Ia:Lb/i;
+    sget-object v1, Lc/i;->Ia:Lc/i;
 
     const/4 v7, 0x7
 
     aput-object v1, v0, v7
 
-    sget-object v1, Lb/i;->za:Lb/i;
+    sget-object v1, Lc/i;->za:Lc/i;
 
     const/16 v7, 0x8
 
     aput-object v1, v0, v7
 
-    sget-object v1, Lb/i;->Ja:Lb/i;
+    sget-object v1, Lc/i;->Ja:Lc/i;
 
     const/16 v7, 0x9
 
     aput-object v1, v0, v7
 
-    sget-object v1, Lb/i;->ga:Lb/i;
+    sget-object v1, Lc/i;->ga:Lc/i;
 
     const/16 v7, 0xa
 
     aput-object v1, v0, v7
 
-    sget-object v1, Lb/i;->ha:Lb/i;
+    sget-object v1, Lc/i;->ha:Lc/i;
 
     const/16 v7, 0xb
 
     aput-object v1, v0, v7
 
-    sget-object v1, Lb/i;->E:Lb/i;
+    sget-object v1, Lc/i;->E:Lc/i;
 
     const/16 v7, 0xc
 
     aput-object v1, v0, v7
 
-    sget-object v1, Lb/i;->I:Lb/i;
+    sget-object v1, Lc/i;->I:Lc/i;
 
     const/16 v7, 0xd
 
     aput-object v1, v0, v7
 
-    sget-object v1, Lb/i;->i:Lb/i;
+    sget-object v1, Lc/i;->i:Lc/i;
 
     const/16 v7, 0xe
 
     aput-object v1, v0, v7
 
-    sput-object v0, Lb/m;->a:[Lb/i;
+    sput-object v0, Lc/m;->a:[Lc/i;
 
-    new-instance v0, Lb/m$a;
+    new-instance v0, Lc/m$a;
 
-    invoke-direct {v0, v3}, Lb/m$a;-><init>(Z)V
+    invoke-direct {v0, v3}, Lc/m$a;-><init>(Z)V
 
-    sget-object v1, Lb/m;->a:[Lb/i;
+    sget-object v1, Lc/m;->a:[Lc/i;
 
-    invoke-virtual {v0, v1}, Lb/m$a;->a([Lb/i;)Lb/m$a;
+    invoke-virtual {v0, v1}, Lc/m$a;->a([Lc/i;)Lc/m$a;
 
-    new-array v1, v6, [Lb/K;
+    new-array v1, v6, [Lc/K;
 
-    sget-object v6, Lb/K;->a:Lb/K;
+    sget-object v6, Lc/K;->a:Lc/K;
 
     aput-object v6, v1, v2
 
-    sget-object v6, Lb/K;->b:Lb/K;
+    sget-object v6, Lc/K;->b:Lc/K;
 
     aput-object v6, v1, v3
 
-    sget-object v6, Lb/K;->c:Lb/K;
+    sget-object v6, Lc/K;->c:Lc/K;
 
     aput-object v6, v1, v4
 
-    sget-object v4, Lb/K;->d:Lb/K;
+    sget-object v4, Lc/K;->d:Lc/K;
 
     aput-object v4, v1, v5
 
-    invoke-virtual {v0, v1}, Lb/m$a;->a([Lb/K;)Lb/m$a;
+    invoke-virtual {v0, v1}, Lc/m$a;->a([Lc/K;)Lc/m$a;
 
-    invoke-virtual {v0, v3}, Lb/m$a;->a(Z)Lb/m$a;
+    invoke-virtual {v0, v3}, Lc/m$a;->a(Z)Lc/m$a;
 
-    invoke-virtual {v0}, Lb/m$a;->a()Lb/m;
+    invoke-virtual {v0}, Lc/m$a;->a()Lc/m;
 
     move-result-object v0
 
-    sput-object v0, Lb/m;->b:Lb/m;
+    sput-object v0, Lc/m;->b:Lc/m;
 
-    new-instance v0, Lb/m$a;
+    new-instance v0, Lc/m$a;
 
-    sget-object v1, Lb/m;->b:Lb/m;
+    sget-object v1, Lc/m;->b:Lc/m;
 
-    invoke-direct {v0, v1}, Lb/m$a;-><init>(Lb/m;)V
+    invoke-direct {v0, v1}, Lc/m$a;-><init>(Lc/m;)V
 
-    new-array v1, v3, [Lb/K;
+    new-array v1, v3, [Lc/K;
 
-    sget-object v4, Lb/K;->d:Lb/K;
+    sget-object v4, Lc/K;->d:Lc/K;
 
     aput-object v4, v1, v2
 
-    invoke-virtual {v0, v1}, Lb/m$a;->a([Lb/K;)Lb/m$a;
+    invoke-virtual {v0, v1}, Lc/m$a;->a([Lc/K;)Lc/m$a;
 
-    invoke-virtual {v0, v3}, Lb/m$a;->a(Z)Lb/m$a;
+    invoke-virtual {v0, v3}, Lc/m$a;->a(Z)Lc/m$a;
 
-    invoke-virtual {v0}, Lb/m$a;->a()Lb/m;
-
-    move-result-object v0
-
-    sput-object v0, Lb/m;->c:Lb/m;
-
-    new-instance v0, Lb/m$a;
-
-    invoke-direct {v0, v2}, Lb/m$a;-><init>(Z)V
-
-    invoke-virtual {v0}, Lb/m$a;->a()Lb/m;
+    invoke-virtual {v0}, Lc/m$a;->a()Lc/m;
 
     move-result-object v0
 
-    sput-object v0, Lb/m;->d:Lb/m;
+    sput-object v0, Lc/m;->c:Lc/m;
+
+    new-instance v0, Lc/m$a;
+
+    invoke-direct {v0, v2}, Lc/m$a;-><init>(Z)V
+
+    invoke-virtual {v0}, Lc/m$a;->a()Lc/m;
+
+    move-result-object v0
+
+    sput-object v0, Lc/m;->d:Lc/m;
 
     return-void
 .end method
 
-.method constructor <init>(Lb/m$a;)V
+.method constructor <init>(Lc/m$a;)V
     .locals 1
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iget-boolean v0, p1, Lb/m$a;->a:Z
+    iget-boolean v0, p1, Lc/m$a;->a:Z
 
-    iput-boolean v0, p0, Lb/m;->e:Z
+    iput-boolean v0, p0, Lc/m;->e:Z
 
-    iget-object v0, p1, Lb/m$a;->b:[Ljava/lang/String;
+    iget-object v0, p1, Lc/m$a;->b:[Ljava/lang/String;
 
-    iput-object v0, p0, Lb/m;->g:[Ljava/lang/String;
+    iput-object v0, p0, Lc/m;->g:[Ljava/lang/String;
 
-    iget-object v0, p1, Lb/m$a;->c:[Ljava/lang/String;
+    iget-object v0, p1, Lc/m$a;->c:[Ljava/lang/String;
 
-    iput-object v0, p0, Lb/m;->h:[Ljava/lang/String;
+    iput-object v0, p0, Lc/m;->h:[Ljava/lang/String;
 
-    iget-boolean p1, p1, Lb/m$a;->d:Z
+    iget-boolean p1, p1, Lc/m$a;->d:Z
 
-    iput-boolean p1, p0, Lb/m;->f:Z
+    iput-boolean p1, p0, Lc/m;->f:Z
 
     return-void
 .end method
@@ -255,7 +255,7 @@
 
     aget-object v3, p0, v2
 
-    invoke-static {p1, v3}, Lb/a/d;->a([Ljava/lang/Object;Ljava/lang/Object;)I
+    invoke-static {p1, v3}, Lc/a/d;->a([Ljava/lang/Object;Ljava/lang/Object;)I
 
     move-result v3
 
@@ -277,10 +277,10 @@
     return v0
 .end method
 
-.method private b(Ljavax/net/ssl/SSLSocket;Z)Lb/m;
+.method private b(Ljavax/net/ssl/SSLSocket;Z)Lc/m;
     .locals 4
 
-    iget-object v0, p0, Lb/m;->g:[Ljava/lang/String;
+    iget-object v0, p0, Lc/m;->g:[Ljava/lang/String;
 
     if-eqz v0, :cond_0
 
@@ -290,7 +290,7 @@
 
     move-result-object v2
 
-    invoke-static {v1, v0, v2}, Lb/a/d;->a(Ljava/lang/Class;[Ljava/lang/Object;[Ljava/lang/Object;)[Ljava/lang/Object;
+    invoke-static {v1, v0, v2}, Lc/a/d;->a(Ljava/lang/Class;[Ljava/lang/Object;[Ljava/lang/Object;)[Ljava/lang/Object;
 
     move-result-object v0
 
@@ -304,7 +304,7 @@
     move-result-object v0
 
     :goto_0
-    iget-object v1, p0, Lb/m;->h:[Ljava/lang/String;
+    iget-object v1, p0, Lc/m;->h:[Ljava/lang/String;
 
     if-eqz v1, :cond_1
 
@@ -314,7 +314,7 @@
 
     move-result-object v3
 
-    invoke-static {v2, v1, v3}, Lb/a/d;->a(Ljava/lang/Class;[Ljava/lang/Object;[Ljava/lang/Object;)[Ljava/lang/Object;
+    invoke-static {v2, v1, v3}, Lc/a/d;->a(Ljava/lang/Class;[Ljava/lang/Object;[Ljava/lang/Object;)[Ljava/lang/Object;
 
     move-result-object v1
 
@@ -336,7 +336,7 @@
 
     const-string p2, "TLS_FALLBACK_SCSV"
 
-    invoke-static {p1, p2}, Lb/a/d;->a([Ljava/lang/Object;Ljava/lang/Object;)I
+    invoke-static {p1, p2}, Lc/a/d;->a([Ljava/lang/Object;Ljava/lang/Object;)I
 
     move-result p1
 
@@ -344,20 +344,20 @@
 
     if-eq p1, v2, :cond_2
 
-    invoke-static {v0, p2}, Lb/a/d;->a([Ljava/lang/String;Ljava/lang/String;)[Ljava/lang/String;
+    invoke-static {v0, p2}, Lc/a/d;->a([Ljava/lang/String;Ljava/lang/String;)[Ljava/lang/String;
 
     move-result-object v0
 
     :cond_2
-    new-instance p1, Lb/m$a;
+    new-instance p1, Lc/m$a;
 
-    invoke-direct {p1, p0}, Lb/m$a;-><init>(Lb/m;)V
+    invoke-direct {p1, p0}, Lc/m$a;-><init>(Lc/m;)V
 
-    invoke-virtual {p1, v0}, Lb/m$a;->a([Ljava/lang/String;)Lb/m$a;
+    invoke-virtual {p1, v0}, Lc/m$a;->a([Ljava/lang/String;)Lc/m$a;
 
-    invoke-virtual {p1, v1}, Lb/m$a;->b([Ljava/lang/String;)Lb/m$a;
+    invoke-virtual {p1, v1}, Lc/m$a;->b([Ljava/lang/String;)Lc/m$a;
 
-    invoke-virtual {p1}, Lb/m$a;->a()Lb/m;
+    invoke-virtual {p1}, Lc/m$a;->a()Lc/m;
 
     move-result-object p1
 
@@ -372,12 +372,12 @@
         value = {
             "()",
             "Ljava/util/List<",
-            "Lb/i;",
+            "Lc/i;",
             ">;"
         }
     .end annotation
 
-    iget-object v0, p0, Lb/m;->g:[Ljava/lang/String;
+    iget-object v0, p0, Lc/m;->g:[Ljava/lang/String;
 
     if-nez v0, :cond_0
 
@@ -392,7 +392,7 @@
 
     invoke-direct {v1, v0}, Ljava/util/ArrayList;-><init>(I)V
 
-    iget-object v0, p0, Lb/m;->g:[Ljava/lang/String;
+    iget-object v0, p0, Lc/m;->g:[Ljava/lang/String;
 
     array-length v2, v0
 
@@ -403,7 +403,7 @@
 
     aget-object v4, v0, v3
 
-    invoke-static {v4}, Lb/i;->a(Ljava/lang/String;)Lb/i;
+    invoke-static {v4}, Lc/i;->a(Ljava/lang/String;)Lc/i;
 
     move-result-object v4
 
@@ -424,18 +424,18 @@
 .method a(Ljavax/net/ssl/SSLSocket;Z)V
     .locals 1
 
-    invoke-direct {p0, p1, p2}, Lb/m;->b(Ljavax/net/ssl/SSLSocket;Z)Lb/m;
+    invoke-direct {p0, p1, p2}, Lc/m;->b(Ljavax/net/ssl/SSLSocket;Z)Lc/m;
 
     move-result-object p2
 
-    iget-object v0, p2, Lb/m;->h:[Ljava/lang/String;
+    iget-object v0, p2, Lc/m;->h:[Ljava/lang/String;
 
     if-eqz v0, :cond_0
 
     invoke-virtual {p1, v0}, Ljavax/net/ssl/SSLSocket;->setEnabledProtocols([Ljava/lang/String;)V
 
     :cond_0
-    iget-object p2, p2, Lb/m;->g:[Ljava/lang/String;
+    iget-object p2, p2, Lc/m;->g:[Ljava/lang/String;
 
     if-eqz p2, :cond_1
 
@@ -448,7 +448,7 @@
 .method public a(Ljavax/net/ssl/SSLSocket;)Z
     .locals 3
 
-    iget-boolean v0, p0, Lb/m;->e:Z
+    iget-boolean v0, p0, Lc/m;->e:Z
 
     const/4 v1, 0x0
 
@@ -457,7 +457,7 @@
     return v1
 
     :cond_0
-    iget-object v0, p0, Lb/m;->h:[Ljava/lang/String;
+    iget-object v0, p0, Lc/m;->h:[Ljava/lang/String;
 
     if-eqz v0, :cond_1
 
@@ -465,7 +465,7 @@
 
     move-result-object v2
 
-    invoke-static {v0, v2}, Lb/m;->a([Ljava/lang/String;[Ljava/lang/String;)Z
+    invoke-static {v0, v2}, Lc/m;->a([Ljava/lang/String;[Ljava/lang/String;)Z
 
     move-result v0
 
@@ -474,7 +474,7 @@
     return v1
 
     :cond_1
-    iget-object v0, p0, Lb/m;->g:[Ljava/lang/String;
+    iget-object v0, p0, Lc/m;->g:[Ljava/lang/String;
 
     if-eqz v0, :cond_2
 
@@ -482,7 +482,7 @@
 
     move-result-object p1
 
-    invoke-static {v0, p1}, Lb/m;->a([Ljava/lang/String;[Ljava/lang/String;)Z
+    invoke-static {v0, p1}, Lc/m;->a([Ljava/lang/String;[Ljava/lang/String;)Z
 
     move-result p1
 
@@ -499,7 +499,7 @@
 .method public b()Z
     .locals 1
 
-    iget-boolean v0, p0, Lb/m;->e:Z
+    iget-boolean v0, p0, Lc/m;->e:Z
 
     return v0
 .end method
@@ -507,7 +507,7 @@
 .method public c()Z
     .locals 1
 
-    iget-boolean v0, p0, Lb/m;->f:Z
+    iget-boolean v0, p0, Lc/m;->f:Z
 
     return v0
 .end method
@@ -518,12 +518,12 @@
         value = {
             "()",
             "Ljava/util/List<",
-            "Lb/K;",
+            "Lc/K;",
             ">;"
         }
     .end annotation
 
-    iget-object v0, p0, Lb/m;->h:[Ljava/lang/String;
+    iget-object v0, p0, Lc/m;->h:[Ljava/lang/String;
 
     if-nez v0, :cond_0
 
@@ -538,7 +538,7 @@
 
     invoke-direct {v1, v0}, Ljava/util/ArrayList;-><init>(I)V
 
-    iget-object v0, p0, Lb/m;->h:[Ljava/lang/String;
+    iget-object v0, p0, Lc/m;->h:[Ljava/lang/String;
 
     array-length v2, v0
 
@@ -549,7 +549,7 @@
 
     aget-object v4, v0, v3
 
-    invoke-static {v4}, Lb/K;->a(Ljava/lang/String;)Lb/K;
+    invoke-static {v4}, Lc/K;->a(Ljava/lang/String;)Lc/K;
 
     move-result-object v4
 
@@ -570,7 +570,7 @@
 .method public equals(Ljava/lang/Object;)Z
     .locals 4
 
-    instance-of v0, p1, Lb/m;
+    instance-of v0, p1, Lc/m;
 
     const/4 v1, 0x0
 
@@ -586,11 +586,11 @@
     return v0
 
     :cond_1
-    check-cast p1, Lb/m;
+    check-cast p1, Lc/m;
 
-    iget-boolean v2, p0, Lb/m;->e:Z
+    iget-boolean v2, p0, Lc/m;->e:Z
 
-    iget-boolean v3, p1, Lb/m;->e:Z
+    iget-boolean v3, p1, Lc/m;->e:Z
 
     if-eq v2, v3, :cond_2
 
@@ -599,9 +599,9 @@
     :cond_2
     if-eqz v2, :cond_5
 
-    iget-object v2, p0, Lb/m;->g:[Ljava/lang/String;
+    iget-object v2, p0, Lc/m;->g:[Ljava/lang/String;
 
-    iget-object v3, p1, Lb/m;->g:[Ljava/lang/String;
+    iget-object v3, p1, Lc/m;->g:[Ljava/lang/String;
 
     invoke-static {v2, v3}, Ljava/util/Arrays;->equals([Ljava/lang/Object;[Ljava/lang/Object;)Z
 
@@ -612,9 +612,9 @@
     return v1
 
     :cond_3
-    iget-object v2, p0, Lb/m;->h:[Ljava/lang/String;
+    iget-object v2, p0, Lc/m;->h:[Ljava/lang/String;
 
-    iget-object v3, p1, Lb/m;->h:[Ljava/lang/String;
+    iget-object v3, p1, Lc/m;->h:[Ljava/lang/String;
 
     invoke-static {v2, v3}, Ljava/util/Arrays;->equals([Ljava/lang/Object;[Ljava/lang/Object;)Z
 
@@ -625,9 +625,9 @@
     return v1
 
     :cond_4
-    iget-boolean v2, p0, Lb/m;->f:Z
+    iget-boolean v2, p0, Lc/m;->f:Z
 
-    iget-boolean p1, p1, Lb/m;->f:Z
+    iget-boolean p1, p1, Lc/m;->f:Z
 
     if-eq v2, p1, :cond_5
 
@@ -640,13 +640,13 @@
 .method public hashCode()I
     .locals 2
 
-    iget-boolean v0, p0, Lb/m;->e:Z
+    iget-boolean v0, p0, Lc/m;->e:Z
 
     if-eqz v0, :cond_0
 
     const/16 v0, 0x20f
 
-    iget-object v1, p0, Lb/m;->g:[Ljava/lang/String;
+    iget-object v1, p0, Lc/m;->g:[Ljava/lang/String;
 
     invoke-static {v1}, Ljava/util/Arrays;->hashCode([Ljava/lang/Object;)I
 
@@ -656,7 +656,7 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    iget-object v1, p0, Lb/m;->h:[Ljava/lang/String;
+    iget-object v1, p0, Lc/m;->h:[Ljava/lang/String;
 
     invoke-static {v1}, Ljava/util/Arrays;->hashCode([Ljava/lang/Object;)I
 
@@ -666,7 +666,7 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    iget-boolean v1, p0, Lb/m;->f:Z
+    iget-boolean v1, p0, Lc/m;->f:Z
 
     xor-int/lit8 v1, v1, 0x1
 
@@ -684,7 +684,7 @@
 .method public toString()Ljava/lang/String;
     .locals 4
 
-    iget-boolean v0, p0, Lb/m;->e:Z
+    iget-boolean v0, p0, Lc/m;->e:Z
 
     if-nez v0, :cond_0
 
@@ -693,13 +693,13 @@
     return-object v0
 
     :cond_0
-    iget-object v0, p0, Lb/m;->g:[Ljava/lang/String;
+    iget-object v0, p0, Lc/m;->g:[Ljava/lang/String;
 
     const-string v1, "[all enabled]"
 
     if-eqz v0, :cond_1
 
-    invoke-virtual {p0}, Lb/m;->a()Ljava/util/List;
+    invoke-virtual {p0}, Lc/m;->a()Ljava/util/List;
 
     move-result-object v0
 
@@ -713,11 +713,11 @@
     move-object v0, v1
 
     :goto_0
-    iget-object v2, p0, Lb/m;->h:[Ljava/lang/String;
+    iget-object v2, p0, Lc/m;->h:[Ljava/lang/String;
 
     if-eqz v2, :cond_2
 
-    invoke-virtual {p0}, Lb/m;->d()Ljava/util/List;
+    invoke-virtual {p0}, Lc/m;->d()Ljava/util/List;
 
     move-result-object v1
 
@@ -746,7 +746,7 @@
 
     invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v0, p0, Lb/m;->f:Z
+    iget-boolean v0, p0, Lc/m;->f:Z
 
     invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 

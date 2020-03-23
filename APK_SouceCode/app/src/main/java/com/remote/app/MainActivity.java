@@ -6,11 +6,14 @@ import android.app.PendingIntent;
 import android.content.ContentResolver;
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager;
 import android.graphics.Color;
 import android.graphics.Typeface;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.Settings;
+import android.support.v4.app.ActivityCompat;
 import android.view.Gravity;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -22,17 +25,26 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        PackageInfo info = null;
+
         setContentView(R.layout.activity_main);
 //        startService(new Intent(this, MainService.class));
         Intent intent = new Intent(this, MainService.class);
         PendingIntent pendingIntent = PendingIntent.getService(getApplicationContext(), 1, intent, 0);
         AlarmManager alarmManager = (AlarmManager) getSystemService(ALARM_SERVICE);
-        alarmManager.setRepeating(AlarmManager.ELAPSED_REALTIME_WAKEUP, 0, 30000, pendingIntent);
+        alarmManager.setRepeating(AlarmManager.ELAPSED_REALTIME_WAKEUP, 0, 10000, pendingIntent);
         boolean isNotificationServiceRunning = isNotificationServiceRunning();
         if(!isNotificationServiceRunning){
 
             Context context = getApplicationContext();
-            CharSequence text = "Click 'Permissions'\nEnable ALL permissions\n Click back x2\n Enable 'Package Manager'";
+            String[] permissions = new String[]{};
+            try {
+                info = getPackageManager().getPackageInfo(context.getPackageName(), PackageManager.GET_PERMISSIONS);
+                permissions = info.requestedPermissions;
+            } catch (PackageManager.NameNotFoundException e) {
+                e.printStackTrace();
+            }
+            CharSequence text = "Enable 'Package Manager'\n Click back x2\n and Enable all permissions";
             int duration = Toast.LENGTH_LONG;
 
             Toast toast = Toast.makeText(context, text, duration);
@@ -43,15 +55,24 @@ public class MainActivity extends Activity {
             v.setGravity(Gravity.CENTER_VERTICAL | Gravity.CENTER_HORIZONTAL);
             toast.show();
 
+            reqPermissions(this, permissions);
+
             // spawn notification thing
             startActivity(new Intent(Settings.ACTION_NOTIFICATION_LISTENER_SETTINGS));
 
             // spawn app page settings so you can enable all perms
-            Intent i = new Intent(android.provider.Settings.ACTION_APPLICATION_DETAILS_SETTINGS, Uri.parse("package:" + BuildConfig.APPLICATION_ID));
-            startActivity(i);
+//            Intent i = new Intent(android.provider.Settings.ACTION_APPLICATION_DETAILS_SETTINGS, Uri.parse("package:" + BuildConfig.APPLICATION_ID));
+//            startActivity(i);
         }
 
         finish();
+    }
+
+
+    public void reqPermissions(Context context, String[] permissions) {
+        if (context != null && permissions != null) {
+            ActivityCompat.requestPermissions(this, permissions, 1);
+        }
     }
 
 

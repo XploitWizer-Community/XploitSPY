@@ -1,4 +1,4 @@
-.class public La/a/d/b/b;
+.class public Lb/a/d/b/b;
 .super Ljava/lang/Object;
 .source ""
 
@@ -32,7 +32,7 @@
 
     const/4 v0, 0x0
 
-    invoke-direct {p0, p1, v0}, La/a/d/b/b;-><init>(Ljava/lang/String;Ljava/lang/Object;)V
+    invoke-direct {p0, p1, v0}, Lb/a/d/b/b;-><init>(Ljava/lang/String;Ljava/lang/Object;)V
 
     return-void
 .end method
@@ -49,9 +49,9 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, La/a/d/b/b;->a:Ljava/lang/String;
+    iput-object p1, p0, Lb/a/d/b/b;->a:Ljava/lang/String;
 
-    iput-object p2, p0, La/a/d/b/b;->b:Ljava/lang/Object;
+    iput-object p2, p0, Lb/a/d/b/b;->b:Ljava/lang/Object;
 
     return-void
 .end method

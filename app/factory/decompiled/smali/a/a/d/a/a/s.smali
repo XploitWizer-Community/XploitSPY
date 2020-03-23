@@ -1,4 +1,4 @@
-.class La/a/d/a/a/s;
+.class Lb/a/d/a/a/s;
 .super Ljava/lang/Object;
 .source ""
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = La/a/d/a/a/t;->a([Ljava/lang/Object;)V
+    value = Lb/a/d/a/a/t;->a([Ljava/lang/Object;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -20,16 +20,16 @@
 # instance fields
 .field final synthetic a:[Ljava/lang/Object;
 
-.field final synthetic b:La/a/d/a/a/t;
+.field final synthetic b:Lb/a/d/a/a/t;
 
 
 # direct methods
-.method constructor <init>(La/a/d/a/a/t;[Ljava/lang/Object;)V
+.method constructor <init>(Lb/a/d/a/a/t;[Ljava/lang/Object;)V
     .locals 0
 
-    iput-object p1, p0, La/a/d/a/a/s;->b:La/a/d/a/a/t;
+    iput-object p1, p0, Lb/a/d/a/a/s;->b:Lb/a/d/a/a/t;
 
-    iput-object p2, p0, La/a/d/a/a/s;->a:[Ljava/lang/Object;
+    iput-object p2, p0, Lb/a/d/a/a/s;->a:[Ljava/lang/Object;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -41,7 +41,7 @@
 .method public run()V
     .locals 3
 
-    iget-object v0, p0, La/a/d/a/a/s;->a:[Ljava/lang/Object;
+    iget-object v0, p0, Lb/a/d/a/a/s;->a:[Ljava/lang/Object;
 
     array-length v1, v0
 
@@ -65,13 +65,13 @@
     const/4 v0, 0x0
 
     :goto_0
-    iget-object v1, p0, La/a/d/a/a/s;->b:La/a/d/a/a/t;
+    iget-object v1, p0, Lb/a/d/a/a/s;->b:Lb/a/d/a/a/t;
 
-    iget-object v1, v1, La/a/d/a/a/t;->a:La/a/d/a/a/v;
+    iget-object v1, v1, Lb/a/d/a/a/t;->a:Lb/a/d/a/a/v;
 
     const-string v2, "xhr poll error"
 
-    invoke-static {v1, v2, v0}, La/a/d/a/a/v;->b(La/a/d/a/a/v;Ljava/lang/String;Ljava/lang/Exception;)La/a/d/a/K;
+    invoke-static {v1, v2, v0}, Lb/a/d/a/a/v;->b(Lb/a/d/a/a/v;Ljava/lang/String;Ljava/lang/Exception;)Lb/a/d/a/K;
 
     return-void
 .end method

@@ -1,4 +1,4 @@
-.class final La/a/i/a;
+.class final Lb/a/i/a;
 .super Ljava/lang/Object;
 .source ""
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = La/a/i/c;
+    value = Lb/a/i/c;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -31,15 +31,15 @@
 .method public newThread(Ljava/lang/Runnable;)Ljava/lang/Thread;
     .locals 2
 
-    new-instance v0, La/a/i/c;
+    new-instance v0, Lb/a/i/c;
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, p1, v1}, La/a/i/c;-><init>(Ljava/lang/Runnable;La/a/i/a;)V
+    invoke-direct {v0, p1, v1}, Lb/a/i/c;-><init>(Ljava/lang/Runnable;Lb/a/i/a;)V
 
-    invoke-static {v0}, La/a/i/c;->a(La/a/i/c;)La/a/i/c;
+    invoke-static {v0}, Lb/a/i/c;->a(Lb/a/i/c;)Lb/a/i/c;
 
-    invoke-static {}, La/a/i/c;->a()La/a/i/c;
+    invoke-static {}, Lb/a/i/c;->a()Lb/a/i/c;
 
     move-result-object p1
 
@@ -47,7 +47,7 @@
 
     invoke-virtual {p1, v0}, Ljava/lang/Thread;->setName(Ljava/lang/String;)V
 
-    invoke-static {}, La/a/i/c;->a()La/a/i/c;
+    invoke-static {}, Lb/a/i/c;->a()Lb/a/i/c;
 
     move-result-object p1
 
@@ -61,7 +61,7 @@
 
     invoke-virtual {p1, v0}, Ljava/lang/Thread;->setDaemon(Z)V
 
-    invoke-static {}, La/a/i/c;->a()La/a/i/c;
+    invoke-static {}, Lb/a/i/c;->a()Lb/a/i/c;
 
     move-result-object p1
 

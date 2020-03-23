@@ -1,11 +1,11 @@
-.class final Lb/a/f/a$b;
+.class final Lc/a/f/a$b;
 .super Ljava/lang/Object;
 .source ""
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lb/a/f/a;
+    value = Lc/a/f/a;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -28,16 +28,16 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lb/a/f/a$b;->a:Ljava/lang/reflect/Method;
+    iput-object p1, p0, Lc/a/f/a$b;->a:Ljava/lang/reflect/Method;
 
-    iput-object p2, p0, Lb/a/f/a$b;->b:Ljava/lang/reflect/Method;
+    iput-object p2, p0, Lc/a/f/a$b;->b:Ljava/lang/reflect/Method;
 
-    iput-object p3, p0, Lb/a/f/a$b;->c:Ljava/lang/reflect/Method;
+    iput-object p3, p0, Lc/a/f/a$b;->c:Ljava/lang/reflect/Method;
 
     return-void
 .end method
 
-.method static a()Lb/a/f/a$b;
+.method static a()Lc/a/f/a$b;
     .locals 7
 
     const-string v0, "dalvik.system.CloseGuard"
@@ -95,9 +95,9 @@
     move-object v4, v0
 
     :goto_0
-    new-instance v2, Lb/a/f/a$b;
+    new-instance v2, Lc/a/f/a$b;
 
-    invoke-direct {v2, v1, v4, v0}, Lb/a/f/a$b;-><init>(Ljava/lang/reflect/Method;Ljava/lang/reflect/Method;Ljava/lang/reflect/Method;)V
+    invoke-direct {v2, v1, v4, v0}, Lc/a/f/a$b;-><init>(Ljava/lang/reflect/Method;Ljava/lang/reflect/Method;Ljava/lang/reflect/Method;)V
 
     return-object v2
 .end method
@@ -107,7 +107,7 @@
 .method a(Ljava/lang/String;)Ljava/lang/Object;
     .locals 5
 
-    iget-object v0, p0, Lb/a/f/a$b;->a:Ljava/lang/reflect/Method;
+    iget-object v0, p0, Lc/a/f/a$b;->a:Ljava/lang/reflect/Method;
 
     const/4 v1, 0x0
 
@@ -122,7 +122,7 @@
 
     move-result-object v0
 
-    iget-object v3, p0, Lb/a/f/a$b;->b:Ljava/lang/reflect/Method;
+    iget-object v3, p0, Lc/a/f/a$b;->b:Ljava/lang/reflect/Method;
 
     const/4 v4, 0x1
 
@@ -149,7 +149,7 @@
     if-eqz p1, :cond_0
 
     :try_start_0
-    iget-object v1, p0, Lb/a/f/a$b;->c:Ljava/lang/reflect/Method;
+    iget-object v1, p0, Lc/a/f/a$b;->c:Ljava/lang/reflect/Method;
 
     new-array v2, v0, [Ljava/lang/Object;
 

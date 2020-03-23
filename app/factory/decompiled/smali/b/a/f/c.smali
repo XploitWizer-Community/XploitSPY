@@ -1,12 +1,12 @@
-.class Lb/a/f/c;
-.super Lb/a/f/e;
+.class Lc/a/f/c;
+.super Lc/a/f/e;
 .source ""
 
 
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lb/a/f/c$a;
+        Lc/a/f/c$a;
     }
 .end annotation
 
@@ -53,22 +53,22 @@
         }
     .end annotation
 
-    invoke-direct {p0}, Lb/a/f/e;-><init>()V
+    invoke-direct {p0}, Lc/a/f/e;-><init>()V
 
-    iput-object p1, p0, Lb/a/f/c;->c:Ljava/lang/reflect/Method;
+    iput-object p1, p0, Lc/a/f/c;->c:Ljava/lang/reflect/Method;
 
-    iput-object p2, p0, Lb/a/f/c;->d:Ljava/lang/reflect/Method;
+    iput-object p2, p0, Lc/a/f/c;->d:Ljava/lang/reflect/Method;
 
-    iput-object p3, p0, Lb/a/f/c;->e:Ljava/lang/reflect/Method;
+    iput-object p3, p0, Lc/a/f/c;->e:Ljava/lang/reflect/Method;
 
-    iput-object p4, p0, Lb/a/f/c;->f:Ljava/lang/Class;
+    iput-object p4, p0, Lc/a/f/c;->f:Ljava/lang/Class;
 
-    iput-object p5, p0, Lb/a/f/c;->g:Ljava/lang/Class;
+    iput-object p5, p0, Lc/a/f/c;->g:Ljava/lang/Class;
 
     return-void
 .end method
 
-.method public static b()Lb/a/f/e;
+.method public static b()Lc/a/f/e;
     .locals 10
 
     :try_start_0
@@ -182,13 +182,13 @@
 
     move-result-object v7
 
-    new-instance v1, Lb/a/f/c;
+    new-instance v1, Lc/a/f/c;
 
     move-object v4, v1
 
     move-object v5, v0
 
-    invoke-direct/range {v4 .. v9}, Lb/a/f/c;-><init>(Ljava/lang/reflect/Method;Ljava/lang/reflect/Method;Ljava/lang/reflect/Method;Ljava/lang/Class;Ljava/lang/Class;)V
+    invoke-direct/range {v4 .. v9}, Lc/a/f/c;-><init>(Ljava/lang/reflect/Method;Ljava/lang/reflect/Method;Ljava/lang/reflect/Method;Ljava/lang/Class;Ljava/lang/Class;)V
     :try_end_1
     .catch Ljava/lang/ClassNotFoundException; {:try_start_1 .. :try_end_1} :catch_0
     .catch Ljava/lang/NoSuchMethodException; {:try_start_1 .. :try_end_1} :catch_0
@@ -207,7 +207,7 @@
     .locals 4
 
     :try_start_0
-    iget-object v0, p0, Lb/a/f/c;->e:Ljava/lang/reflect/Method;
+    iget-object v0, p0, Lc/a/f/c;->e:Ljava/lang/reflect/Method;
 
     const/4 v1, 0x0
 
@@ -242,17 +242,17 @@
             "Ljavax/net/ssl/SSLSocket;",
             "Ljava/lang/String;",
             "Ljava/util/List<",
-            "Lb/B;",
+            "Lc/B;",
             ">;)V"
         }
     .end annotation
 
-    invoke-static {p3}, Lb/a/f/e;->a(Ljava/util/List;)Ljava/util/List;
+    invoke-static {p3}, Lc/a/f/e;->a(Ljava/util/List;)Ljava/util/List;
 
     move-result-object p2
 
     :try_start_0
-    const-class p3, Lb/a/f/e;
+    const-class p3, Lc/a/f/e;
 
     invoke-virtual {p3}, Ljava/lang/Class;->getClassLoader()Ljava/lang/ClassLoader;
 
@@ -262,27 +262,27 @@
 
     new-array v1, v0, [Ljava/lang/Class;
 
-    iget-object v2, p0, Lb/a/f/c;->f:Ljava/lang/Class;
+    iget-object v2, p0, Lc/a/f/c;->f:Ljava/lang/Class;
 
     const/4 v3, 0x0
 
     aput-object v2, v1, v3
 
-    iget-object v2, p0, Lb/a/f/c;->g:Ljava/lang/Class;
+    iget-object v2, p0, Lc/a/f/c;->g:Ljava/lang/Class;
 
     const/4 v4, 0x1
 
     aput-object v2, v1, v4
 
-    new-instance v2, Lb/a/f/c$a;
+    new-instance v2, Lc/a/f/c$a;
 
-    invoke-direct {v2, p2}, Lb/a/f/c$a;-><init>(Ljava/util/List;)V
+    invoke-direct {v2, p2}, Lc/a/f/c$a;-><init>(Ljava/util/List;)V
 
     invoke-static {p3, v1, v2}, Ljava/lang/reflect/Proxy;->newProxyInstance(Ljava/lang/ClassLoader;[Ljava/lang/Class;Ljava/lang/reflect/InvocationHandler;)Ljava/lang/Object;
 
     move-result-object p2
 
-    iget-object p3, p0, Lb/a/f/c;->c:Ljava/lang/reflect/Method;
+    iget-object p3, p0, Lc/a/f/c;->c:Ljava/lang/reflect/Method;
 
     const/4 v1, 0x0
 
@@ -319,7 +319,7 @@
     .locals 3
 
     :try_start_0
-    iget-object v0, p0, Lb/a/f/c;->d:Ljava/lang/reflect/Method;
+    iget-object v0, p0, Lc/a/f/c;->d:Ljava/lang/reflect/Method;
 
     const/4 v1, 0x1
 
@@ -339,17 +339,17 @@
 
     move-result-object v0
 
-    check-cast v0, Lb/a/f/c$a;
+    check-cast v0, Lc/a/f/c$a;
 
-    iget-boolean v1, v0, Lb/a/f/c$a;->b:Z
-
-    if-nez v1, :cond_0
-
-    iget-object v1, v0, Lb/a/f/c$a;->c:Ljava/lang/String;
+    iget-boolean v1, v0, Lc/a/f/c$a;->b:Z
 
     if-nez v1, :cond_0
 
-    invoke-static {}, Lb/a/f/e;->a()Lb/a/f/e;
+    iget-object v1, v0, Lc/a/f/c$a;->c:Ljava/lang/String;
+
+    if-nez v1, :cond_0
+
+    invoke-static {}, Lc/a/f/e;->a()Lc/a/f/e;
 
     move-result-object v0
 
@@ -357,19 +357,19 @@
 
     const-string v2, "ALPN callback dropped: HTTP/2 is disabled. Is alpn-boot on the boot class path?"
 
-    invoke-virtual {v0, v1, v2, p1}, Lb/a/f/e;->a(ILjava/lang/String;Ljava/lang/Throwable;)V
+    invoke-virtual {v0, v1, v2, p1}, Lc/a/f/e;->a(ILjava/lang/String;Ljava/lang/Throwable;)V
 
     return-object p1
 
     :cond_0
-    iget-boolean v1, v0, Lb/a/f/c$a;->b:Z
+    iget-boolean v1, v0, Lc/a/f/c$a;->b:Z
 
     if-eqz v1, :cond_1
 
     goto :goto_0
 
     :cond_1
-    iget-object p1, v0, Lb/a/f/c$a;->c:Ljava/lang/String;
+    iget-object p1, v0, Lc/a/f/c$a;->c:Ljava/lang/String;
     :try_end_0
     .catch Ljava/lang/reflect/InvocationTargetException; {:try_start_0 .. :try_end_0} :catch_0
     .catch Ljava/lang/IllegalAccessException; {:try_start_0 .. :try_end_0} :catch_0

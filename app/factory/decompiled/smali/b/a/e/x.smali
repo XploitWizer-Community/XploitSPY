@@ -1,14 +1,14 @@
-.class final Lb/a/e/x;
+.class final Lc/a/e/x;
 .super Ljava/lang/Object;
 .source ""
 
 # interfaces
-.implements Lb/a/e/y;
+.implements Lc/a/e/y;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lb/a/e/y;
+    value = Lc/a/e/y;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -28,18 +28,18 @@
 
 
 # virtual methods
-.method public a(ILb/a/e/b;)V
+.method public a(ILc/a/e/b;)V
     .locals 0
 
     return-void
 .end method
 
-.method public a(ILc/g;IZ)Z
+.method public a(ILd/g;IZ)Z
     .locals 0
 
     int-to-long p3, p3
 
-    invoke-interface {p2, p3, p4}, Lc/g;->skip(J)V
+    invoke-interface {p2, p3, p4}, Ld/g;->skip(J)V
 
     const/4 p1, 0x1
 
@@ -52,7 +52,7 @@
         value = {
             "(I",
             "Ljava/util/List<",
-            "Lb/a/e/c;",
+            "Lc/a/e/c;",
             ">;)Z"
         }
     .end annotation
@@ -68,7 +68,7 @@
         value = {
             "(I",
             "Ljava/util/List<",
-            "Lb/a/e/c;",
+            "Lc/a/e/c;",
             ">;Z)Z"
         }
     .end annotation

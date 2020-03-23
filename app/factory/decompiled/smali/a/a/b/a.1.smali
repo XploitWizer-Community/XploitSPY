@@ -1,4 +1,4 @@
-.class public interface abstract La/a/b/a;
+.class public interface abstract Lb/a/b/a;
 .super Ljava/lang/Object;
 .source ""
 

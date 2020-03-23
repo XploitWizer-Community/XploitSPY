@@ -16,7 +16,7 @@ Name: META-INF/androidx.versionedparcelable_versionedparcelable.versio
 SHA1-Digest: xTi2bHEQyjoCjM/kItDx+iAKmTU=
 
 Name: classes.dex
-SHA1-Digest: +1LVqIGq2QygY5QXe4Zc5Ghcxj0=
+SHA1-Digest: nfyXkI1RxCxUkOTHkBUiIMW0ous=
 
 Name: res/drawable-hdpi-v4/notification_bg_low_normal.9.png
 SHA1-Digest: D2PhKM51tYZo8a79riJ3XiUD2nc=
@@ -133,50 +133,50 @@ Name: res/mipmap-anydpi-v26/ic_launcher_round.xml
 SHA1-Digest: 47Wrr0L5u//HrdR+ydw1DJsE2HY=
 
 Name: res/mipmap-hdpi-v4/ic_launcher.png
-SHA1-Digest: CiXVTbePOBc9ne/9nlv8o0TCZ28=
+SHA1-Digest: Az7eCHDW1WJ65isMhK5fUu97x2U=
 
 Name: res/mipmap-hdpi-v4/ic_launcher_foreground.png
 SHA1-Digest: zuSZv0eX0Slge8oOeCJj8lGS7AY=
 
 Name: res/mipmap-hdpi-v4/ic_launcher_round.png
-SHA1-Digest: 4b2l1PZ0NuE26zEVE5nGLZITnk8=
+SHA1-Digest: D+lGi10fQJOJaeJopY3pKUeLVKA=
 
 Name: res/mipmap-mdpi-v4/ic_launcher.png
-SHA1-Digest: Lljn+rRJP2oxU1PhzlbBGOGRT14=
+SHA1-Digest: cnxEsLsySM6usKLiCeGu+ch4h2o=
 
 Name: res/mipmap-mdpi-v4/ic_launcher_foreground.png
 SHA1-Digest: DhEKTsotpno1+qK785KRqy2LV0s=
 
 Name: res/mipmap-mdpi-v4/ic_launcher_round.png
-SHA1-Digest: BdI5pctLBt9lc3JirYb6IVAH/lo=
+SHA1-Digest: lNJ/y3NHBLrK7bXpxnETOk6nFE8=
 
 Name: res/mipmap-xhdpi-v4/ic_launcher.png
-SHA1-Digest: YACEqzi5/Gl51S/VAvx8uQta+g4=
+SHA1-Digest: 9Z6aG1rdjL1JM+5rr0bT4V53W+w=
 
 Name: res/mipmap-xhdpi-v4/ic_launcher_foreground.png
 SHA1-Digest: znJVmP7NXWUh41NYKfeAkhCIebc=
 
 Name: res/mipmap-xhdpi-v4/ic_launcher_round.png
-SHA1-Digest: AUfG1+N8IRbmiXNEvlDxlkj21ZY=
+SHA1-Digest: AHrJ5hek1oOGOms/fmd/3UOAWHI=
 
 Name: res/mipmap-xxhdpi-v4/ic_launcher.png
-SHA1-Digest: lkLXmt/N/2TlQh3hZip/LjVi0sc=
+SHA1-Digest: D7dtqI/PMq7Zeg8yIZ8pnj1mpGg=
 
 Name: res/mipmap-xxhdpi-v4/ic_launcher_foreground.png
 SHA1-Digest: ludOnLPEKk4odyFRUHavLYCRgw0=
 
 Name: res/mipmap-xxhdpi-v4/ic_launcher_round.png
-SHA1-Digest: jEKZ0O0vkyWRKlk8X/VOWr9G/OQ=
+SHA1-Digest: 3MWQnkb4FFvC9aI2uaGltMlVANQ=
 
 Name: res/mipmap-xxxhdpi-v4/ic_launcher.png
-SHA1-Digest: rOBVOmO/++XtiCJ+zfm/I0/TNmA=
+SHA1-Digest: XjCSyAK2oaGNM8hf5UuhChFMnsk=
 
 Name: res/mipmap-xxxhdpi-v4/ic_launcher_foreground.png
 SHA1-Digest: bLEIjVpuqFG7M7qzVYqN5IWxU70=
 
 Name: res/mipmap-xxxhdpi-v4/ic_launcher_round.png
-SHA1-Digest: zlZ/0sc3w4/fPeU3D1K2j2cYfUY=
+SHA1-Digest: 1rbjkPp9cl5NhOKl6u1sJwjuKqE=
 
 Name: resources.arsc
-SHA1-Digest: cSxFQcAf1geMZPDYTpu+eYPySnA=
+SHA1-Digest: oY0Z4W/1+wnrkqtyD7ns8E2LZIo=
 

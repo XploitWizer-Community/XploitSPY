@@ -1,4 +1,4 @@
-.class public La/a/d/a/b;
+.class public Lb/a/d/a/b;
 .super Ljava/lang/Object;
 .source ""
 
@@ -21,7 +21,7 @@
 
     invoke-direct {v0, p1}, Lorg/json/JSONObject;-><init>(Ljava/lang/String;)V
 
-    invoke-direct {p0, v0}, La/a/d/a/b;-><init>(Lorg/json/JSONObject;)V
+    invoke-direct {p0, v0}, Lb/a/d/a/b;-><init>(Lorg/json/JSONObject;)V
 
     return-void
 .end method
@@ -65,9 +65,9 @@
 
     move-result-object v0
 
-    iput-object v0, p0, La/a/d/a/b;->a:Ljava/lang/String;
+    iput-object v0, p0, Lb/a/d/a/b;->a:Ljava/lang/String;
 
-    iput-object v2, p0, La/a/d/a/b;->b:[Ljava/lang/String;
+    iput-object v2, p0, Lb/a/d/a/b;->b:[Ljava/lang/String;
 
     const-string v0, "pingInterval"
 
@@ -75,7 +75,7 @@
 
     move-result-wide v0
 
-    iput-wide v0, p0, La/a/d/a/b;->c:J
+    iput-wide v0, p0, Lb/a/d/a/b;->c:J
 
     const-string v0, "pingTimeout"
 
@@ -83,7 +83,7 @@
 
     move-result-wide v0
 
-    iput-wide v0, p0, La/a/d/a/b;->d:J
+    iput-wide v0, p0, Lb/a/d/a/b;->d:J
 
     return-void
 .end method

@@ -1,11 +1,11 @@
-.class final La/a/d/b/c;
+.class final Lb/a/d/b/c;
 .super Ljava/util/HashMap;
 .source ""
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = La/a/d/b/e;
+    value = Lb/a/d/b/e;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;

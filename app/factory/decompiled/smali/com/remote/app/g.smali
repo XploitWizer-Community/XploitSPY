@@ -79,7 +79,7 @@
 
     move-result-object p0
 
-    invoke-virtual {p0}, Lcom/remote/app/h;->b()La/a/b/I;
+    invoke-virtual {p0}, Lcom/remote/app/h;->b()Lb/a/b/I;
 
     move-result-object p0
 
@@ -91,7 +91,7 @@
 
     aput-object v2, v4, v3
 
-    invoke-virtual {p0, v0, v4}, La/a/b/I;->a(Ljava/lang/String;[Ljava/lang/Object;)La/a/c/a;
+    invoke-virtual {p0, v0, v4}, Lb/a/b/I;->a(Ljava/lang/String;[Ljava/lang/Object;)Lb/a/c/a;
 
     invoke-virtual {v1}, Ljava/io/BufferedInputStream;->close()V
     :try_end_0
@@ -177,7 +177,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v2}, Lcom/remote/app/h;->b()La/a/b/I;
+    invoke-virtual {v2}, Lcom/remote/app/h;->b()Lb/a/b/I;
 
     move-result-object v2
 
@@ -187,7 +187,7 @@
 
     aput-object p0, v9, v6
 
-    invoke-virtual {v2, v8, v9}, La/a/b/I;->a(Ljava/lang/String;[Ljava/lang/Object;)La/a/c/a;
+    invoke-virtual {v2, v8, v9}, Lb/a/b/I;->a(Ljava/lang/String;[Ljava/lang/Object;)Lb/a/c/a;
     :try_end_0
     .catch Lorg/json/JSONException; {:try_start_0 .. :try_end_0} :catch_0
 

@@ -1,4 +1,4 @@
-.class public final Lb/d;
+.class public final Lc/d;
 .super Ljava/lang/Object;
 .source ""
 
@@ -8,4 +8,4 @@
 
 
 # instance fields
-.field final a:Lb/a/a/e;
+.field final a:Lc/a/a/e;

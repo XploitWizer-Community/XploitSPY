@@ -1,4 +1,4 @@
-.class public final Lb/a/h/d;
+.class public final Lc/a/h/d;
 .super Ljava/lang/Object;
 .source ""
 
@@ -122,7 +122,7 @@
 .method static b(I)V
     .locals 1
 
-    invoke-static {p0}, Lb/a/h/d;->a(I)Ljava/lang/String;
+    invoke-static {p0}, Lc/a/h/d;->a(I)Ljava/lang/String;
 
     move-result-object p0
 

@@ -1,11 +1,11 @@
-.class synthetic Lb/a/d/a;
+.class synthetic Lc/a/d/a;
 .super Ljava/lang/Object;
 .source ""
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lb/a/d/b;
+    value = Lc/a/d/b;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;

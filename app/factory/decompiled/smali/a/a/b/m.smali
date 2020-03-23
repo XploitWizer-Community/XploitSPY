@@ -1,14 +1,14 @@
-.class La/a/b/m;
+.class Lb/a/b/m;
 .super Ljava/lang/Object;
 .source ""
 
 # interfaces
-.implements La/a/b/y$a;
+.implements Lb/a/b/y$a;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = La/a/b/w;->o()V
+    value = Lb/a/b/w;->o()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -20,16 +20,16 @@
 # instance fields
 .field final synthetic a:Ljava/util/Timer;
 
-.field final synthetic b:La/a/b/w;
+.field final synthetic b:Lb/a/b/w;
 
 
 # direct methods
-.method constructor <init>(La/a/b/w;Ljava/util/Timer;)V
+.method constructor <init>(Lb/a/b/w;Ljava/util/Timer;)V
     .locals 0
 
-    iput-object p1, p0, La/a/b/m;->b:La/a/b/w;
+    iput-object p1, p0, Lb/a/b/m;->b:Lb/a/b/w;
 
-    iput-object p2, p0, La/a/b/m;->a:Ljava/util/Timer;
+    iput-object p2, p0, Lb/a/b/m;->a:Ljava/util/Timer;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -41,7 +41,7 @@
 .method public destroy()V
     .locals 1
 
-    iget-object v0, p0, La/a/b/m;->a:Ljava/util/Timer;
+    iget-object v0, p0, Lb/a/b/m;->a:Ljava/util/Timer;
 
     invoke-virtual {v0}, Ljava/util/Timer;->cancel()V
 

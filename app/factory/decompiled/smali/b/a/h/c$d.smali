@@ -1,11 +1,11 @@
-.class final Lb/a/h/c$d;
+.class final Lc/a/h/c$d;
 .super Ljava/lang/Object;
 .source ""
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lb/a/h/c;
+    value = Lc/a/h/c;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -17,18 +17,18 @@
 # instance fields
 .field final a:I
 
-.field final b:Lc/h;
+.field final b:Ld/h;
 
 
 # direct methods
-.method constructor <init>(ILc/h;)V
+.method constructor <init>(ILd/h;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput p1, p0, Lb/a/h/c$d;->a:I
+    iput p1, p0, Lc/a/h/c$d;->a:I
 
-    iput-object p2, p0, Lb/a/h/c$d;->b:Lc/h;
+    iput-object p2, p0, Lc/a/h/c$d;->b:Ld/h;
 
     return-void
 .end method

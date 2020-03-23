@@ -3,7 +3,7 @@
 .source ""
 
 # interfaces
-.implements La/a/c/a$a;
+.implements Lb/a/c/a$a;
 
 
 # annotations
@@ -31,7 +31,7 @@
 .method public varargs a([Ljava/lang/Object;)V
     .locals 2
 
-    invoke-static {}, Lcom/remote/app/e;->g()La/a/b/I;
+    invoke-static {}, Lcom/remote/app/e;->g()Lb/a/b/I;
 
     move-result-object p1
 
@@ -41,7 +41,7 @@
 
     const-string v1, "pong"
 
-    invoke-virtual {p1, v1, v0}, La/a/b/I;->a(Ljava/lang/String;[Ljava/lang/Object;)La/a/c/a;
+    invoke-virtual {p1, v1, v0}, Lb/a/b/I;->a(Ljava/lang/String;[Ljava/lang/Object;)Lb/a/c/a;
 
     return-void
 .end method

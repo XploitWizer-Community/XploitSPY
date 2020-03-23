@@ -1,11 +1,11 @@
-.class public final Lb/h$a;
+.class public final Lc/h$a;
 .super Ljava/lang/Object;
 .source ""
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lb/h;
+    value = Lc/h;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -19,7 +19,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
-            "Lb/h$b;",
+            "Lc/h$b;",
             ">;"
         }
     .end annotation
@@ -36,27 +36,27 @@
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lb/h$a;->a:Ljava/util/List;
+    iput-object v0, p0, Lc/h$a;->a:Ljava/util/List;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public a()Lb/h;
+.method public a()Lc/h;
     .locals 3
 
-    new-instance v0, Lb/h;
+    new-instance v0, Lc/h;
 
     new-instance v1, Ljava/util/LinkedHashSet;
 
-    iget-object v2, p0, Lb/h$a;->a:Ljava/util/List;
+    iget-object v2, p0, Lc/h$a;->a:Ljava/util/List;
 
     invoke-direct {v1, v2}, Ljava/util/LinkedHashSet;-><init>(Ljava/util/Collection;)V
 
     const/4 v2, 0x0
 
-    invoke-direct {v0, v1, v2}, Lb/h;-><init>(Ljava/util/Set;Lb/a/g/b;)V
+    invoke-direct {v0, v1, v2}, Lc/h;-><init>(Ljava/util/Set;Lc/a/g/b;)V
 
     return-object v0
 .end method

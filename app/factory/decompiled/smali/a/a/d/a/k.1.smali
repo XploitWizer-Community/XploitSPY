@@ -1,4 +1,4 @@
-.class La/a/d/a/k;
+.class Lb/a/d/a/k;
 .super Ljava/lang/Object;
 .source ""
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = La/a/d/a/l;->run()V
+    value = Lb/a/d/a/l;->run()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field final synthetic a:La/a/d/a/l;
+.field final synthetic a:Lb/a/d/a/l;
 
 
 # direct methods
-.method constructor <init>(La/a/d/a/l;)V
+.method constructor <init>(Lb/a/d/a/l;)V
     .locals 0
 
-    iput-object p1, p0, La/a/d/a/k;->a:La/a/d/a/l;
+    iput-object p1, p0, Lb/a/d/a/k;->a:Lb/a/d/a/l;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -37,9 +37,9 @@
 .method public run()V
     .locals 3
 
-    iget-object v0, p0, La/a/d/a/k;->a:La/a/d/a/l;
+    iget-object v0, p0, Lb/a/d/a/k;->a:Lb/a/d/a/l;
 
-    iget-object v0, v0, La/a/d/a/l;->a:La/a/d/a/G;
+    iget-object v0, v0, Lb/a/d/a/l;->a:Lb/a/d/a/G;
 
     const/4 v1, 0x0
 
@@ -47,7 +47,7 @@
 
     const-string v2, "ping"
 
-    invoke-virtual {v0, v2, v1}, La/a/c/a;->a(Ljava/lang/String;[Ljava/lang/Object;)La/a/c/a;
+    invoke-virtual {v0, v2, v1}, Lb/a/c/a;->a(Ljava/lang/String;[Ljava/lang/Object;)Lb/a/c/a;
 
     return-void
 .end method

@@ -1,204 +1,110 @@
 .class final Lc/z;
-.super Ljava/lang/Object;
+.super Lc/a/a;
 .source ""
 
 
-# static fields
-.field public static final a:Ljava/nio/charset/Charset;
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lc/A;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x8
+    name = null
+.end annotation
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 1
+.method constructor <init>()V
+    .locals 0
 
-    const-string v0, "UTF-8"
-
-    invoke-static {v0}, Ljava/nio/charset/Charset;->forName(Ljava/lang/String;)Ljava/nio/charset/Charset;
-
-    move-result-object v0
-
-    sput-object v0, Lc/z;->a:Ljava/nio/charset/Charset;
+    invoke-direct {p0}, Lc/a/a;-><init>()V
 
     return-void
 .end method
 
-.method public static a(I)I
+
+# virtual methods
+.method public a(Lc/l;Lc/a;Lc/a/b/g;)Lc/a/b/c;
+    .locals 0
+
+    invoke-virtual {p1, p2, p3}, Lc/l;->a(Lc/a;Lc/a/b/g;)Lc/a/b/c;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public a(Lc/l;)Lc/a/b/d;
+    .locals 0
+
+    iget-object p1, p1, Lc/l;->f:Lc/a/b/d;
+
+    return-object p1
+.end method
+
+.method public a(Lc/f;)Lc/a/b/g;
+    .locals 0
+
+    check-cast p1, Lc/C;
+
+    invoke-virtual {p1}, Lc/C;->d()Lc/a/b/g;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public a(Lc/A;Lc/D;)Lc/f;
     .locals 2
 
-    const/high16 v0, -0x1000000
+    new-instance v0, Lc/C;
 
-    and-int/2addr v0, p0
+    const/4 v1, 0x1
 
-    ushr-int/lit8 v0, v0, 0x18
+    invoke-direct {v0, p1, p2, v1}, Lc/C;-><init>(Lc/A;Lc/D;Z)V
 
-    const/high16 v1, 0xff0000
-
-    and-int/2addr v1, p0
-
-    ushr-int/lit8 v1, v1, 0x8
-
-    or-int/2addr v0, v1
-
-    const v1, 0xff00
-
-    and-int/2addr v1, p0
-
-    shl-int/lit8 v1, v1, 0x8
-
-    or-int/2addr v0, v1
-
-    and-int/lit16 p0, p0, 0xff
-
-    shl-int/lit8 p0, p0, 0x18
-
-    or-int/2addr p0, v0
-
-    return p0
+    return-object v0
 .end method
 
-.method public static a(S)S
-    .locals 1
+.method public a(Lc/m;Ljavax/net/ssl/SSLSocket;Z)V
+    .locals 0
 
-    const v0, 0xffff
-
-    and-int/2addr p0, v0
-
-    const v0, 0xff00
-
-    and-int/2addr v0, p0
-
-    ushr-int/lit8 v0, v0, 0x8
-
-    and-int/lit16 p0, p0, 0xff
-
-    shl-int/lit8 p0, p0, 0x8
-
-    or-int/2addr p0, v0
-
-    int-to-short p0, p0
-
-    return p0
-.end method
-
-.method public static a(JJJ)V
-    .locals 5
-
-    or-long v0, p2, p4
-
-    const-wide/16 v2, 0x0
-
-    cmp-long v4, v0, v2
-
-    if-ltz v4, :cond_0
-
-    cmp-long v0, p2, p0
-
-    if-gtz v0, :cond_0
-
-    sub-long v0, p0, p2
-
-    cmp-long v2, v0, p4
-
-    if-ltz v2, :cond_0
+    invoke-virtual {p1, p2, p3}, Lc/m;->a(Ljavax/net/ssl/SSLSocket;Z)V
 
     return-void
-
-    :cond_0
-    new-instance v0, Ljava/lang/ArrayIndexOutOfBoundsException;
-
-    const/4 v1, 0x3
-
-    new-array v1, v1, [Ljava/lang/Object;
-
-    const/4 v2, 0x0
-
-    invoke-static {p0, p1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
-
-    move-result-object p0
-
-    aput-object p0, v1, v2
-
-    const/4 p0, 0x1
-
-    invoke-static {p2, p3}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
-
-    move-result-object p1
-
-    aput-object p1, v1, p0
-
-    const/4 p0, 0x2
-
-    invoke-static {p4, p5}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
-
-    move-result-object p1
-
-    aput-object p1, v1, p0
-
-    const-string p0, "size=%s offset=%s byteCount=%s"
-
-    invoke-static {p0, v1}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object p0
-
-    invoke-direct {v0, p0}, Ljava/lang/ArrayIndexOutOfBoundsException;-><init>(Ljava/lang/String;)V
-
-    throw v0
 .end method
 
-.method public static a(Ljava/lang/Throwable;)V
+.method public a(Lc/v$a;Ljava/lang/String;)V
     .locals 0
 
-    invoke-static {p0}, Lc/z;->b(Ljava/lang/Throwable;)V
+    invoke-virtual {p1, p2}, Lc/v$a;->a(Ljava/lang/String;)Lc/v$a;
 
-    const/4 p0, 0x0
-
-    throw p0
+    return-void
 .end method
 
-.method public static a([BI[BII)Z
-    .locals 4
-
-    const/4 v0, 0x0
-
-    const/4 v1, 0x0
-
-    :goto_0
-    if-ge v1, p4, :cond_1
-
-    add-int v2, v1, p1
-
-    aget-byte v2, p0, v2
-
-    add-int v3, v1, p3
-
-    aget-byte v3, p2, v3
-
-    if-eq v2, v3, :cond_0
-
-    return v0
-
-    :cond_0
-    add-int/lit8 v1, v1, 0x1
-
-    goto :goto_0
-
-    :cond_1
-    const/4 p0, 0x1
-
-    return p0
-.end method
-
-.method private static b(Ljava/lang/Throwable;)V
+.method public a(Lc/v$a;Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "<T:",
-            "Ljava/lang/Throwable;",
-            ">(",
-            "Ljava/lang/Throwable;",
-            ")V^TT;"
-        }
-    .end annotation
 
-    throw p0
+    invoke-virtual {p1, p2, p3}, Lc/v$a;->b(Ljava/lang/String;Ljava/lang/String;)Lc/v$a;
+
+    return-void
+.end method
+
+.method public a(Lc/l;Lc/a/b/c;)Z
+    .locals 0
+
+    invoke-virtual {p1, p2}, Lc/l;->a(Lc/a/b/c;)Z
+
+    move-result p1
+
+    return p1
+.end method
+
+.method public b(Lc/l;Lc/a/b/c;)V
+    .locals 0
+
+    invoke-virtual {p1, p2}, Lc/l;->b(Lc/a/b/c;)V
+
+    return-void
 .end method

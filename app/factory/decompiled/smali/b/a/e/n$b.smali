@@ -1,11 +1,11 @@
-.class public abstract Lb/a/e/n$b;
+.class public abstract Lc/a/e/n$b;
 .super Ljava/lang/Object;
 .source ""
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lb/a/e/n;
+    value = Lc/a/e/n;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,18 +15,18 @@
 
 
 # static fields
-.field public static final a:Lb/a/e/n$b;
+.field public static final a:Lc/a/e/n$b;
 
 
 # direct methods
 .method static constructor <clinit>()V
     .locals 1
 
-    new-instance v0, Lb/a/e/o;
+    new-instance v0, Lc/a/e/o;
 
-    invoke-direct {v0}, Lb/a/e/o;-><init>()V
+    invoke-direct {v0}, Lc/a/e/o;-><init>()V
 
-    sput-object v0, Lb/a/e/n$b;->a:Lb/a/e/n$b;
+    sput-object v0, Lc/a/e/n$b;->a:Lc/a/e/n$b;
 
     return-void
 .end method
@@ -41,11 +41,11 @@
 
 
 # virtual methods
-.method public a(Lb/a/e/n;)V
+.method public a(Lc/a/e/n;)V
     .locals 0
 
     return-void
 .end method
 
-.method public abstract a(Lb/a/e/t;)V
+.method public abstract a(Lc/a/e/t;)V
 .end method

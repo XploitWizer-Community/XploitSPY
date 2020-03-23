@@ -1,11 +1,11 @@
-.class public La/a/d/a/G$a;
-.super La/a/d/a/K$a;
+.class public Lb/a/d/a/G$a;
+.super Lb/a/d/a/K$a;
 .source ""
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = La/a/d/a/G;
+    value = Lb/a/d/a/G;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -30,40 +30,40 @@
 .method public constructor <init>()V
     .locals 1
 
-    invoke-direct {p0}, La/a/d/a/K$a;-><init>()V
+    invoke-direct {p0}, Lb/a/d/a/K$a;-><init>()V
 
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, La/a/d/a/G$a;->p:Z
+    iput-boolean v0, p0, Lb/a/d/a/G$a;->p:Z
 
     return-void
 .end method
 
-.method static synthetic a(Ljava/net/URI;La/a/d/a/G$a;)La/a/d/a/G$a;
+.method static synthetic a(Ljava/net/URI;Lb/a/d/a/G$a;)Lb/a/d/a/G$a;
     .locals 0
 
-    invoke-static {p0, p1}, La/a/d/a/G$a;->b(Ljava/net/URI;La/a/d/a/G$a;)La/a/d/a/G$a;
+    invoke-static {p0, p1}, Lb/a/d/a/G$a;->b(Ljava/net/URI;Lb/a/d/a/G$a;)Lb/a/d/a/G$a;
 
     move-result-object p0
 
     return-object p0
 .end method
 
-.method private static b(Ljava/net/URI;La/a/d/a/G$a;)La/a/d/a/G$a;
+.method private static b(Ljava/net/URI;Lb/a/d/a/G$a;)Lb/a/d/a/G$a;
     .locals 2
 
     if-nez p1, :cond_0
 
-    new-instance p1, La/a/d/a/G$a;
+    new-instance p1, Lb/a/d/a/G$a;
 
-    invoke-direct {p1}, La/a/d/a/G$a;-><init>()V
+    invoke-direct {p1}, Lb/a/d/a/G$a;-><init>()V
 
     :cond_0
     invoke-virtual {p0}, Ljava/net/URI;->getHost()Ljava/lang/String;
 
     move-result-object v0
 
-    iput-object v0, p1, La/a/d/a/G$a;->r:Ljava/lang/String;
+    iput-object v0, p1, Lb/a/d/a/G$a;->r:Ljava/lang/String;
 
     invoke-virtual {p0}, Ljava/net/URI;->getScheme()Ljava/lang/String;
 
@@ -101,13 +101,13 @@
     const/4 v0, 0x1
 
     :goto_1
-    iput-boolean v0, p1, La/a/d/a/K$a;->d:Z
+    iput-boolean v0, p1, Lb/a/d/a/K$a;->d:Z
 
     invoke-virtual {p0}, Ljava/net/URI;->getPort()I
 
     move-result v0
 
-    iput v0, p1, La/a/d/a/K$a;->f:I
+    iput v0, p1, Lb/a/d/a/K$a;->f:I
 
     invoke-virtual {p0}, Ljava/net/URI;->getRawQuery()Ljava/lang/String;
 
@@ -115,7 +115,7 @@
 
     if-eqz p0, :cond_3
 
-    iput-object p0, p1, La/a/d/a/G$a;->s:Ljava/lang/String;
+    iput-object p0, p1, Lb/a/d/a/G$a;->s:Ljava/lang/String;
 
     :cond_3
     return-object p1

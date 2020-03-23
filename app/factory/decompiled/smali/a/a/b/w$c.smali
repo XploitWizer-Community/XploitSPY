@@ -1,11 +1,11 @@
-.class public La/a/b/w$c;
-.super La/a/d/a/G$a;
+.class public Lb/a/b/w$c;
+.super Lb/a/d/a/G$a;
 .source ""
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = La/a/b/w;
+    value = Lb/a/b/w;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -32,15 +32,15 @@
 .method public constructor <init>()V
     .locals 2
 
-    invoke-direct {p0}, La/a/d/a/G$a;-><init>()V
+    invoke-direct {p0}, Lb/a/d/a/G$a;-><init>()V
 
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, La/a/b/w$c;->t:Z
+    iput-boolean v0, p0, Lb/a/b/w$c;->t:Z
 
     const-wide/16 v0, 0x4e20
 
-    iput-wide v0, p0, La/a/b/w$c;->y:J
+    iput-wide v0, p0, Lb/a/b/w$c;->y:J
 
     return-void
 .end method

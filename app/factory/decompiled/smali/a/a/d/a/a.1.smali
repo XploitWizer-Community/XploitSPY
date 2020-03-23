@@ -1,4 +1,4 @@
-.class public La/a/d/a/a;
+.class public Lb/a/d/a/a;
 .super Ljava/lang/Exception;
 .source ""
 

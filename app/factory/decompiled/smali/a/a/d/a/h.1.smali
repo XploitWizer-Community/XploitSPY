@@ -1,4 +1,4 @@
-.class La/a/d/a/h;
+.class Lb/a/d/a/h;
 .super Ljava/lang/Object;
 .source ""
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = La/a/d/a/G;->a(J)V
+    value = Lb/a/d/a/G;->a(J)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,18 +18,18 @@
 
 
 # instance fields
-.field final synthetic a:La/a/d/a/G;
+.field final synthetic a:Lb/a/d/a/G;
 
-.field final synthetic b:La/a/d/a/G;
+.field final synthetic b:Lb/a/d/a/G;
 
 
 # direct methods
-.method constructor <init>(La/a/d/a/G;La/a/d/a/G;)V
+.method constructor <init>(Lb/a/d/a/G;Lb/a/d/a/G;)V
     .locals 0
 
-    iput-object p1, p0, La/a/d/a/h;->b:La/a/d/a/G;
+    iput-object p1, p0, Lb/a/d/a/h;->b:Lb/a/d/a/G;
 
-    iput-object p2, p0, La/a/d/a/h;->a:La/a/d/a/G;
+    iput-object p2, p0, Lb/a/d/a/h;->a:Lb/a/d/a/G;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -41,11 +41,11 @@
 .method public run()V
     .locals 1
 
-    new-instance v0, La/a/d/a/g;
+    new-instance v0, Lb/a/d/a/g;
 
-    invoke-direct {v0, p0}, La/a/d/a/g;-><init>(La/a/d/a/h;)V
+    invoke-direct {v0, p0}, Lb/a/d/a/g;-><init>(Lb/a/d/a/h;)V
 
-    invoke-static {v0}, La/a/i/c;->a(Ljava/lang/Runnable;)V
+    invoke-static {v0}, Lb/a/i/c;->a(Ljava/lang/Runnable;)V
 
     return-void
 .end method

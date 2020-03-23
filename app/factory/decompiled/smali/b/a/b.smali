@@ -1,4 +1,4 @@
-.class public abstract Lb/a/b;
+.class public abstract Lc/a/b;
 .super Ljava/lang/Object;
 .source ""
 
@@ -16,11 +16,11 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    invoke-static {p1, p2}, Lb/a/d;->a(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+    invoke-static {p1, p2}, Lc/a/d;->a(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object p1
 
-    iput-object p1, p0, Lb/a/b;->a:Ljava/lang/String;
+    iput-object p1, p0, Lc/a/b;->a:Ljava/lang/String;
 
     return-void
 .end method
@@ -45,12 +45,12 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lb/a/b;->a:Ljava/lang/String;
+    iget-object v2, p0, Lc/a/b;->a:Ljava/lang/String;
 
     invoke-virtual {v1, v2}, Ljava/lang/Thread;->setName(Ljava/lang/String;)V
 
     :try_start_0
-    invoke-virtual {p0}, Lb/a/b;->b()V
+    invoke-virtual {p0}, Lc/a/b;->b()V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 

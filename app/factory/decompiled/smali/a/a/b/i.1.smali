@@ -1,14 +1,14 @@
-.class La/a/b/i;
+.class Lb/a/b/i;
 .super Ljava/lang/Object;
 .source ""
 
 # interfaces
-.implements La/a/h/c$c$a;
+.implements Lb/a/h/c$c$a;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = La/a/b/w;->a(La/a/h/b;)V
+    value = Lb/a/b/w;->a(Lb/a/h/b;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,18 +18,18 @@
 
 
 # instance fields
-.field final synthetic a:La/a/b/w;
+.field final synthetic a:Lb/a/b/w;
 
-.field final synthetic b:La/a/b/w;
+.field final synthetic b:Lb/a/b/w;
 
 
 # direct methods
-.method constructor <init>(La/a/b/w;La/a/b/w;)V
+.method constructor <init>(Lb/a/b/w;Lb/a/b/w;)V
     .locals 0
 
-    iput-object p1, p0, La/a/b/i;->b:La/a/b/w;
+    iput-object p1, p0, Lb/a/b/i;->b:Lb/a/b/w;
 
-    iput-object p2, p0, La/a/b/i;->a:La/a/b/w;
+    iput-object p2, p0, Lb/a/b/i;->a:Lb/a/b/w;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -56,13 +56,13 @@
 
     if-eqz v4, :cond_0
 
-    iget-object v4, p0, La/a/b/i;->a:La/a/b/w;
+    iget-object v4, p0, Lb/a/b/i;->a:Lb/a/b/w;
 
-    iget-object v4, v4, La/a/b/w;->v:La/a/d/a/G;
+    iget-object v4, v4, Lb/a/b/w;->v:Lb/a/d/a/G;
 
     check-cast v3, Ljava/lang/String;
 
-    invoke-virtual {v4, v3}, La/a/d/a/G;->b(Ljava/lang/String;)V
+    invoke-virtual {v4, v3}, Lb/a/d/a/G;->b(Ljava/lang/String;)V
 
     goto :goto_1
 
@@ -71,13 +71,13 @@
 
     if-eqz v4, :cond_1
 
-    iget-object v4, p0, La/a/b/i;->a:La/a/b/w;
+    iget-object v4, p0, Lb/a/b/i;->a:Lb/a/b/w;
 
-    iget-object v4, v4, La/a/b/w;->v:La/a/d/a/G;
+    iget-object v4, v4, Lb/a/b/w;->v:Lb/a/d/a/G;
 
     check-cast v3, [B
 
-    invoke-virtual {v4, v3}, La/a/d/a/G;->a([B)V
+    invoke-virtual {v4, v3}, Lb/a/d/a/G;->a([B)V
 
     :cond_1
     :goto_1
@@ -86,13 +86,13 @@
     goto :goto_0
 
     :cond_2
-    iget-object p1, p0, La/a/b/i;->a:La/a/b/w;
+    iget-object p1, p0, Lb/a/b/i;->a:Lb/a/b/w;
 
-    invoke-static {p1, v1}, La/a/b/w;->a(La/a/b/w;Z)Z
+    invoke-static {p1, v1}, Lb/a/b/w;->a(Lb/a/b/w;Z)Z
 
-    iget-object p1, p0, La/a/b/i;->a:La/a/b/w;
+    iget-object p1, p0, Lb/a/b/i;->a:Lb/a/b/w;
 
-    invoke-static {p1}, La/a/b/w;->e(La/a/b/w;)V
+    invoke-static {p1}, Lb/a/b/w;->e(Lb/a/b/w;)V
 
     return-void
 .end method

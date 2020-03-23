@@ -1,14 +1,14 @@
-.class La/a/d/a/A;
+.class Lb/a/d/a/A;
 .super Ljava/lang/Object;
 .source ""
 
 # interfaces
-.implements La/a/c/a$a;
+.implements Lb/a/c/a$a;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = La/a/d/a/G;->a(La/a/d/a/K;)V
+    value = Lb/a/d/a/G;->a(Lb/a/d/a/K;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,18 +18,18 @@
 
 
 # instance fields
-.field final synthetic a:La/a/d/a/G;
+.field final synthetic a:Lb/a/d/a/G;
 
-.field final synthetic b:La/a/d/a/G;
+.field final synthetic b:Lb/a/d/a/G;
 
 
 # direct methods
-.method constructor <init>(La/a/d/a/G;La/a/d/a/G;)V
+.method constructor <init>(Lb/a/d/a/G;Lb/a/d/a/G;)V
     .locals 0
 
-    iput-object p1, p0, La/a/d/a/A;->b:La/a/d/a/G;
+    iput-object p1, p0, Lb/a/d/a/A;->b:Lb/a/d/a/G;
 
-    iput-object p2, p0, La/a/d/a/A;->a:La/a/d/a/G;
+    iput-object p2, p0, Lb/a/d/a/A;->a:Lb/a/d/a/G;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -41,9 +41,9 @@
 .method public varargs a([Ljava/lang/Object;)V
     .locals 0
 
-    iget-object p1, p0, La/a/d/a/A;->a:La/a/d/a/G;
+    iget-object p1, p0, Lb/a/d/a/A;->a:Lb/a/d/a/G;
 
-    invoke-static {p1}, La/a/d/a/G;->a(La/a/d/a/G;)V
+    invoke-static {p1}, Lb/a/d/a/G;->a(Lb/a/d/a/G;)V
 
     return-void
 .end method

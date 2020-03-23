@@ -1,17 +1,17 @@
-.class public final Lb/a/c/j;
+.class public final Lc/a/c/j;
 .super Ljava/lang/Object;
 .source ""
 
 
 # direct methods
-.method public static a(Lb/D;Ljava/net/Proxy$Type;)Ljava/lang/String;
+.method public static a(Lc/D;Ljava/net/Proxy$Type;)Ljava/lang/String;
     .locals 2
 
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-virtual {p0}, Lb/D;->e()Ljava/lang/String;
+    invoke-virtual {p0}, Lc/D;->e()Ljava/lang/String;
 
     move-result-object v1
 
@@ -21,13 +21,13 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    invoke-static {p0, p1}, Lb/a/c/j;->b(Lb/D;Ljava/net/Proxy$Type;)Z
+    invoke-static {p0, p1}, Lc/a/c/j;->b(Lc/D;Ljava/net/Proxy$Type;)Z
 
     move-result p1
 
     if-eqz p1, :cond_0
 
-    invoke-virtual {p0}, Lb/D;->g()Lb/w;
+    invoke-virtual {p0}, Lc/D;->g()Lc/w;
 
     move-result-object p0
 
@@ -36,11 +36,11 @@
     goto :goto_0
 
     :cond_0
-    invoke-virtual {p0}, Lb/D;->g()Lb/w;
+    invoke-virtual {p0}, Lc/D;->g()Lc/w;
 
     move-result-object p0
 
-    invoke-static {p0}, Lb/a/c/j;->a(Lb/w;)Ljava/lang/String;
+    invoke-static {p0}, Lc/a/c/j;->a(Lc/w;)Ljava/lang/String;
 
     move-result-object p0
 
@@ -58,14 +58,14 @@
     return-object p0
 .end method
 
-.method public static a(Lb/w;)Ljava/lang/String;
+.method public static a(Lc/w;)Ljava/lang/String;
     .locals 2
 
-    invoke-virtual {p0}, Lb/w;->c()Ljava/lang/String;
+    invoke-virtual {p0}, Lc/w;->c()Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-virtual {p0}, Lb/w;->e()Ljava/lang/String;
+    invoke-virtual {p0}, Lc/w;->e()Ljava/lang/String;
 
     move-result-object p0
 
@@ -91,10 +91,10 @@
     return-object v0
 .end method
 
-.method private static b(Lb/D;Ljava/net/Proxy$Type;)Z
+.method private static b(Lc/D;Ljava/net/Proxy$Type;)Z
     .locals 0
 
-    invoke-virtual {p0}, Lb/D;->d()Z
+    invoke-virtual {p0}, Lc/D;->d()Z
 
     move-result p0
 

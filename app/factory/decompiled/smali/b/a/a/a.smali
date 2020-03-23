@@ -1,169 +1,194 @@
-.class Lb/a/a/a;
+.class public Lb/a/a/a;
 .super Ljava/lang/Object;
 .source ""
 
-# interfaces
-.implements Lc/w;
-
-
-# annotations
-.annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lb/a/a/b;->a(Lb/a/a/c;Lb/G;)Lb/G;
-.end annotation
-
-.annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
-    name = null
-.end annotation
-
 
 # instance fields
-.field a:Z
+.field private a:J
 
-.field final synthetic b:Lc/g;
+.field private b:J
 
-.field final synthetic c:Lb/a/a/c;
+.field private c:I
 
-.field final synthetic d:Lc/f;
+.field private d:D
 
-.field final synthetic e:Lb/a/a/b;
+.field private e:I
 
 
 # direct methods
-.method constructor <init>(Lb/a/a/b;Lc/g;Lb/a/a/c;Lc/f;)V
-    .locals 0
-
-    iput-object p1, p0, Lb/a/a/a;->e:Lb/a/a/b;
-
-    iput-object p2, p0, Lb/a/a/a;->b:Lc/g;
-
-    iput-object p3, p0, Lb/a/a/a;->c:Lb/a/a/c;
-
-    iput-object p4, p0, Lb/a/a/a;->d:Lc/f;
+.method public constructor <init>()V
+    .locals 2
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    const-wide/16 v0, 0x64
+
+    iput-wide v0, p0, Lb/a/a/a;->a:J
+
+    const-wide/16 v0, 0x2710
+
+    iput-wide v0, p0, Lb/a/a/a;->b:J
+
+    const/4 v0, 0x2
+
+    iput v0, p0, Lb/a/a/a;->c:I
 
     return-void
 .end method
 
 
 # virtual methods
-.method public b(Lc/e;J)J
-    .locals 8
+.method public a()J
+    .locals 6
 
-    const/4 v0, 0x1
+    iget-wide v0, p0, Lb/a/a/a;->a:J
 
-    :try_start_0
-    iget-object v1, p0, Lb/a/a/a;->b:Lc/g;
-
-    invoke-interface {v1, p1, p2, p3}, Lc/w;->b(Lc/e;J)J
-
-    move-result-wide p2
-    :try_end_0
-    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
-
-    const-wide/16 v1, -0x1
-
-    cmp-long v3, p2, v1
-
-    if-nez v3, :cond_1
-
-    iget-boolean p1, p0, Lb/a/a/a;->a:Z
-
-    if-nez p1, :cond_0
-
-    iput-boolean v0, p0, Lb/a/a/a;->a:Z
-
-    iget-object p1, p0, Lb/a/a/a;->d:Lc/f;
-
-    invoke-interface {p1}, Lc/v;->close()V
-
-    :cond_0
-    return-wide v1
-
-    :cond_1
-    iget-object v0, p0, Lb/a/a/a;->d:Lc/f;
-
-    invoke-interface {v0}, Lc/f;->a()Lc/e;
-
-    move-result-object v3
-
-    invoke-virtual {p1}, Lc/e;->o()J
-
-    move-result-wide v0
-
-    sub-long v4, v0, p2
-
-    move-object v2, p1
-
-    move-wide v6, p2
-
-    invoke-virtual/range {v2 .. v7}, Lc/e;->a(Lc/e;JJ)Lc/e;
-
-    iget-object p1, p0, Lb/a/a/a;->d:Lc/f;
-
-    invoke-interface {p1}, Lc/f;->i()Lc/f;
-
-    return-wide p2
-
-    :catch_0
-    move-exception p1
-
-    iget-boolean p2, p0, Lb/a/a/a;->a:Z
-
-    if-nez p2, :cond_2
-
-    iput-boolean v0, p0, Lb/a/a/a;->a:Z
-
-    iget-object p2, p0, Lb/a/a/a;->c:Lb/a/a/c;
-
-    invoke-interface {p2}, Lb/a/a/c;->abort()V
-
-    :cond_2
-    throw p1
-.end method
-
-.method public b()Lc/y;
-    .locals 1
-
-    iget-object v0, p0, Lb/a/a/a;->b:Lc/g;
-
-    invoke-interface {v0}, Lc/w;->b()Lc/y;
+    invoke-static {v0, v1}, Ljava/math/BigInteger;->valueOf(J)Ljava/math/BigInteger;
 
     move-result-object v0
 
-    return-object v0
-.end method
+    iget v1, p0, Lb/a/a/a;->c:I
 
-.method public close()V
-    .locals 2
+    int-to-long v1, v1
 
-    iget-boolean v0, p0, Lb/a/a/a;->a:Z
+    invoke-static {v1, v2}, Ljava/math/BigInteger;->valueOf(J)Ljava/math/BigInteger;
 
-    if-nez v0, :cond_0
+    move-result-object v1
 
-    const/16 v0, 0x64
+    iget v2, p0, Lb/a/a/a;->e:I
 
-    sget-object v1, Ljava/util/concurrent/TimeUnit;->MILLISECONDS:Ljava/util/concurrent/TimeUnit;
+    add-int/lit8 v3, v2, 0x1
 
-    invoke-static {p0, v0, v1}, Lb/a/d;->a(Lc/w;ILjava/util/concurrent/TimeUnit;)Z
+    iput v3, p0, Lb/a/a/a;->e:I
 
-    move-result v0
+    invoke-virtual {v1, v2}, Ljava/math/BigInteger;->pow(I)Ljava/math/BigInteger;
 
-    if-nez v0, :cond_0
+    move-result-object v1
 
-    const/4 v0, 0x1
+    invoke-virtual {v0, v1}, Ljava/math/BigInteger;->multiply(Ljava/math/BigInteger;)Ljava/math/BigInteger;
 
-    iput-boolean v0, p0, Lb/a/a/a;->a:Z
+    move-result-object v0
 
-    iget-object v0, p0, Lb/a/a/a;->c:Lb/a/a/c;
+    iget-wide v1, p0, Lb/a/a/a;->d:D
 
-    invoke-interface {v0}, Lb/a/a/c;->abort()V
+    const-wide/16 v3, 0x0
+
+    cmpl-double v5, v1, v3
+
+    if-eqz v5, :cond_1
+
+    invoke-static {}, Ljava/lang/Math;->random()D
+
+    move-result-wide v1
+
+    invoke-static {v1, v2}, Ljava/math/BigDecimal;->valueOf(D)Ljava/math/BigDecimal;
+
+    move-result-object v3
+
+    iget-wide v4, p0, Lb/a/a/a;->d:D
+
+    invoke-static {v4, v5}, Ljava/math/BigDecimal;->valueOf(D)Ljava/math/BigDecimal;
+
+    move-result-object v4
+
+    invoke-virtual {v3, v4}, Ljava/math/BigDecimal;->multiply(Ljava/math/BigDecimal;)Ljava/math/BigDecimal;
+
+    move-result-object v3
+
+    new-instance v4, Ljava/math/BigDecimal;
+
+    invoke-direct {v4, v0}, Ljava/math/BigDecimal;-><init>(Ljava/math/BigInteger;)V
+
+    invoke-virtual {v3, v4}, Ljava/math/BigDecimal;->multiply(Ljava/math/BigDecimal;)Ljava/math/BigDecimal;
+
+    move-result-object v3
+
+    invoke-virtual {v3}, Ljava/math/BigDecimal;->toBigInteger()Ljava/math/BigInteger;
+
+    move-result-object v3
+
+    const-wide/high16 v4, 0x4024000000000000L    # 10.0
+
+    mul-double v1, v1, v4
+
+    invoke-static {v1, v2}, Ljava/lang/Math;->floor(D)D
+
+    move-result-wide v1
+
+    double-to-int v1, v1
+
+    and-int/lit8 v1, v1, 0x1
+
+    if-nez v1, :cond_0
+
+    invoke-virtual {v0, v3}, Ljava/math/BigInteger;->subtract(Ljava/math/BigInteger;)Ljava/math/BigInteger;
+
+    move-result-object v0
+
+    goto :goto_0
 
     :cond_0
-    iget-object v0, p0, Lb/a/a/a;->b:Lc/g;
+    invoke-virtual {v0, v3}, Ljava/math/BigInteger;->add(Ljava/math/BigInteger;)Ljava/math/BigInteger;
 
-    invoke-interface {v0}, Lc/w;->close()V
+    move-result-object v0
+
+    :cond_1
+    :goto_0
+    iget-wide v1, p0, Lb/a/a/a;->b:J
+
+    invoke-static {v1, v2}, Ljava/math/BigInteger;->valueOf(J)Ljava/math/BigInteger;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Ljava/math/BigInteger;->min(Ljava/math/BigInteger;)Ljava/math/BigInteger;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/math/BigInteger;->longValue()J
+
+    move-result-wide v0
+
+    return-wide v0
+.end method
+
+.method public a(D)Lb/a/a/a;
+    .locals 0
+
+    iput-wide p1, p0, Lb/a/a/a;->d:D
+
+    return-object p0
+.end method
+
+.method public a(J)Lb/a/a/a;
+    .locals 0
+
+    iput-wide p1, p0, Lb/a/a/a;->b:J
+
+    return-object p0
+.end method
+
+.method public b()I
+    .locals 1
+
+    iget v0, p0, Lb/a/a/a;->e:I
+
+    return v0
+.end method
+
+.method public b(J)Lb/a/a/a;
+    .locals 0
+
+    iput-wide p1, p0, Lb/a/a/a;->a:J
+
+    return-object p0
+.end method
+
+.method public c()V
+    .locals 1
+
+    const/4 v0, 0x0
+
+    iput v0, p0, Lb/a/a/a;->e:I
 
     return-void
 .end method

@@ -1,4 +1,4 @@
-.class public final Lb/a/c/f;
+.class public final Lc/a/c/f;
 .super Ljava/lang/Object;
 .source ""
 
@@ -17,7 +17,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lb/a/c/f;->a:Ljava/util/regex/Pattern;
+    sput-object v0, Lc/a/c/f;->a:Ljava/util/regex/Pattern;
 
     return-void
 .end method
@@ -94,30 +94,30 @@
     return p1
 .end method
 
-.method public static a(Lb/G;)J
+.method public static a(Lc/G;)J
     .locals 2
 
-    invoke-virtual {p0}, Lb/G;->n()Lb/v;
+    invoke-virtual {p0}, Lc/G;->n()Lc/v;
 
     move-result-object p0
 
-    invoke-static {p0}, Lb/a/c/f;->a(Lb/v;)J
+    invoke-static {p0}, Lc/a/c/f;->a(Lc/v;)J
 
     move-result-wide v0
 
     return-wide v0
 .end method
 
-.method public static a(Lb/v;)J
+.method public static a(Lc/v;)J
     .locals 2
 
     const-string v0, "Content-Length"
 
-    invoke-virtual {p0, v0}, Lb/v;->a(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p0, v0}, Lc/v;->a(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
 
-    invoke-static {p0}, Lb/a/c/f;->a(Ljava/lang/String;)J
+    invoke-static {p0}, Lc/a/c/f;->a(Ljava/lang/String;)J
 
     move-result-wide v0
 
@@ -145,17 +145,17 @@
     return-wide v0
 .end method
 
-.method public static a(Lb/p;Lb/w;Lb/v;)V
+.method public static a(Lc/p;Lc/w;Lc/v;)V
     .locals 1
 
-    sget-object v0, Lb/p;->a:Lb/p;
+    sget-object v0, Lc/p;->a:Lc/p;
 
     if-ne p0, v0, :cond_0
 
     return-void
 
     :cond_0
-    invoke-static {p1, p2}, Lb/n;->a(Lb/w;Lb/v;)Ljava/util/List;
+    invoke-static {p1, p2}, Lc/n;->a(Lc/w;Lc/v;)Ljava/util/List;
 
     move-result-object p2
 
@@ -168,7 +168,7 @@
     return-void
 
     :cond_1
-    invoke-interface {p0, p1, p2}, Lb/p;->a(Lb/w;Ljava/util/List;)V
+    invoke-interface {p0, p1, p2}, Lc/p;->a(Lc/w;Ljava/util/List;)V
 
     return-void
 .end method
@@ -207,14 +207,14 @@
     return p1
 .end method
 
-.method public static b(Lb/G;)Z
+.method public static b(Lc/G;)Z
     .locals 8
 
-    invoke-virtual {p0}, Lb/G;->r()Lb/D;
+    invoke-virtual {p0}, Lc/G;->r()Lc/D;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lb/D;->e()Ljava/lang/String;
+    invoke-virtual {v0}, Lc/D;->e()Ljava/lang/String;
 
     move-result-object v0
 
@@ -231,7 +231,7 @@
     return v1
 
     :cond_0
-    invoke-virtual {p0}, Lb/G;->l()I
+    invoke-virtual {p0}, Lc/G;->l()I
 
     move-result v0
 
@@ -257,7 +257,7 @@
     return v3
 
     :cond_2
-    invoke-static {p0}, Lb/a/c/f;->a(Lb/G;)J
+    invoke-static {p0}, Lc/a/c/f;->a(Lc/G;)J
 
     move-result-wide v4
 
@@ -269,7 +269,7 @@
 
     const-string v0, "Transfer-Encoding"
 
-    invoke-virtual {p0, v0}, Lb/G;->b(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p0, v0}, Lc/G;->b(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
 

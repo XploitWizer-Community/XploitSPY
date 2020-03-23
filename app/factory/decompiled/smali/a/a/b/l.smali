@@ -1,11 +1,11 @@
-.class La/a/b/l;
+.class Lb/a/b/l;
 .super Ljava/util/TimerTask;
 .source ""
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = La/a/b/w;->o()V
+    value = Lb/a/b/w;->o()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,18 +15,18 @@
 
 
 # instance fields
-.field final synthetic a:La/a/b/w;
+.field final synthetic a:Lb/a/b/w;
 
-.field final synthetic b:La/a/b/w;
+.field final synthetic b:Lb/a/b/w;
 
 
 # direct methods
-.method constructor <init>(La/a/b/w;La/a/b/w;)V
+.method constructor <init>(Lb/a/b/w;Lb/a/b/w;)V
     .locals 0
 
-    iput-object p1, p0, La/a/b/l;->b:La/a/b/w;
+    iput-object p1, p0, Lb/a/b/l;->b:Lb/a/b/w;
 
-    iput-object p2, p0, La/a/b/l;->a:La/a/b/w;
+    iput-object p2, p0, Lb/a/b/l;->a:Lb/a/b/w;
 
     invoke-direct {p0}, Ljava/util/TimerTask;-><init>()V
 
@@ -38,11 +38,11 @@
 .method public run()V
     .locals 1
 
-    new-instance v0, La/a/b/k;
+    new-instance v0, Lb/a/b/k;
 
-    invoke-direct {v0, p0}, La/a/b/k;-><init>(La/a/b/l;)V
+    invoke-direct {v0, p0}, Lb/a/b/k;-><init>(Lb/a/b/l;)V
 
-    invoke-static {v0}, La/a/i/c;->a(Ljava/lang/Runnable;)V
+    invoke-static {v0}, Lb/a/i/c;->a(Ljava/lang/Runnable;)V
 
     return-void
 .end method

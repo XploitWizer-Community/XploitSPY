@@ -1,4 +1,4 @@
-.class public final Lb/a/e/z;
+.class public final Lc/a/e/z;
 .super Ljava/lang/Object;
 .source ""
 
@@ -19,7 +19,7 @@
 
     new-array v0, v0, [I
 
-    iput-object v0, p0, Lb/a/e/z;->b:[I
+    iput-object v0, p0, Lc/a/e/z;->b:[I
 
     return-void
 .end method
@@ -29,17 +29,17 @@
 .method a(I)I
     .locals 1
 
-    iget-object v0, p0, Lb/a/e/z;->b:[I
+    iget-object v0, p0, Lc/a/e/z;->b:[I
 
     aget p1, v0, p1
 
     return p1
 .end method
 
-.method a(II)Lb/a/e/z;
+.method a(II)Lc/a/e/z;
     .locals 3
 
-    iget-object v0, p0, Lb/a/e/z;->b:[I
+    iget-object v0, p0, Lc/a/e/z;->b:[I
 
     array-length v1, v0
 
@@ -52,11 +52,11 @@
 
     shl-int/2addr v1, p1
 
-    iget v2, p0, Lb/a/e/z;->a:I
+    iget v2, p0, Lc/a/e/z;->a:I
 
     or-int/2addr v1, v2
 
-    iput v1, p0, Lb/a/e/z;->a:I
+    iput v1, p0, Lc/a/e/z;->a:I
 
     aput p2, v0, p1
 
@@ -68,16 +68,16 @@
 
     const/4 v0, 0x0
 
-    iput v0, p0, Lb/a/e/z;->a:I
+    iput v0, p0, Lc/a/e/z;->a:I
 
-    iget-object v1, p0, Lb/a/e/z;->b:[I
+    iget-object v1, p0, Lc/a/e/z;->b:[I
 
     invoke-static {v1, v0}, Ljava/util/Arrays;->fill([II)V
 
     return-void
 .end method
 
-.method a(Lb/a/e/z;)V
+.method a(Lc/a/e/z;)V
     .locals 2
 
     const/4 v0, 0x0
@@ -87,7 +87,7 @@
 
     if-ge v0, v1, :cond_1
 
-    invoke-virtual {p1, v0}, Lb/a/e/z;->d(I)Z
+    invoke-virtual {p1, v0}, Lc/a/e/z;->d(I)Z
 
     move-result v1
 
@@ -96,11 +96,11 @@
     goto :goto_1
 
     :cond_0
-    invoke-virtual {p1, v0}, Lb/a/e/z;->a(I)I
+    invoke-virtual {p1, v0}, Lc/a/e/z;->a(I)I
 
     move-result v1
 
-    invoke-virtual {p0, v0, v1}, Lb/a/e/z;->a(II)Lb/a/e/z;
+    invoke-virtual {p0, v0, v1}, Lc/a/e/z;->a(II)Lc/a/e/z;
 
     :goto_1
     add-int/lit8 v0, v0, 0x1
@@ -114,13 +114,13 @@
 .method b()I
     .locals 2
 
-    iget v0, p0, Lb/a/e/z;->a:I
+    iget v0, p0, Lc/a/e/z;->a:I
 
     and-int/lit8 v0, v0, 0x2
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lb/a/e/z;->b:[I
+    iget-object v0, p0, Lc/a/e/z;->b:[I
 
     const/4 v1, 0x1
 
@@ -138,13 +138,13 @@
 .method b(I)I
     .locals 1
 
-    iget v0, p0, Lb/a/e/z;->a:I
+    iget v0, p0, Lc/a/e/z;->a:I
 
     and-int/lit8 v0, v0, 0x10
 
     if-eqz v0, :cond_0
 
-    iget-object p1, p0, Lb/a/e/z;->b:[I
+    iget-object p1, p0, Lc/a/e/z;->b:[I
 
     const/4 v0, 0x4
 
@@ -157,13 +157,13 @@
 .method c()I
     .locals 2
 
-    iget v0, p0, Lb/a/e/z;->a:I
+    iget v0, p0, Lc/a/e/z;->a:I
 
     and-int/lit16 v0, v0, 0x80
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lb/a/e/z;->b:[I
+    iget-object v0, p0, Lc/a/e/z;->b:[I
 
     const/4 v1, 0x7
 
@@ -181,13 +181,13 @@
 .method c(I)I
     .locals 1
 
-    iget v0, p0, Lb/a/e/z;->a:I
+    iget v0, p0, Lc/a/e/z;->a:I
 
     and-int/lit8 v0, v0, 0x20
 
     if-eqz v0, :cond_0
 
-    iget-object p1, p0, Lb/a/e/z;->b:[I
+    iget-object p1, p0, Lc/a/e/z;->b:[I
 
     const/4 v0, 0x5
 
@@ -200,7 +200,7 @@
 .method d()I
     .locals 1
 
-    iget v0, p0, Lb/a/e/z;->a:I
+    iget v0, p0, Lc/a/e/z;->a:I
 
     invoke-static {v0}, Ljava/lang/Integer;->bitCount(I)I
 
@@ -216,7 +216,7 @@
 
     shl-int p1, v0, p1
 
-    iget v1, p0, Lb/a/e/z;->a:I
+    iget v1, p0, Lc/a/e/z;->a:I
 
     and-int/2addr p1, v1
 

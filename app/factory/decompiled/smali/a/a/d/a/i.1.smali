@@ -1,4 +1,4 @@
-.class La/a/d/a/i;
+.class Lb/a/d/a/i;
 .super Ljava/lang/Object;
 .source ""
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = La/a/d/a/j;->run()V
+    value = Lb/a/d/a/j;->run()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field final synthetic a:La/a/d/a/j;
+.field final synthetic a:Lb/a/d/a/j;
 
 
 # direct methods
-.method constructor <init>(La/a/d/a/j;)V
+.method constructor <init>(Lb/a/d/a/j;)V
     .locals 0
 
-    iput-object p1, p0, La/a/d/a/i;->a:La/a/d/a/j;
+    iput-object p1, p0, Lb/a/d/a/i;->a:Lb/a/d/a/j;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -37,7 +37,7 @@
 .method public run()V
     .locals 4
 
-    invoke-static {}, La/a/d/a/G;->b()Ljava/util/logging/Logger;
+    invoke-static {}, Lb/a/d/a/G;->b()Ljava/util/logging/Logger;
 
     move-result-object v0
 
@@ -45,11 +45,11 @@
 
     new-array v1, v1, [Ljava/lang/Object;
 
-    iget-object v2, p0, La/a/d/a/i;->a:La/a/d/a/j;
+    iget-object v2, p0, Lb/a/d/a/i;->a:Lb/a/d/a/j;
 
-    iget-object v2, v2, La/a/d/a/j;->a:La/a/d/a/G;
+    iget-object v2, v2, Lb/a/d/a/j;->a:Lb/a/d/a/G;
 
-    invoke-static {v2}, La/a/d/a/G;->d(La/a/d/a/G;)J
+    invoke-static {v2}, Lb/a/d/a/G;->d(Lb/a/d/a/G;)J
 
     move-result-wide v2
 
@@ -69,21 +69,21 @@
 
     invoke-virtual {v0, v1}, Ljava/util/logging/Logger;->fine(Ljava/lang/String;)V
 
-    iget-object v0, p0, La/a/d/a/i;->a:La/a/d/a/j;
+    iget-object v0, p0, Lb/a/d/a/i;->a:Lb/a/d/a/j;
 
-    iget-object v0, v0, La/a/d/a/j;->a:La/a/d/a/G;
+    iget-object v0, v0, Lb/a/d/a/j;->a:Lb/a/d/a/G;
 
-    invoke-static {v0}, La/a/d/a/G;->e(La/a/d/a/G;)V
+    invoke-static {v0}, Lb/a/d/a/G;->e(Lb/a/d/a/G;)V
 
-    iget-object v0, p0, La/a/d/a/i;->a:La/a/d/a/j;
+    iget-object v0, p0, Lb/a/d/a/i;->a:Lb/a/d/a/j;
 
-    iget-object v0, v0, La/a/d/a/j;->a:La/a/d/a/G;
+    iget-object v0, v0, Lb/a/d/a/j;->a:Lb/a/d/a/G;
 
-    invoke-static {v0}, La/a/d/a/G;->d(La/a/d/a/G;)J
+    invoke-static {v0}, Lb/a/d/a/G;->d(Lb/a/d/a/G;)J
 
     move-result-wide v1
 
-    invoke-static {v0, v1, v2}, La/a/d/a/G;->a(La/a/d/a/G;J)V
+    invoke-static {v0, v1, v2}, Lb/a/d/a/G;->a(Lb/a/d/a/G;J)V
 
     return-void
 .end method

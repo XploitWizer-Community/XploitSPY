@@ -1,14 +1,14 @@
-.class La/a/d/a/a/l;
+.class Lb/a/d/a/a/l;
 .super Ljava/lang/Object;
 .source ""
 
 # interfaces
-.implements La/a/c/a$a;
+.implements Lb/a/c/a$a;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = La/a/d/a/a/v;->a(La/a/d/a/a/v$a$a;)La/a/d/a/a/v$a;
+    value = Lb/a/d/a/a/v;->a(Lb/a/d/a/a/v$a$a;)Lb/a/d/a/a/v$a;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,18 +18,18 @@
 
 
 # instance fields
-.field final synthetic a:La/a/d/a/a/v;
+.field final synthetic a:Lb/a/d/a/a/v;
 
-.field final synthetic b:La/a/d/a/a/v;
+.field final synthetic b:Lb/a/d/a/a/v;
 
 
 # direct methods
-.method constructor <init>(La/a/d/a/a/v;La/a/d/a/a/v;)V
+.method constructor <init>(Lb/a/d/a/a/v;Lb/a/d/a/a/v;)V
     .locals 0
 
-    iput-object p1, p0, La/a/d/a/a/l;->b:La/a/d/a/a/v;
+    iput-object p1, p0, Lb/a/d/a/a/l;->b:Lb/a/d/a/a/v;
 
-    iput-object p2, p0, La/a/d/a/a/l;->a:La/a/d/a/a/v;
+    iput-object p2, p0, Lb/a/d/a/a/l;->a:Lb/a/d/a/a/v;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -41,7 +41,7 @@
 .method public varargs a([Ljava/lang/Object;)V
     .locals 3
 
-    iget-object v0, p0, La/a/d/a/a/l;->a:La/a/d/a/a/v;
+    iget-object v0, p0, Lb/a/d/a/a/l;->a:Lb/a/d/a/a/v;
 
     const/4 v1, 0x1
 
@@ -55,7 +55,7 @@
 
     const-string p1, "requestHeaders"
 
-    invoke-virtual {v0, p1, v1}, La/a/c/a;->a(Ljava/lang/String;[Ljava/lang/Object;)La/a/c/a;
+    invoke-virtual {v0, p1, v1}, Lb/a/c/a;->a(Ljava/lang/String;[Ljava/lang/Object;)Lb/a/c/a;
 
     return-void
 .end method
