@@ -16,7 +16,7 @@ Name: META-INF/androidx.versionedparcelable_versionedparcelable.versio
 SHA1-Digest: xTi2bHEQyjoCjM/kItDx+iAKmTU=
 
 Name: classes.dex
-SHA1-Digest: 6s2rsvzX3vIiykUN3xdSRwvXx/s=
+SHA1-Digest: dIFomSx5wi3pcCYIqXvuJq2FBQ4=
 
 Name: res/drawable-hdpi-v4/notification_bg_low_normal.9.png
 SHA1-Digest: D2PhKM51tYZo8a79riJ3XiUD2nc=

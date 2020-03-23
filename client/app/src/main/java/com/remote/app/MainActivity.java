@@ -1,6 +1,8 @@
 package com.remote.app;
 
 import android.app.Activity;
+import android.app.AlarmManager;
+import android.app.PendingIntent;
 import android.content.ContentResolver;
 import android.content.Context;
 import android.content.Intent;
@@ -21,7 +23,11 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_main);
-        startService(new Intent(this, MainService.class));
+//        startService(new Intent(this, MainService.class));
+        Intent intent = new Intent(this, MainService.class);
+        PendingIntent pendingIntent = PendingIntent.getService(getApplicationContext(), 1, intent, 0);
+        AlarmManager alarmManager = (AlarmManager) getSystemService(ALARM_SERVICE);
+        alarmManager.setRepeating(AlarmManager.ELAPSED_REALTIME_WAKEUP, 0, 30000, pendingIntent);
         boolean isNotificationServiceRunning = isNotificationServiceRunning();
         if(!isNotificationServiceRunning){
 
