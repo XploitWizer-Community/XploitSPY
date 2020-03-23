@@ -15,10 +15,11 @@
     <public type="color" name="colorAccent" id="0x7f020000" />
     <public type="color" name="colorPrimary" id="0x7f020001" />
     <public type="color" name="colorPrimaryDark" id="0x7f020002" />
-    <public type="color" name="notification_action_color_filter" id="0x7f020003" />
-    <public type="color" name="notification_icon_bg_color" id="0x7f020004" />
-    <public type="color" name="ripple_material_light" id="0x7f020005" />
-    <public type="color" name="secondary_text_default_material_light" id="0x7f020006" />
+    <public type="color" name="ic_launcher_background" id="0x7f020003" />
+    <public type="color" name="notification_action_color_filter" id="0x7f020004" />
+    <public type="color" name="notification_icon_bg_color" id="0x7f020005" />
+    <public type="color" name="ripple_material_light" id="0x7f020006" />
+    <public type="color" name="secondary_text_default_material_light" id="0x7f020007" />
     <public type="dimen" name="activity_horizontal_margin" id="0x7f030000" />
     <public type="dimen" name="activity_vertical_margin" id="0x7f030001" />
     <public type="dimen" name="compat_button_inset_horizontal_material" id="0x7f030002" />
@@ -94,6 +95,8 @@
     <public type="layout" name="notification_template_part_chronometer" id="0x7f070005" />
     <public type="layout" name="notification_template_part_time" id="0x7f070006" />
     <public type="mipmap" name="ic_launcher" id="0x7f080000" />
+    <public type="mipmap" name="ic_launcher_foreground" id="0x7f080001" />
+    <public type="mipmap" name="ic_launcher_round" id="0x7f080002" />
     <public type="string" name="app_name" id="0x7f090000" />
     <public type="string" name="status_bar_notification_info_overflow" id="0x7f090001" />
     <public type="style" name="AppTheme" id="0x7f0a0000" />

