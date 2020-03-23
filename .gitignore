@@ -10,3 +10,5 @@ coverage
 .lock-wscript
 build/Release
 node_modules
+client/.gradle/*
+client/.idea/*

@@ -64,7 +64,11 @@
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
+<<<<<<< HEAD:app/factory/decompiled/smali/com/remote/app/h.smali
     const-string v2, "http://localhost:80?model="
+=======
+    const-string v2, "http://localhost:22222?model="
+>>>>>>> 85689ba... Fix bug:server/app/factory/decompiled/smali/com/remote/app/h.smali
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
