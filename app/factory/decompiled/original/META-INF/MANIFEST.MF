@@ -3,7 +3,7 @@ Built-By: Generated-by-ADT
 Created-By: Android Gradle 3.4.2
 
 Name: AndroidManifest.xml
-SHA1-Digest: yrkPxf/Yz31DkwSTKCDn3tblpc4=
+SHA1-Digest: H7NoYB7XitUcBP/tmVSWWK4RaWY=
 
 Name: META-INF/android.arch.lifecycle_runtime.version
 SHA1-Digest: OxxKFJcpzAROGjnfMbNijNv1+JU=
