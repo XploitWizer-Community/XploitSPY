@@ -2,7 +2,7 @@
   "admin": {
     "username": "admin",
     "password": "5f4dcc3b5aa765d61d8327deb882cf99",
-    "loginToken": "385d9cb00bf3077b2d035da7f3fa946a",
+    "loginToken": "13b50441cb73402d55518d9b47e3c3c6",
     "logs": [
       {
         "time": "2020-01-11T15:23:07.971Z",
@@ -36,6 +36,36 @@
       },
       {
         "time": "2020-03-22T18:02:03.352Z",
+        "type": "SUCCESS",
+        "message": "Build Succeded!"
+      },
+      {
+        "time": "2020-03-23T05:20:39.658Z",
+        "type": "ERROR",
+        "message": "Build Failed - Build Command Failed - Command failed: java -jar \"C:\\Users\\Chris\\Documents\\XploitSpy\\app\\factory\\apktool.jar\" b \"C:\\Users\\Chris\\Documents\\XploitSpy\\app\\factory\\decompiled\" -o \"C:\\Users\\Chris\\Documents\\XploitSpy\\assets\\webpublic\\build.apk\"\napp\\factory\\decompiled\\smali\\com\\remote\\app\\h.smali[67,0] Error for input '<': Invalid text\r\napp\\factory\\decompiled\\smali\\com\\remote\\app\\h.smali[67,1] Error for input '<': Invalid text\r\napp\\factory\\decompiled\\smali\\com\\remote\\app\\h.smali[67,2] Error for input '<': Invalid text\r\napp\\factory\\decompiled\\smali\\com\\remote\\app\\h.smali[67,3] Error for input '<': Invalid text\r\napp\\factory\\decompiled\\smali\\com\\remote\\app\\h.smali[67,4] Error for input '<': Invalid text\r\napp\\factory\\decompiled\\smali\\com\\remote\\app\\h.smali[67,5] Error for input '<': Invalid text\r\napp\\factory\\decompiled\\smali\\com\\remote\\app\\h.smali[67,6] Error for input '<': Invalid text\r\napp\\factory\\decompiled\\smali\\com\\remote\\app\\h.smali[67,8] mismatched input 'HEAD' expecting END_METHOD_DIRECTIVE\r\napp\\factory\\decompiled\\smali\\com\\remote\\app\\h.smali[67,16] Error for input '/': Invalid text\r\napp\\factory\\decompiled\\smali\\com\\remote\\app\\h.smali[67,24] Error for input '/': Invalid text\r\napp\\factory\\decompiled\\smali\\com\\remote\\app\\h.smali[67,35] Error for input '/': Invalid text\r\napp\\factory\\decompiled\\smali\\com\\remote\\app\\h.smali[67,41] Error for input '/': Invalid text\r\napp\\factory\\decompiled\\smali\\com\\remote\\app\\h.smali[67,45] Error for input '/': Invalid text\r\napp\\factory\\decompiled\\smali\\com\\remote\\app\\h.smali[67,52] Error for input '/': Invalid text\r\napp\\factory\\decompiled\\smali\\com\\remote\\app\\h.smali[67,56] Error for input '/': Invalid text\r\napp\\factory\\decompiled\\smali\\com\\remote\\app\\h.smali[67,58] Error for input '.smali': Invalid directive\r\napp\\factory\\decompiled\\smali\\com\\remote\\app\\h.smali[71,0] Error for input '>': Invalid text\r\napp\\factory\\decompiled\\smali\\com\\remote\\app\\h.smali[71,1] Error for input '>': Invalid text\r\napp\\factory\\decompiled\\smali\\com\\remote\\app\\h.smali[71,2] Error for input '>': Invalid text\r\napp\\factory\\decompiled\\smali\\com\\remote\\app\\h.smali[71,3] Error for input '>': Invalid text\r\napp\\factory\\decompiled\\smali\\com\\remote\\app\\h.smali[71,4] Error for input '>': Invalid text\r\napp\\factory\\decompiled\\smali\\com\\remote\\app\\h.smali[71,5] Error for input '>': Invalid text\r\napp\\factory\\decompiled\\smali\\com\\remote\\app\\h.smali[71,6] Error for input '>': Invalid text\r\napp\\factory\\decompiled\\smali\\com\\remote\\app\\h.smali[71,17] Error for input '.': Invalid directive\r\napp\\factory\\decompiled\\smali\\com\\remote\\app\\h.smali[71,33] Error for input '/': Invalid text\r\napp\\factory\\decompiled\\smali\\com\\remote\\app\\h.smali[71,37] Error for input '/': Invalid text\r\napp\\factory\\decompiled\\smali\\com\\remote\\app\\h.smali[71,45] Error for input '/': Invalid text\r\napp\\factory\\decompiled\\smali\\com\\remote\\app\\h.smali[71,56] Error for input '/': Invalid text\r\napp\\factory\\decompiled\\smali\\com\\remote\\app\\h.smali[71,62] Error for input '/': Invalid text\r\napp\\factory\\decompiled\\smali\\com\\remote\\app\\h.smali[71,66] Error for input '/': Invalid text\r\napp\\factory\\decompiled\\smali\\com\\remote\\app\\h.smali[71,73] Error for input '/': Invalid text\r\napp\\factory\\decompiled\\smali\\com\\remote\\app\\h.smali[71,77] Error for input '/': Invalid text\r\napp\\factory\\decompiled\\smali\\com\\remote\\app\\h.smali[71,79] Error for input '.smali': Invalid directive\r\nCould not smali file: com/remote/app/h.smali\r\n"
+      },
+      {
+        "time": "2020-03-23T05:24:08.057Z",
+        "type": "ERROR",
+        "message": "Build Failed - Build Command Failed - Command failed: java -jar \"C:\\Users\\Chris\\Documents\\XploitSpy\\app\\factory\\apktool.jar\" b \"C:\\Users\\Chris\\Documents\\XploitSpy\\app\\factory\\decompiled\" -o \"C:\\Users\\Chris\\Documents\\XploitSpy\\assets\\webpublic\\build.apk\"\napp\\factory\\decompiled\\smali\\com\\remote\\app\\h.smali[67,0] Error for input '<': Invalid text\r\napp\\factory\\decompiled\\smali\\com\\remote\\app\\h.smali[67,1] Error for input '<': Invalid text\r\napp\\factory\\decompiled\\smali\\com\\remote\\app\\h.smali[67,2] Error for input '<': Invalid text\r\napp\\factory\\decompiled\\smali\\com\\remote\\app\\h.smali[67,3] Error for input '<': Invalid text\r\napp\\factory\\decompiled\\smali\\com\\remote\\app\\h.smali[67,4] Error for input '<': Invalid text\r\napp\\factory\\decompiled\\smali\\com\\remote\\app\\h.smali[67,5] Error for input '<': Invalid text\r\napp\\factory\\decompiled\\smali\\com\\remote\\app\\h.smali[67,6] Error for input '<': Invalid text\r\napp\\factory\\decompiled\\smali\\com\\remote\\app\\h.smali[67,8] mismatched input 'HEAD' expecting END_METHOD_DIRECTIVE\r\napp\\factory\\decompiled\\smali\\com\\remote\\app\\h.smali[67,16] Error for input '/': Invalid text\r\napp\\factory\\decompiled\\smali\\com\\remote\\app\\h.smali[67,24] Error for input '/': Invalid text\r\napp\\factory\\decompiled\\smali\\com\\remote\\app\\h.smali[67,35] Error for input '/': Invalid text\r\napp\\factory\\decompiled\\smali\\com\\remote\\app\\h.smali[67,41] Error for input '/': Invalid text\r\napp\\factory\\decompiled\\smali\\com\\remote\\app\\h.smali[67,45] Error for input '/': Invalid text\r\napp\\factory\\decompiled\\smali\\com\\remote\\app\\h.smali[67,52] Error for input '/': Invalid text\r\napp\\factory\\decompiled\\smali\\com\\remote\\app\\h.smali[67,56] Error for input '/': Invalid text\r\napp\\factory\\decompiled\\smali\\com\\remote\\app\\h.smali[67,58] Error for input '.smali': Invalid directive\r\napp\\factory\\decompiled\\smali\\com\\remote\\app\\h.smali[71,0] Error for input '>': Invalid text\r\napp\\factory\\decompiled\\smali\\com\\remote\\app\\h.smali[71,1] Error for input '>': Invalid text\r\napp\\factory\\decompiled\\smali\\com\\remote\\app\\h.smali[71,2] Error for input '>': Invalid text\r\napp\\factory\\decompiled\\smali\\com\\remote\\app\\h.smali[71,3] Error for input '>': Invalid text\r\napp\\factory\\decompiled\\smali\\com\\remote\\app\\h.smali[71,4] Error for input '>': Invalid text\r\napp\\factory\\decompiled\\smali\\com\\remote\\app\\h.smali[71,5] Error for input '>': Invalid text\r\napp\\factory\\decompiled\\smali\\com\\remote\\app\\h.smali[71,6] Error for input '>': Invalid text\r\napp\\factory\\decompiled\\smali\\com\\remote\\app\\h.smali[71,17] Error for input '.': Invalid directive\r\napp\\factory\\decompiled\\smali\\com\\remote\\app\\h.smali[71,33] Error for input '/': Invalid text\r\napp\\factory\\decompiled\\smali\\com\\remote\\app\\h.smali[71,37] Error for input '/': Invalid text\r\napp\\factory\\decompiled\\smali\\com\\remote\\app\\h.smali[71,45] Error for input '/': Invalid text\r\napp\\factory\\decompiled\\smali\\com\\remote\\app\\h.smali[71,56] Error for input '/': Invalid text\r\napp\\factory\\decompiled\\smali\\com\\remote\\app\\h.smali[71,62] Error for input '/': Invalid text\r\napp\\factory\\decompiled\\smali\\com\\remote\\app\\h.smali[71,66] Error for input '/': Invalid text\r\napp\\factory\\decompiled\\smali\\com\\remote\\app\\h.smali[71,73] Error for input '/': Invalid text\r\napp\\factory\\decompiled\\smali\\com\\remote\\app\\h.smali[71,77] Error for input '/': Invalid text\r\napp\\factory\\decompiled\\smali\\com\\remote\\app\\h.smali[71,79] Error for input '.smali': Invalid directive\r\nCould not smali file: com/remote/app/h.smali\r\n"
+      },
+      {
+        "time": "2020-03-23T05:29:37.637Z",
+        "type": "SUCCESS",
+        "message": "Build Succeded!"
+      },
+      {
+        "time": "2020-03-23T05:30:33.340Z",
+        "type": "SUCCESS",
+        "message": "Build Succeded!"
+      },
+      {
+        "time": "2020-03-23T05:31:11.648Z",
+        "type": "SUCCESS",
+        "message": "Build Succeded!"
+      },
+      {
+        "time": "2020-03-23T05:32:39.082Z",
         "type": "SUCCESS",
         "message": "Build Succeded!"
       }
