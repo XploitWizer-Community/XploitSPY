@@ -1,109 +1,77 @@
-.class public abstract Lc/i;
+.class public abstract Lc/I;
 .super Ljava/lang/Object;
 .source ""
 
 # interfaces
-.implements Lc/w;
-
-
-# instance fields
-.field private final a:Lc/w;
+.implements Ljava/io/Closeable;
 
 
 # direct methods
-.method public constructor <init>(Lc/w;)V
-    .locals 1
+.method public constructor <init>()V
+    .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    if-eqz p1, :cond_0
-
-    iput-object p1, p0, Lc/i;->a:Lc/w;
-
     return-void
+.end method
+
+.method public static a(Lc/y;JLd/g;)Lc/I;
+    .locals 1
+
+    if-eqz p3, :cond_0
+
+    new-instance v0, Lc/H;
+
+    invoke-direct {v0, p0, p1, p2, p3}, Lc/H;-><init>(Lc/y;JLd/g;)V
+
+    return-object v0
 
     :cond_0
-    new-instance p1, Ljava/lang/IllegalArgumentException;
+    new-instance p0, Ljava/lang/NullPointerException;
 
-    const-string v0, "delegate == null"
+    const-string p1, "source == null"
 
-    invoke-direct {p1, v0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
 
-    throw p1
+    throw p0
+.end method
+
+.method public static a(Lc/y;[B)Lc/I;
+    .locals 3
+
+    new-instance v0, Ld/e;
+
+    invoke-direct {v0}, Ld/e;-><init>()V
+
+    invoke-virtual {v0, p1}, Ld/e;->write([B)Ld/e;
+
+    array-length p1, p1
+
+    int-to-long v1, p1
+
+    invoke-static {p0, v1, v2, v0}, Lc/I;->a(Lc/y;JLd/g;)Lc/I;
+
+    move-result-object p0
+
+    return-object p0
 .end method
 
 
 # virtual methods
-.method public b(Lc/e;J)J
-    .locals 1
-
-    iget-object v0, p0, Lc/i;->a:Lc/w;
-
-    invoke-interface {v0, p1, p2, p3}, Lc/w;->b(Lc/e;J)J
-
-    move-result-wide p1
-
-    return-wide p1
-.end method
-
-.method public b()Lc/y;
-    .locals 1
-
-    iget-object v0, p0, Lc/i;->a:Lc/w;
-
-    invoke-interface {v0}, Lc/w;->b()Lc/y;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
 .method public close()V
     .locals 1
 
-    iget-object v0, p0, Lc/i;->a:Lc/w;
+    invoke-virtual {p0}, Lc/I;->k()Ld/g;
 
-    invoke-interface {v0}, Lc/w;->close()V
+    move-result-object v0
+
+    invoke-static {v0}, Lc/a/d;->a(Ljava/io/Closeable;)V
 
     return-void
 .end method
 
-.method public toString()Ljava/lang/String;
-    .locals 2
+.method public abstract j()J
+.end method
 
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string v1, "("
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-object v1, p0, Lc/i;->a:Lc/w;
-
-    invoke-virtual {v1}, Ljava/lang/Object;->toString()Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string v1, ")"
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    return-object v0
+.method public abstract k()Ld/g;
 .end method

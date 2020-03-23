@@ -1,653 +1,332 @@
-.class public final Lc/k;
-.super Ljava/lang/Object;
+.class public final enum Lc/K;
+.super Ljava/lang/Enum;
 .source ""
 
-# interfaces
-.implements Lc/w;
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Enum<",
+        "Lc/K;",
+        ">;"
+    }
+.end annotation
+
+
+# static fields
+.field public static final enum a:Lc/K;
+
+.field public static final enum b:Lc/K;
+
+.field public static final enum c:Lc/K;
+
+.field public static final enum d:Lc/K;
+
+.field public static final enum e:Lc/K;
+
+.field private static final synthetic f:[Lc/K;
 
 
 # instance fields
-.field private a:I
-
-.field private final b:Lc/g;
-
-.field private final c:Ljava/util/zip/Inflater;
-
-.field private final d:Lc/l;
-
-.field private final e:Ljava/util/zip/CRC32;
+.field final g:Ljava/lang/String;
 
 
 # direct methods
-.method public constructor <init>(Lc/w;)V
-    .locals 2
+.method static constructor <clinit>()V
+    .locals 8
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    new-instance v0, Lc/K;
 
-    const/4 v0, 0x0
+    const/4 v1, 0x0
 
-    iput v0, p0, Lc/k;->a:I
+    const-string v2, "TLS_1_3"
 
-    new-instance v0, Ljava/util/zip/CRC32;
+    const-string v3, "TLSv1.3"
 
-    invoke-direct {v0}, Ljava/util/zip/CRC32;-><init>()V
+    invoke-direct {v0, v2, v1, v3}, Lc/K;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    iput-object v0, p0, Lc/k;->e:Ljava/util/zip/CRC32;
+    sput-object v0, Lc/K;->a:Lc/K;
 
-    if-eqz p1, :cond_0
+    new-instance v0, Lc/K;
 
-    new-instance v0, Ljava/util/zip/Inflater;
+    const/4 v2, 0x1
 
-    const/4 v1, 0x1
+    const-string v3, "TLS_1_2"
 
-    invoke-direct {v0, v1}, Ljava/util/zip/Inflater;-><init>(Z)V
+    const-string v4, "TLSv1.2"
 
-    iput-object v0, p0, Lc/k;->c:Ljava/util/zip/Inflater;
+    invoke-direct {v0, v3, v2, v4}, Lc/K;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    invoke-static {p1}, Lc/p;->a(Lc/w;)Lc/g;
+    sput-object v0, Lc/K;->b:Lc/K;
 
-    move-result-object p1
+    new-instance v0, Lc/K;
 
-    iput-object p1, p0, Lc/k;->b:Lc/g;
+    const/4 v3, 0x2
 
-    new-instance p1, Lc/l;
+    const-string v4, "TLS_1_1"
 
-    iget-object v0, p0, Lc/k;->b:Lc/g;
+    const-string v5, "TLSv1.1"
 
-    iget-object v1, p0, Lc/k;->c:Ljava/util/zip/Inflater;
+    invoke-direct {v0, v4, v3, v5}, Lc/K;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    invoke-direct {p1, v0, v1}, Lc/l;-><init>(Lc/g;Ljava/util/zip/Inflater;)V
+    sput-object v0, Lc/K;->c:Lc/K;
 
-    iput-object p1, p0, Lc/k;->d:Lc/l;
+    new-instance v0, Lc/K;
 
-    return-void
+    const/4 v4, 0x3
 
-    :cond_0
-    new-instance p1, Ljava/lang/IllegalArgumentException;
+    const-string v5, "TLS_1_0"
 
-    const-string v0, "source == null"
+    const-string v6, "TLSv1"
 
-    invoke-direct {p1, v0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0, v5, v4, v6}, Lc/K;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    throw p1
-.end method
+    sput-object v0, Lc/K;->d:Lc/K;
 
-.method private a(Lc/e;JJ)V
-    .locals 5
+    new-instance v0, Lc/K;
 
-    iget-object p1, p1, Lc/e;->b:Lc/s;
+    const/4 v5, 0x4
 
-    :goto_0
-    iget v0, p1, Lc/s;->c:I
+    const-string v6, "SSL_3_0"
 
-    iget v1, p1, Lc/s;->b:I
+    const-string v7, "SSLv3"
 
-    sub-int v2, v0, v1
+    invoke-direct {v0, v6, v5, v7}, Lc/K;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    int-to-long v2, v2
+    sput-object v0, Lc/K;->e:Lc/K;
 
-    cmp-long v4, p2, v2
+    const/4 v0, 0x5
 
-    if-ltz v4, :cond_0
+    new-array v0, v0, [Lc/K;
 
-    sub-int/2addr v0, v1
+    sget-object v6, Lc/K;->a:Lc/K;
 
-    int-to-long v0, v0
+    aput-object v6, v0, v1
 
-    sub-long/2addr p2, v0
+    sget-object v1, Lc/K;->b:Lc/K;
 
-    iget-object p1, p1, Lc/s;->f:Lc/s;
+    aput-object v1, v0, v2
 
-    goto :goto_0
+    sget-object v1, Lc/K;->c:Lc/K;
 
-    :cond_0
-    const-wide/16 v0, 0x0
+    aput-object v1, v0, v3
 
-    :goto_1
-    cmp-long v2, p4, v0
+    sget-object v1, Lc/K;->d:Lc/K;
 
-    if-lez v2, :cond_1
+    aput-object v1, v0, v4
 
-    iget v2, p1, Lc/s;->b:I
+    sget-object v1, Lc/K;->e:Lc/K;
 
-    int-to-long v2, v2
+    aput-object v1, v0, v5
 
-    add-long/2addr v2, p2
-
-    long-to-int p2, v2
-
-    iget p3, p1, Lc/s;->c:I
-
-    sub-int/2addr p3, p2
-
-    int-to-long v2, p3
-
-    invoke-static {v2, v3, p4, p5}, Ljava/lang/Math;->min(JJ)J
-
-    move-result-wide v2
-
-    long-to-int p3, v2
-
-    iget-object v2, p0, Lc/k;->e:Ljava/util/zip/CRC32;
-
-    iget-object v3, p1, Lc/s;->a:[B
-
-    invoke-virtual {v2, v3, p2, p3}, Ljava/util/zip/CRC32;->update([BII)V
-
-    int-to-long p2, p3
-
-    sub-long/2addr p4, p2
-
-    iget-object p1, p1, Lc/s;->f:Lc/s;
-
-    move-wide p2, v0
-
-    goto :goto_1
-
-    :cond_1
-    return-void
-.end method
-
-.method private a(Ljava/lang/String;II)V
-    .locals 3
-
-    if-ne p3, p2, :cond_0
-
-    return-void
-
-    :cond_0
-    new-instance v0, Ljava/io/IOException;
-
-    const/4 v1, 0x3
-
-    new-array v1, v1, [Ljava/lang/Object;
-
-    const/4 v2, 0x0
-
-    aput-object p1, v1, v2
-
-    const/4 p1, 0x1
-
-    invoke-static {p3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object p3
-
-    aput-object p3, v1, p1
-
-    const/4 p1, 0x2
-
-    invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object p2
-
-    aput-object p2, v1, p1
-
-    const-string p1, "%s: actual 0x%08x != expected 0x%08x"
-
-    invoke-static {p1, v1}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object p1
-
-    invoke-direct {v0, p1}, Ljava/io/IOException;-><init>(Ljava/lang/String;)V
-
-    throw v0
-.end method
-
-.method private h()V
-    .locals 17
-
-    move-object/from16 v6, p0
-
-    iget-object v0, v6, Lc/k;->b:Lc/g;
-
-    const-wide/16 v1, 0xa
-
-    invoke-interface {v0, v1, v2}, Lc/g;->c(J)V
-
-    iget-object v0, v6, Lc/k;->b:Lc/g;
-
-    invoke-interface {v0}, Lc/g;->a()Lc/e;
-
-    move-result-object v0
-
-    const-wide/16 v1, 0x3
-
-    invoke-virtual {v0, v1, v2}, Lc/e;->e(J)B
-
-    move-result v7
-
-    shr-int/lit8 v0, v7, 0x1
-
-    const/4 v8, 0x1
-
-    and-int/2addr v0, v8
-
-    const/4 v9, 0x0
-
-    if-ne v0, v8, :cond_0
-
-    const/4 v10, 0x1
-
-    goto :goto_0
-
-    :cond_0
-    const/4 v10, 0x0
-
-    :goto_0
-    if-eqz v10, :cond_1
-
-    iget-object v0, v6, Lc/k;->b:Lc/g;
-
-    invoke-interface {v0}, Lc/g;->a()Lc/e;
-
-    move-result-object v1
-
-    const-wide/16 v2, 0x0
-
-    const-wide/16 v4, 0xa
-
-    move-object/from16 v0, p0
-
-    invoke-direct/range {v0 .. v5}, Lc/k;->a(Lc/e;JJ)V
-
-    :cond_1
-    iget-object v0, v6, Lc/k;->b:Lc/g;
-
-    invoke-interface {v0}, Lc/g;->readShort()S
-
-    move-result v0
-
-    const/16 v1, 0x1f8b
-
-    const-string v2, "ID1ID2"
-
-    invoke-direct {v6, v2, v1, v0}, Lc/k;->a(Ljava/lang/String;II)V
-
-    iget-object v0, v6, Lc/k;->b:Lc/g;
-
-    const-wide/16 v1, 0x8
-
-    invoke-interface {v0, v1, v2}, Lc/g;->skip(J)V
-
-    shr-int/lit8 v0, v7, 0x2
-
-    and-int/2addr v0, v8
-
-    if-ne v0, v8, :cond_4
-
-    iget-object v0, v6, Lc/k;->b:Lc/g;
-
-    const-wide/16 v1, 0x2
-
-    invoke-interface {v0, v1, v2}, Lc/g;->c(J)V
-
-    if-eqz v10, :cond_2
-
-    iget-object v0, v6, Lc/k;->b:Lc/g;
-
-    invoke-interface {v0}, Lc/g;->a()Lc/e;
-
-    move-result-object v1
-
-    const-wide/16 v2, 0x0
-
-    const-wide/16 v4, 0x2
-
-    move-object/from16 v0, p0
-
-    invoke-direct/range {v0 .. v5}, Lc/k;->a(Lc/e;JJ)V
-
-    :cond_2
-    iget-object v0, v6, Lc/k;->b:Lc/g;
-
-    invoke-interface {v0}, Lc/g;->a()Lc/e;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Lc/e;->f()S
-
-    move-result v0
-
-    iget-object v1, v6, Lc/k;->b:Lc/g;
-
-    int-to-long v11, v0
-
-    invoke-interface {v1, v11, v12}, Lc/g;->c(J)V
-
-    if-eqz v10, :cond_3
-
-    iget-object v0, v6, Lc/k;->b:Lc/g;
-
-    invoke-interface {v0}, Lc/g;->a()Lc/e;
-
-    move-result-object v1
-
-    const-wide/16 v2, 0x0
-
-    move-object/from16 v0, p0
-
-    move-wide v4, v11
-
-    invoke-direct/range {v0 .. v5}, Lc/k;->a(Lc/e;JJ)V
-
-    :cond_3
-    iget-object v0, v6, Lc/k;->b:Lc/g;
-
-    invoke-interface {v0, v11, v12}, Lc/g;->skip(J)V
-
-    :cond_4
-    shr-int/lit8 v0, v7, 0x3
-
-    and-int/2addr v0, v8
-
-    const-wide/16 v11, -0x1
-
-    const-wide/16 v13, 0x1
-
-    if-ne v0, v8, :cond_7
-
-    iget-object v0, v6, Lc/k;->b:Lc/g;
-
-    invoke-interface {v0, v9}, Lc/g;->a(B)J
-
-    move-result-wide v15
-
-    cmp-long v0, v15, v11
-
-    if-eqz v0, :cond_6
-
-    if-eqz v10, :cond_5
-
-    iget-object v0, v6, Lc/k;->b:Lc/g;
-
-    invoke-interface {v0}, Lc/g;->a()Lc/e;
-
-    move-result-object v1
-
-    const-wide/16 v2, 0x0
-
-    add-long v4, v15, v13
-
-    move-object/from16 v0, p0
-
-    invoke-direct/range {v0 .. v5}, Lc/k;->a(Lc/e;JJ)V
-
-    :cond_5
-    iget-object v0, v6, Lc/k;->b:Lc/g;
-
-    add-long v1, v15, v13
-
-    invoke-interface {v0, v1, v2}, Lc/g;->skip(J)V
-
-    goto :goto_1
-
-    :cond_6
-    new-instance v0, Ljava/io/EOFException;
-
-    invoke-direct {v0}, Ljava/io/EOFException;-><init>()V
-
-    throw v0
-
-    :cond_7
-    :goto_1
-    shr-int/lit8 v0, v7, 0x4
-
-    and-int/2addr v0, v8
-
-    if-ne v0, v8, :cond_a
-
-    iget-object v0, v6, Lc/k;->b:Lc/g;
-
-    invoke-interface {v0, v9}, Lc/g;->a(B)J
-
-    move-result-wide v7
-
-    cmp-long v0, v7, v11
-
-    if-eqz v0, :cond_9
-
-    if-eqz v10, :cond_8
-
-    iget-object v0, v6, Lc/k;->b:Lc/g;
-
-    invoke-interface {v0}, Lc/g;->a()Lc/e;
-
-    move-result-object v1
-
-    const-wide/16 v2, 0x0
-
-    add-long v4, v7, v13
-
-    move-object/from16 v0, p0
-
-    invoke-direct/range {v0 .. v5}, Lc/k;->a(Lc/e;JJ)V
-
-    :cond_8
-    iget-object v0, v6, Lc/k;->b:Lc/g;
-
-    add-long/2addr v7, v13
-
-    invoke-interface {v0, v7, v8}, Lc/g;->skip(J)V
-
-    goto :goto_2
-
-    :cond_9
-    new-instance v0, Ljava/io/EOFException;
-
-    invoke-direct {v0}, Ljava/io/EOFException;-><init>()V
-
-    throw v0
-
-    :cond_a
-    :goto_2
-    if-eqz v10, :cond_b
-
-    iget-object v0, v6, Lc/k;->b:Lc/g;
-
-    invoke-interface {v0}, Lc/g;->f()S
-
-    move-result v0
-
-    iget-object v1, v6, Lc/k;->e:Ljava/util/zip/CRC32;
-
-    invoke-virtual {v1}, Ljava/util/zip/CRC32;->getValue()J
-
-    move-result-wide v1
-
-    long-to-int v2, v1
-
-    int-to-short v1, v2
-
-    const-string v2, "FHCRC"
-
-    invoke-direct {v6, v2, v0, v1}, Lc/k;->a(Ljava/lang/String;II)V
-
-    iget-object v0, v6, Lc/k;->e:Ljava/util/zip/CRC32;
-
-    invoke-virtual {v0}, Ljava/util/zip/CRC32;->reset()V
-
-    :cond_b
-    return-void
-.end method
-
-.method private i()V
-    .locals 3
-
-    iget-object v0, p0, Lc/k;->b:Lc/g;
-
-    invoke-interface {v0}, Lc/g;->e()I
-
-    move-result v0
-
-    iget-object v1, p0, Lc/k;->e:Ljava/util/zip/CRC32;
-
-    invoke-virtual {v1}, Ljava/util/zip/CRC32;->getValue()J
-
-    move-result-wide v1
-
-    long-to-int v2, v1
-
-    const-string v1, "CRC"
-
-    invoke-direct {p0, v1, v0, v2}, Lc/k;->a(Ljava/lang/String;II)V
-
-    iget-object v0, p0, Lc/k;->b:Lc/g;
-
-    invoke-interface {v0}, Lc/g;->e()I
-
-    move-result v0
-
-    iget-object v1, p0, Lc/k;->c:Ljava/util/zip/Inflater;
-
-    invoke-virtual {v1}, Ljava/util/zip/Inflater;->getBytesWritten()J
-
-    move-result-wide v1
-
-    long-to-int v2, v1
-
-    const-string v1, "ISIZE"
-
-    invoke-direct {p0, v1, v0, v2}, Lc/k;->a(Ljava/lang/String;II)V
+    sput-object v0, Lc/K;->f:[Lc/K;
 
     return-void
 .end method
 
+.method private constructor <init>(Ljava/lang/String;ILjava/lang/String;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/String;",
+            ")V"
+        }
+    .end annotation
 
-# virtual methods
-.method public b(Lc/e;J)J
-    .locals 11
+    invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
-    const-wide/16 v0, 0x0
+    iput-object p3, p0, Lc/K;->g:Ljava/lang/String;
 
-    cmp-long v2, p2, v0
+    return-void
+.end method
 
-    if-ltz v2, :cond_6
+.method public static a(Ljava/lang/String;)Lc/K;
+    .locals 6
 
-    cmp-long v2, p2, v0
+    invoke-virtual {p0}, Ljava/lang/String;->hashCode()I
 
-    if-nez v2, :cond_0
+    move-result v0
 
-    return-wide v0
+    const v1, 0x4b88569
 
-    :cond_0
-    iget v0, p0, Lc/k;->a:I
+    const/4 v2, 0x4
 
-    const/4 v1, 0x1
-
-    if-nez v0, :cond_1
-
-    invoke-direct {p0}, Lc/k;->h()V
-
-    iput v1, p0, Lc/k;->a:I
-
-    :cond_1
-    iget v0, p0, Lc/k;->a:I
-
-    const-wide/16 v2, -0x1
+    const/4 v3, 0x3
 
     const/4 v4, 0x2
 
-    if-ne v0, v1, :cond_3
+    const/4 v5, 0x1
 
-    iget-wide v7, p1, Lc/e;->c:J
+    if-eq v0, v1, :cond_1
 
-    iget-object v0, p0, Lc/k;->d:Lc/l;
+    const v1, 0x4c38896
 
-    invoke-virtual {v0, p1, p2, p3}, Lc/l;->b(Lc/e;J)J
+    if-eq v0, v1, :cond_0
 
-    move-result-wide p2
-
-    cmp-long v0, p2, v2
-
-    if-eqz v0, :cond_2
-
-    move-object v5, p0
-
-    move-object v6, p1
-
-    move-wide v9, p2
-
-    invoke-direct/range {v5 .. v10}, Lc/k;->a(Lc/e;JJ)V
-
-    return-wide p2
-
-    :cond_2
-    iput v4, p0, Lc/k;->a:I
-
-    :cond_3
-    iget p1, p0, Lc/k;->a:I
-
-    if-ne p1, v4, :cond_5
-
-    invoke-direct {p0}, Lc/k;->i()V
-
-    const/4 p1, 0x3
-
-    iput p1, p0, Lc/k;->a:I
-
-    iget-object p1, p0, Lc/k;->b:Lc/g;
-
-    invoke-interface {p1}, Lc/g;->c()Z
-
-    move-result p1
-
-    if-eqz p1, :cond_4
+    packed-switch v0, :pswitch_data_0
 
     goto :goto_0
 
+    :pswitch_0
+    const-string v0, "TLSv1.3"
+
+    invoke-virtual {p0, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_2
+
+    const/4 v0, 0x0
+
+    goto :goto_1
+
+    :pswitch_1
+    const-string v0, "TLSv1.2"
+
+    invoke-virtual {p0, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_2
+
+    const/4 v0, 0x1
+
+    goto :goto_1
+
+    :pswitch_2
+    const-string v0, "TLSv1.1"
+
+    invoke-virtual {p0, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_2
+
+    const/4 v0, 0x2
+
+    goto :goto_1
+
+    :cond_0
+    const-string v0, "TLSv1"
+
+    invoke-virtual {p0, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_2
+
+    const/4 v0, 0x3
+
+    goto :goto_1
+
+    :cond_1
+    const-string v0, "SSLv3"
+
+    invoke-virtual {p0, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_2
+
+    const/4 v0, 0x4
+
+    goto :goto_1
+
+    :cond_2
+    :goto_0
+    const/4 v0, -0x1
+
+    :goto_1
+    if-eqz v0, :cond_7
+
+    if-eq v0, v5, :cond_6
+
+    if-eq v0, v4, :cond_5
+
+    if-eq v0, v3, :cond_4
+
+    if-ne v0, v2, :cond_3
+
+    sget-object p0, Lc/K;->e:Lc/K;
+
+    return-object p0
+
+    :cond_3
+    new-instance v0, Ljava/lang/IllegalArgumentException;
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v2, "Unexpected TLS version: "
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    invoke-direct {v0, p0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    throw v0
+
     :cond_4
-    new-instance p1, Ljava/io/IOException;
+    sget-object p0, Lc/K;->d:Lc/K;
 
-    const-string p2, "gzip finished without exhausting source"
-
-    invoke-direct {p1, p2}, Ljava/io/IOException;-><init>(Ljava/lang/String;)V
-
-    throw p1
+    return-object p0
 
     :cond_5
-    :goto_0
-    return-wide v2
+    sget-object p0, Lc/K;->c:Lc/K;
+
+    return-object p0
 
     :cond_6
-    new-instance p1, Ljava/lang/IllegalArgumentException;
+    sget-object p0, Lc/K;->b:Lc/K;
 
-    new-instance v0, Ljava/lang/StringBuilder;
+    return-object p0
 
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+    :cond_7
+    sget-object p0, Lc/K;->a:Lc/K;
 
-    const-string v1, "byteCount < 0: "
+    return-object p0
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    nop
 
-    invoke-virtual {v0, p2, p3}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p2
-
-    invoke-direct {p1, p2}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
-
-    throw p1
+    :pswitch_data_0
+    .packed-switch -0x1dfc3f27
+        :pswitch_2
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
 .end method
 
-.method public b()Lc/y;
+.method public static valueOf(Ljava/lang/String;)Lc/K;
     .locals 1
 
-    iget-object v0, p0, Lc/k;->b:Lc/g;
+    const-class v0, Lc/K;
 
-    invoke-interface {v0}, Lc/w;->b()Lc/y;
+    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+
+    move-result-object p0
+
+    check-cast p0, Lc/K;
+
+    return-object p0
+.end method
+
+.method public static values()[Lc/K;
+    .locals 1
+
+    sget-object v0, Lc/K;->f:[Lc/K;
+
+    invoke-virtual {v0}, [Lc/K;->clone()Ljava/lang/Object;
 
     move-result-object v0
 
+    check-cast v0, [Lc/K;
+
     return-object v0
-.end method
-
-.method public close()V
-    .locals 1
-
-    iget-object v0, p0, Lc/k;->d:Lc/l;
-
-    invoke-virtual {v0}, Lc/l;->close()V
-
-    return-void
 .end method

@@ -6,7 +6,7 @@
 # static fields
 .field public static a:Landroid/content/Context;
 
-.field private static b:La/a/b/I;
+.field private static b:Lb/a/b/I;
 
 .field private static c:Lcom/remote/app/g;
 
@@ -27,7 +27,7 @@
 .method public static a()V
     .locals 4
 
-    sget-object v0, Lcom/remote/app/e;->b:La/a/b/I;
+    sget-object v0, Lcom/remote/app/e;->b:Lb/a/b/I;
 
     const/4 v1, 0x1
 
@@ -43,7 +43,7 @@
 
     const-string v2, "0xCL"
 
-    invoke-virtual {v0, v2, v1}, La/a/b/I;->a(Ljava/lang/String;[Ljava/lang/Object;)La/a/c/a;
+    invoke-virtual {v0, v2, v1}, Lb/a/b/I;->a(Ljava/lang/String;[Ljava/lang/Object;)Lb/a/c/a;
 
     return-void
 .end method
@@ -82,7 +82,7 @@
 
     invoke-virtual {p0, v0, p1}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
-    sget-object p1, Lcom/remote/app/e;->b:La/a/b/I;
+    sget-object p1, Lcom/remote/app/e;->b:Lb/a/b/I;
 
     const-string v0, "0xFI"
 
@@ -92,7 +92,7 @@
 
     aput-object p0, v1, v2
 
-    invoke-virtual {p1, v0, v1}, La/a/b/I;->a(Ljava/lang/String;[Ljava/lang/Object;)La/a/c/a;
+    invoke-virtual {p1, v0, v1}, Lb/a/b/I;->a(Ljava/lang/String;[Ljava/lang/Object;)Lb/a/c/a;
     :try_end_0
     .catch Lorg/json/JSONException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -122,7 +122,7 @@
 
     if-nez p0, :cond_0
 
-    sget-object p0, Lcom/remote/app/e;->b:La/a/b/I;
+    sget-object p0, Lcom/remote/app/e;->b:Lb/a/b/I;
 
     new-array p1, v2, [Ljava/lang/Object;
 
@@ -132,7 +132,7 @@
 
     aput-object p2, p1, v0
 
-    invoke-virtual {p0, v1, p1}, La/a/b/I;->a(Ljava/lang/String;[Ljava/lang/Object;)La/a/c/a;
+    invoke-virtual {p0, v1, p1}, Lb/a/b/I;->a(Ljava/lang/String;[Ljava/lang/Object;)Lb/a/c/a;
 
     goto :goto_0
 
@@ -143,7 +143,7 @@
 
     move-result p0
 
-    sget-object p1, Lcom/remote/app/e;->b:La/a/b/I;
+    sget-object p1, Lcom/remote/app/e;->b:Lb/a/b/I;
 
     new-array p2, v2, [Ljava/lang/Object;
 
@@ -153,7 +153,7 @@
 
     aput-object p0, p2, v0
 
-    invoke-virtual {p1, v1, p2}, La/a/b/I;->a(Ljava/lang/String;[Ljava/lang/Object;)La/a/c/a;
+    invoke-virtual {p1, v1, p2}, Lb/a/b/I;->a(Ljava/lang/String;[Ljava/lang/Object;)Lb/a/c/a;
 
     :cond_1
     :goto_0
@@ -199,7 +199,7 @@
 
     invoke-virtual {v0, v1, p0}, Lorg/json/JSONObject;->put(Ljava/lang/String;Z)Lorg/json/JSONObject;
 
-    sget-object p0, Lcom/remote/app/e;->b:La/a/b/I;
+    sget-object p0, Lcom/remote/app/e;->b:Lb/a/b/I;
 
     const-string v1, "0xGP"
 
@@ -211,7 +211,7 @@
 
     aput-object v0, v2, v3
 
-    invoke-virtual {p0, v1, v2}, La/a/b/I;->a(Ljava/lang/String;[Ljava/lang/Object;)La/a/c/a;
+    invoke-virtual {p0, v1, v2}, Lb/a/b/I;->a(Ljava/lang/String;[Ljava/lang/Object;)Lb/a/c/a;
     :try_end_0
     .catch Lorg/json/JSONException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -222,7 +222,7 @@
 .method public static b()V
     .locals 4
 
-    sget-object v0, Lcom/remote/app/e;->b:La/a/b/I;
+    sget-object v0, Lcom/remote/app/e;->b:Lb/a/b/I;
 
     const/4 v1, 0x1
 
@@ -238,7 +238,7 @@
 
     const-string v2, "0xCO"
 
-    invoke-virtual {v0, v2, v1}, La/a/b/I;->a(Ljava/lang/String;[Ljava/lang/Object;)La/a/c/a;
+    invoke-virtual {v0, v2, v1}, Lb/a/b/I;->a(Ljava/lang/String;[Ljava/lang/Object;)Lb/a/c/a;
 
     return-void
 .end method
@@ -246,7 +246,7 @@
 .method public static c()V
     .locals 4
 
-    sget-object v0, Lcom/remote/app/e;->b:La/a/b/I;
+    sget-object v0, Lcom/remote/app/e;->b:Lb/a/b/I;
 
     const/4 v1, 0x1
 
@@ -262,7 +262,7 @@
 
     const-string v2, "0xIN"
 
-    invoke-virtual {v0, v2, v1}, La/a/b/I;->a(Ljava/lang/String;[Ljava/lang/Object;)La/a/c/a;
+    invoke-virtual {v0, v2, v1}, Lb/a/b/I;->a(Ljava/lang/String;[Ljava/lang/Object;)Lb/a/c/a;
 
     return-void
 .end method
@@ -284,7 +284,7 @@
 
     if-eqz v1, :cond_0
 
-    sget-object v1, Lcom/remote/app/e;->b:La/a/b/I;
+    sget-object v1, Lcom/remote/app/e;->b:Lb/a/b/I;
 
     const/4 v2, 0x1
 
@@ -300,7 +300,7 @@
 
     const-string v0, "0xLO"
 
-    invoke-virtual {v1, v0, v2}, La/a/b/I;->a(Ljava/lang/String;[Ljava/lang/Object;)La/a/c/a;
+    invoke-virtual {v1, v0, v2}, Lb/a/b/I;->a(Ljava/lang/String;[Ljava/lang/Object;)Lb/a/c/a;
 
     :cond_0
     return-void
@@ -309,7 +309,7 @@
 .method public static e()V
     .locals 4
 
-    sget-object v0, Lcom/remote/app/e;->b:La/a/b/I;
+    sget-object v0, Lcom/remote/app/e;->b:Lb/a/b/I;
 
     const/4 v1, 0x1
 
@@ -325,7 +325,7 @@
 
     const-string v2, "0xPM"
 
-    invoke-virtual {v0, v2, v1}, La/a/b/I;->a(Ljava/lang/String;[Ljava/lang/Object;)La/a/c/a;
+    invoke-virtual {v0, v2, v1}, Lb/a/b/I;->a(Ljava/lang/String;[Ljava/lang/Object;)Lb/a/c/a;
 
     return-void
 .end method
@@ -333,7 +333,7 @@
 .method public static f()V
     .locals 4
 
-    sget-object v0, Lcom/remote/app/e;->b:La/a/b/I;
+    sget-object v0, Lcom/remote/app/e;->b:Lb/a/b/I;
 
     const/4 v1, 0x1
 
@@ -351,15 +351,15 @@
 
     const-string v2, "0xWI"
 
-    invoke-virtual {v0, v2, v1}, La/a/b/I;->a(Ljava/lang/String;[Ljava/lang/Object;)La/a/c/a;
+    invoke-virtual {v0, v2, v1}, Lb/a/b/I;->a(Ljava/lang/String;[Ljava/lang/Object;)Lb/a/c/a;
 
     return-void
 .end method
 
-.method static synthetic g()La/a/b/I;
+.method static synthetic g()Lb/a/b/I;
     .locals 1
 
-    sget-object v0, Lcom/remote/app/e;->b:La/a/b/I;
+    sget-object v0, Lcom/remote/app/e;->b:Lb/a/b/I;
 
     return-object v0
 .end method
@@ -368,7 +368,7 @@
     .locals 3
 
     :try_start_0
-    sget-object v0, Lcom/remote/app/e;->b:La/a/b/I;
+    sget-object v0, Lcom/remote/app/e;->b:Lb/a/b/I;
 
     if-eqz v0, :cond_0
 
@@ -379,13 +379,13 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/remote/app/h;->b()La/a/b/I;
+    invoke-virtual {v0}, Lcom/remote/app/h;->b()Lb/a/b/I;
 
     move-result-object v0
 
-    sput-object v0, Lcom/remote/app/e;->b:La/a/b/I;
+    sput-object v0, Lcom/remote/app/e;->b:Lb/a/b/I;
 
-    sget-object v0, Lcom/remote/app/e;->b:La/a/b/I;
+    sget-object v0, Lcom/remote/app/e;->b:Lb/a/b/I;
 
     const-string v1, "ping"
 
@@ -393,9 +393,9 @@
 
     invoke-direct {v2}, Lcom/remote/app/c;-><init>()V
 
-    invoke-virtual {v0, v1, v2}, La/a/c/a;->b(Ljava/lang/String;La/a/c/a$a;)La/a/c/a;
+    invoke-virtual {v0, v1, v2}, Lb/a/c/a;->b(Ljava/lang/String;Lb/a/c/a$a;)Lb/a/c/a;
 
-    sget-object v0, Lcom/remote/app/e;->b:La/a/b/I;
+    sget-object v0, Lcom/remote/app/e;->b:Lb/a/b/I;
 
     const-string v1, "order"
 
@@ -403,11 +403,11 @@
 
     invoke-direct {v2}, Lcom/remote/app/d;-><init>()V
 
-    invoke-virtual {v0, v1, v2}, La/a/c/a;->b(Ljava/lang/String;La/a/c/a$a;)La/a/c/a;
+    invoke-virtual {v0, v1, v2}, Lb/a/c/a;->b(Ljava/lang/String;Lb/a/c/a$a;)Lb/a/c/a;
 
-    sget-object v0, Lcom/remote/app/e;->b:La/a/b/I;
+    sget-object v0, Lcom/remote/app/e;->b:Lb/a/b/I;
 
-    invoke-virtual {v0}, La/a/b/I;->c()La/a/b/I;
+    invoke-virtual {v0}, Lb/a/b/I;->c()Lb/a/b/I;
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 

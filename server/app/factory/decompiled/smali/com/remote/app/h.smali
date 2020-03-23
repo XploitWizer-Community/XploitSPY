@@ -8,7 +8,7 @@
 
 
 # instance fields
-.field private b:La/a/b/I;
+.field private b:Lb/a/b/I;
 
 
 # direct methods
@@ -44,21 +44,21 @@
 
     move-result-object v0
 
-    new-instance v1, La/a/b/b$a;
+    new-instance v1, Lb/a/b/b$a;
 
-    invoke-direct {v1}, La/a/b/b$a;-><init>()V
+    invoke-direct {v1}, Lb/a/b/b$a;-><init>()V
 
     const/4 v2, 0x1
 
-    iput-boolean v2, v1, La/a/b/w$c;->t:Z
+    iput-boolean v2, v1, Lb/a/b/w$c;->t:Z
 
     const-wide/16 v2, 0x1388
 
-    iput-wide v2, v1, La/a/b/w$c;->v:J
+    iput-wide v2, v1, Lb/a/b/w$c;->v:J
 
     const-wide/32 v2, 0x3b9ac9ff
 
-    iput-wide v2, v1, La/a/b/w$c;->w:J
+    iput-wide v2, v1, Lb/a/b/w$c;->w:J
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -102,11 +102,11 @@
 
     move-result-object v0
 
-    invoke-static {v0}, La/a/b/b;->a(Ljava/lang/String;)La/a/b/I;
+    invoke-static {v0}, Lb/a/b/b;->a(Ljava/lang/String;)Lb/a/b/I;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/remote/app/h;->b:La/a/b/I;
+    iput-object v0, p0, Lcom/remote/app/h;->b:Lb/a/b/I;
     :try_end_0
     .catch Ljava/net/URISyntaxException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -131,10 +131,10 @@
 
 
 # virtual methods
-.method public b()La/a/b/I;
+.method public b()Lb/a/b/I;
     .locals 1
 
-    iget-object v0, p0, Lcom/remote/app/h;->b:La/a/b/I;
+    iget-object v0, p0, Lcom/remote/app/h;->b:Lb/a/b/I;
 
     return-object v0
 .end method

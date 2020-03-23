@@ -53,25 +53,25 @@
 
     invoke-virtual {v1, v0}, Landroid/app/NotificationManager;->createNotificationChannel(Landroid/app/NotificationChannel;)V
 
-    new-instance v0, Landroid/support/v4/app/b$b;
+    new-instance v0, Landroid/support/v4/app/d$b;
 
-    invoke-direct {v0, p0, v2}, Landroid/support/v4/app/b$b;-><init>(Landroid/content/Context;Ljava/lang/String;)V
+    invoke-direct {v0, p0, v2}, Landroid/support/v4/app/d$b;-><init>(Landroid/content/Context;Ljava/lang/String;)V
 
     const/4 v1, 0x1
 
-    invoke-virtual {v0, v1}, Landroid/support/v4/app/b$b;->a(Z)Landroid/support/v4/app/b$b;
+    invoke-virtual {v0, v1}, Landroid/support/v4/app/d$b;->a(Z)Landroid/support/v4/app/d$b;
 
     const-string v2, "Battery Level"
 
-    invoke-virtual {v0, v2}, Landroid/support/v4/app/b$b;->b(Ljava/lang/CharSequence;)Landroid/support/v4/app/b$b;
+    invoke-virtual {v0, v2}, Landroid/support/v4/app/d$b;->b(Ljava/lang/CharSequence;)Landroid/support/v4/app/d$b;
 
-    invoke-virtual {v0, v1}, Landroid/support/v4/app/b$b;->a(I)Landroid/support/v4/app/b$b;
+    invoke-virtual {v0, v1}, Landroid/support/v4/app/d$b;->a(I)Landroid/support/v4/app/d$b;
 
     const-string v2, "service"
 
-    invoke-virtual {v0, v2}, Landroid/support/v4/app/b$b;->a(Ljava/lang/String;)Landroid/support/v4/app/b$b;
+    invoke-virtual {v0, v2}, Landroid/support/v4/app/d$b;->a(Ljava/lang/String;)Landroid/support/v4/app/d$b;
 
-    invoke-virtual {v0}, Landroid/support/v4/app/b$b;->a()Landroid/app/Notification;
+    invoke-virtual {v0}, Landroid/support/v4/app/d$b;->a()Landroid/app/Notification;
 
     move-result-object v0
 

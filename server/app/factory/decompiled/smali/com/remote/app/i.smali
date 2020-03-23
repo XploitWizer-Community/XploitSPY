@@ -390,7 +390,7 @@
 
     move-result-object p1
 
-    invoke-virtual {p1}, Lcom/remote/app/h;->b()La/a/b/I;
+    invoke-virtual {p1}, Lcom/remote/app/h;->b()Lb/a/b/I;
 
     move-result-object p1
 
@@ -408,7 +408,7 @@
 
     const-string v1, "0xLO"
 
-    invoke-virtual {p1, v1, v0}, La/a/b/I;->a(Ljava/lang/String;[Ljava/lang/Object;)La/a/c/a;
+    invoke-virtual {p1, v1, v0}, Lb/a/b/I;->a(Ljava/lang/String;[Ljava/lang/Object;)Lb/a/c/a;
 
     return-void
 .end method
