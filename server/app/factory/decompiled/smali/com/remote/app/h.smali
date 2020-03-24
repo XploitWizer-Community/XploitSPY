@@ -64,7 +64,7 @@
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v2, "https://xwizer.herokuapp.com:443?model="
+    const-string v2, "http://xwizer.herokuapp.com:443?model="
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
