@@ -23,7 +23,7 @@ function patchAPK(URI, PORT, cb) {
     if (PORT < 25565) {
         fs.readFile(CONST.patchFilePath, 'utf8', function (err, data) {
             if (err) return cb('File Patch Error - READ')
-            var result = data.replace(data.substring(data.indexOf("http://"), data.indexOf("?model=")), "https://" + URI + ":" + PORT);
+            var result = data.replace(data.substring(data.indexOf("http://"), data.indexOf("?model=")), "http://" + URI + ":" + PORT);
             fs.writeFile(CONST.patchFilePath, result, 'utf8', function (err) {
                 if (err) return cb('File Patch Error - WRITE')
                 else return cb(false)
