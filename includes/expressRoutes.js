@@ -107,7 +107,7 @@ routes.post('/changepass', isAllowed, (req, res) => {
     else
     {
         let password = crypto.createHash('md5').update(req.query.pass).digest("hex");
-        db.maindb.get('admin').assign({ password }).write();
+        db.maindb.get('admin').assign({ passwor }).write();
         res.send("200");
     }
 });
