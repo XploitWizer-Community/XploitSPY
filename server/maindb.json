@@ -2,7 +2,7 @@
   "admin": {
     "username": "admin",
     "password": "ffe553694f5096471590343432359e02",
-    "loginToken": "ddd9d299c3380709efbc19ac381b4fad",
+    "loginToken": "97d5d9887360786b09e7ff89df307e72",
     "logs": [
       {
         "time": "2020-01-11T15:23:07.971Z",
@@ -56,6 +56,11 @@
       },
       {
         "time": "2020-03-23T04:59:46.252Z",
+        "type": "SUCCESS",
+        "message": "Build Succeded!"
+      },
+      {
+        "time": "2020-04-07T21:03:16.469Z",
         "type": "SUCCESS",
         "message": "Build Succeded!"
       }

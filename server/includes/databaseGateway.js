@@ -2,7 +2,7 @@ const
     lowdb = require('lowdb'),
     FileSync = require('lowdb/adapters/FileSync'),
     path = require('path'),
-    adapter = new FileSync('./maindb.json'),
+    adapter = new FileSync(path.join(__dirname, '../maindb.json')),
     db = lowdb(adapter);
 
 db.defaults({
@@ -18,7 +18,7 @@ db.defaults({
 
 class clientdb {
     constructor(clientID) {
-        let cdb = lowdb(new FileSync('./clientData/' + clientID + '.json'))
+        let cdb = lowdb(new FileSync(path.join(__dirname, '../clientData/') + clientID + '.json'))
         cdb.defaults({
             clientID,
             CommandQue: [],
