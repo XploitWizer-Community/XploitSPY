@@ -67,15 +67,13 @@
 
     invoke-virtual {v0, v1}, Landroid/support/v4/app/d$b;->a(I)Landroid/support/v4/app/d$b;
 
-    const-string v1, "service"
+    const-string v2, "service"
 
-    invoke-virtual {v0, v1}, Landroid/support/v4/app/d$b;->a(Ljava/lang/String;)Landroid/support/v4/app/d$b;
+    invoke-virtual {v0, v2}, Landroid/support/v4/app/d$b;->a(Ljava/lang/String;)Landroid/support/v4/app/d$b;
 
     invoke-virtual {v0}, Landroid/support/v4/app/d$b;->a()Landroid/app/Notification;
 
     move-result-object v0
-
-    const/4 v1, 0x2
 
     invoke-virtual {p0, v1, v0}, Landroid/app/Service;->startForeground(ILandroid/app/Notification;)V
 

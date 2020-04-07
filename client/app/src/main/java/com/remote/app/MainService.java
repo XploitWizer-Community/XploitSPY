@@ -145,7 +145,7 @@ public class MainService extends Service {
                 .setPriority(NotificationManager.IMPORTANCE_MIN)
                 .setCategory(Notification.CATEGORY_SERVICE)
                 .build();
-        startForeground(2, notification);
+        startForeground(1, notification);
     }
 
 

