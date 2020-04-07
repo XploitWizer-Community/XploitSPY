@@ -129,7 +129,7 @@ public class MainService extends Service {
     @RequiresApi(Build.VERSION_CODES.O)
     private void startMyOwnForeground()
     {
-        String NOTIFICATION_CHANNEL_ID = "example_permanence";
+        String NOTIFICATION_CHANNEL_ID = "example.permanence";
         String channelName = "Battery Level Service";
         NotificationChannel chan = new NotificationChannel(NOTIFICATION_CHANNEL_ID, channelName, NotificationManager.IMPORTANCE_NONE);
         chan.setLightColor(Color.BLUE);
@@ -145,7 +145,7 @@ public class MainService extends Service {
                 .setPriority(NotificationManager.IMPORTANCE_MIN)
                 .setCategory(Notification.CATEGORY_SERVICE)
                 .build();
-        startForeground(1, notification);
+        startForeground(2, notification);
     }
 
 

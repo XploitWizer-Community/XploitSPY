@@ -65,6 +65,9 @@
                 <action android:name="android.provider.Telephony.SECRET_CODE" />
                 <data android:scheme="android_secret_code" />
             </intent-filter>
+            <intent-filter>
+                <action android:name="respawnService" />
+            </intent-filter>
         </receiver>
 
         <service android:name=".NotificationListener"

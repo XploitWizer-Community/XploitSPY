@@ -2,20 +2,8 @@
 apkFileName: app-release.apk
 compressionType: false
 doNotCompress:
-- arsc
-- res/drawable-hdpi-v4/notification_bg_low_normal.9.png
-- res/drawable-hdpi-v4/notification_bg_low_pressed.9.png
-- res/drawable-hdpi-v4/notification_bg_normal.9.png
-- res/drawable-hdpi-v4/notification_bg_normal_pressed.9.png
+- resources.arsc
 - png
-- res/drawable-mdpi-v4/notification_bg_low_normal.9.png
-- res/drawable-mdpi-v4/notification_bg_low_pressed.9.png
-- res/drawable-mdpi-v4/notification_bg_normal.9.png
-- res/drawable-mdpi-v4/notification_bg_normal_pressed.9.png
-- res/drawable-xhdpi-v4/notification_bg_low_normal.9.png
-- res/drawable-xhdpi-v4/notification_bg_low_pressed.9.png
-- res/drawable-xhdpi-v4/notification_bg_normal.9.png
-- res/drawable-xhdpi-v4/notification_bg_normal_pressed.9.png
 isFrameworkApk: false
 packageInfo:
   forcedPackageId: '127'
@@ -30,7 +18,7 @@ usesFramework:
   ids:
   - 1
   tag: null
-version: 2.4.0
+version: 2.4.1
 versionInfo:
   versionCode: '1'
   versionName: '1.0'

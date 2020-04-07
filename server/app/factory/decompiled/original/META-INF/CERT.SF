@@ -1,9 +1,9 @@
 Signature-Version: 1.0
 Created-By: 1.0 (Android)
-SHA1-Digest-Manifest: 2Qtk51JBqM6u7TRO079YJbsVT94=
+SHA1-Digest-Manifest: IHujA2NGKYWz+3kPuDWmNrScZo4=
 
 Name: AndroidManifest.xml
-SHA1-Digest: nCwMBXfy2QSt4OJ5EYyKjhi2bog=
+SHA1-Digest: hMY5UmKutb2cZY4afr084GSFwLk=
 
 Name: META-INF/android.arch.lifecycle_runtime.version
 SHA1-Digest: mgd0ibqCDE7dziahk3gQRzTxqfA=
@@ -16,7 +16,7 @@ Name: META-INF/androidx.versionedparcelable_versionedparcelable.versio
 SHA1-Digest: /M5ZcCUkGpD9LMU3LB/ji4SqKws=
 
 Name: classes.dex
-SHA1-Digest: mOcbx/JXakm3skvCwzTjgaZv4eU=
+SHA1-Digest: YrT0vt4yEPhLbLEfpMIXvaRwR4s=
 
 Name: res/drawable-hdpi-v4/notification_bg_low_normal.9.png
 SHA1-Digest: GqlxeUYi9nderviC+XwD6tRD5Kg=
