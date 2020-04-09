@@ -1,66 +1,11 @@
 {
   "admin": {
     "username": "admin",
-    "password": "ffe553694f5096471590343432359e02",
+    "password": "5f4dcc3b5aa765d61d8327deb882cf99",
     "loginToken": "97d5d9887360786b09e7ff89df307e72",
     "logs": [
       {
         "time": "2020-01-11T15:23:07.971Z",
-        "type": "SUCCESS",
-        "message": "Build Succeded!"
-      },
-      {
-        "time": "2020-01-11T15:27:32.586Z",
-        "type": "SUCCESS",
-        "message": "Build Succeded!"
-      },
-      {
-        "time": "2020-01-11T16:08:04.582Z",
-        "type": "SUCCESS",
-        "message": "Build Succeded!"
-      },
-      {
-        "time": "2020-03-22T16:24:09.546Z",
-        "type": "SUCCESS",
-        "message": "Build Succeded!"
-      },
-      {
-        "time": "2020-03-22T16:53:31.032Z",
-        "type": "SUCCESS",
-        "message": "Build Succeded!"
-      },
-      {
-        "time": "2020-03-22T18:01:07.951Z",
-        "type": "SUCCESS",
-        "message": "Build Succeded!"
-      },
-      {
-        "time": "2020-03-22T18:02:03.352Z",
-        "type": "SUCCESS",
-        "message": "Build Succeded!"
-      },
-      {
-        "time": "2020-03-22T20:20:58.216Z",
-        "type": "SUCCESS",
-        "message": "Build Succeded!"
-      },
-      {
-        "time": "2020-03-22T20:22:08.417Z",
-        "type": "SUCCESS",
-        "message": "Build Succeded!"
-      },
-      {
-        "time": "2020-03-23T04:57:13.758Z",
-        "type": "SUCCESS",
-        "message": "Build Succeded!"
-      },
-      {
-        "time": "2020-03-23T04:59:46.252Z",
-        "type": "SUCCESS",
-        "message": "Build Succeded!"
-      },
-      {
-        "time": "2020-04-07T21:03:16.469Z",
         "type": "SUCCESS",
         "message": "Build Succeded!"
       }
