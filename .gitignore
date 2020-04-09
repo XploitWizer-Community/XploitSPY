@@ -8,7 +8,6 @@ lib-cov
 coverage
 .grunt
 .lock-wscript
-build/Release
 node_modules
 .gradle
 .idea

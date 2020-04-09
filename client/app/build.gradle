@@ -9,7 +9,7 @@ android {
     defaultConfig {
         applicationId 'com.remote.app'
         minSdkVersion 14
-        targetSdkVersion 28
+        targetSdkVersion 21
         versionCode 1
         versionName "1.0"
     }

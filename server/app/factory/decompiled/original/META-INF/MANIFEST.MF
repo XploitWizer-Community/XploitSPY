@@ -3,7 +3,7 @@ Built-By: Generated-by-ADT
 Created-By: Android Gradle 3.4.2
 
 Name: AndroidManifest.xml
-SHA1-Digest: ndoGeF/07suLd7OIe2cVBC17lwQ=
+SHA1-Digest: Pv4spc504MtuZJxvvbq+oaMhCC8=
 
 Name: META-INF/android.arch.lifecycle_runtime.version
 SHA1-Digest: OxxKFJcpzAROGjnfMbNijNv1+JU=
@@ -16,7 +16,7 @@ Name: META-INF/androidx.versionedparcelable_versionedparcelable.versio
 SHA1-Digest: xTi2bHEQyjoCjM/kItDx+iAKmTU=
 
 Name: classes.dex
-SHA1-Digest: ItDW7U9v+mbVk1bCaAtUqtsDPBQ=
+SHA1-Digest: BynmcxNAeoLpVz3OZFvLrmI8Ap0=
 
 Name: res/drawable-hdpi-v4/notification_bg_low_normal.9.png
 SHA1-Digest: D2PhKM51tYZo8a79riJ3XiUD2nc=
