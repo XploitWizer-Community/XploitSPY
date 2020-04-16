@@ -218,6 +218,7 @@ class Clients {
                             // cool, we dont have this sms
                             sms.hash = hash;
                             dbSMS.push(sms).write();
+                            newCount++;
                         }
                     });
                     logManager.log(CONST.logTypes.success, clientID + " SMS List Updated - " + newCount + " New Messages");

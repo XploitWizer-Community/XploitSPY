@@ -3,9 +3,6 @@ apkFileName: app-release.apk
 compressionType: false
 doNotCompress:
 - resources.arsc
-- META-INF/android.arch.lifecycle_runtime.version
-- META-INF/androidx.core_core.version
-- META-INF/androidx.versionedparcelable_versionedparcelable.version
 - png
 isFrameworkApk: false
 packageInfo:

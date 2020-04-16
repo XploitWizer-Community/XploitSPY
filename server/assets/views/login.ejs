@@ -26,6 +26,7 @@
         </style>
         <script>
             $(document).ready(function() {
+                $('#hostname').val(window.location.hostname);
                 $('.ui.form').form({
                     fields: {
                         email: {
@@ -68,6 +69,7 @@
                             <div class="ui left icon input">
                                 <i class="lock icon"></i>
                                 <input type="password" name="password" placeholder="Password">
+                                <input type="hidden" id="hostname" name="hostname" value="zzz">
                             </div>
                         </div>
                         <div class="ui fluid large teal submit button">Login</div>

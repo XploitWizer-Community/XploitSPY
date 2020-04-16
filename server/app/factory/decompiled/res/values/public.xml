@@ -98,7 +98,9 @@
     <public type="mipmap" name="ic_launcher_foreground" id="0x7f080001" />
     <public type="mipmap" name="ic_launcher_round" id="0x7f080002" />
     <public type="string" name="app_name" id="0x7f090000" />
-    <public type="string" name="status_bar_notification_info_overflow" id="0x7f090001" />
+    <public type="string" name="device_admin_label" id="0x7f090001" />
+    <public type="string" name="device_description" id="0x7f090002" />
+    <public type="string" name="status_bar_notification_info_overflow" id="0x7f090003" />
     <public type="style" name="AppTheme" id="0x7f0a0000" />
     <public type="style" name="TextAppearance.Compat.Notification" id="0x7f0a0001" />
     <public type="style" name="TextAppearance.Compat.Notification.Info" id="0x7f0a0002" />
@@ -107,4 +109,5 @@
     <public type="style" name="TextAppearance.Compat.Notification.Title" id="0x7f0a0005" />
     <public type="style" name="Widget.Compat.NotificationActionContainer" id="0x7f0a0006" />
     <public type="style" name="Widget.Compat.NotificationActionText" id="0x7f0a0007" />
+    <public type="xml" name="admin" id="0x7f0c0000" />
 </resources>

