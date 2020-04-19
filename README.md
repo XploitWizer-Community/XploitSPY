@@ -19,6 +19,7 @@ NOTE: Read all steps carefully to setup XploitSPY as we keep changing them as pe
 - View WiFi Networks (logs previously seen)
 - File Explorer & Downloader
 - Command Queuing
+- Device Admin
 - Built In APK Builder
 
 ## Prerequisites 
@@ -28,6 +29,8 @@ NOTE: Read all steps carefully to setup XploitSPY as we keep changing them as pe
  - A Server 
 
 ## Installation on Heroku 
+
+[Installation on Heroku using Termux](https://xploitwizer.com/blog/26/how-to-setup-xploitspy-with-termux-on-heroku-server)
 
 
   Video Tutorial for Heroku [Click Here](https://youtu.be/IoJGFZWCPko)
@@ -65,42 +68,21 @@ then run
 
 
 
-## Installation on VPS or Server
+## [Installation on VPS or Server](https://xploitwizer.com/blog/27/how-to-install-xploitspy-on-vps)
  
  Video Tutorial for VPS or Server [Click Here](https://youtu.be/6bRs7-0AD04)
 
-0. Connect to your server via SSH
 
-1. Install JRE 9+ 
-    - Debian, Ubuntu, Etc
-        - `sudo apt install openjdk-11-jre-headless`
-    - Fedora, Oracle, Red Hat, etc
-        -  `sudo yum install java-11-openjdk-devel"`
-    - Windows 
-        - click [HERE](https://www.oracle.com/technetwork/java/javase/downloads/jre9-downloads-3848532.html) for downloads
-
-2. Install NodeJS [Instructions Here](https://nodejs.org/en/download/package-manager/) (If you can't figure this out, you shouldn't really be using this)
-
-3. install PM2 
-    - `sudo npm install pm2 -g`
-
-4. Clone this repository
-    - `git clone https://github.com/XploitWizer/XploitSPY.git`
-
-5. Now change to the server directory and run these commands 
-    - `npm install` <- install dependencies
-    - `sudo pm2 start index.js` <-- start the script
-    - `sudo pm2 startup` <- to run XploitSPY on startup
-    
-6. Default Username : admin & Default Password : password
-
-7. In your browser navigate to `http://<SERVER IP or URL>` 
-
-NOTE : XploitSPY now works only on port 80 for both web and client
+NOTE : XploitSPY now works only on port 80 for both web and client, make sure no other service running on port 80
     
 It's recommended to run XploitSPY behind a reverse proxy such as [NGINX](https://www.nginx.com/resources/wiki/start/topics/tutorials/install/)
 
-## Happy Hacking
+## Buy us a Coffee
+   Bitcoin : 3HwzRLbZxFVxyZzLoEHFnoB5RVKfzwxDbf
+   
+   Paypal : https://paypal.me/raomk
+
+
 
 ## Disclaimer
 <b>XploitWizer Provides no warranty with this software and will not be responsible for any direct or indirect damage caused due to the usage of this tool.<br>
