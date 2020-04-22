@@ -70,7 +70,7 @@ then run
 
 ## [Installation on VPS or Server](https://xploitwizer.com/blog/27/how-to-install-xploitspy-on-vps)
  
- Video Tutorial for VPS or Server [Click Here](https://youtu.be/6bRs7-0AD04)
+ Video Tutorial for VPS or Server [Click Here](https://youtu.be/F0K1IXvdEJk)
 
 
 NOTE : XploitSPY now works only on port 80 for both web and client, make sure no other service running on port 80
