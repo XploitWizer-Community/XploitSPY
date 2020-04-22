@@ -3,6 +3,10 @@
 A cloud based Android Spying or Monitoring Tool, powered by NodeJS
 </p>
 
+<a href="https://heroku.com/deploy?template=https://github.com/XploitWizer/XploitSPY">
+  <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
+</a>
+
 ## Features
 - GPS Logging
 - Microphone Recording
