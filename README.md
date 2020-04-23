@@ -20,6 +20,9 @@ A cloud based Android Monitoring Tool, powered by NodeJS
 - Device Admin
 - Built In APK Builder
 
+## Installation on Heroku
+  
+  Video Tutorial for Heroku [Click Here](https://youtu.be/tFt5G19KuLY)
 
 <a href="https://heroku.com/deploy?template=https://github.com/XploitWizer/XploitSPY">
   <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
