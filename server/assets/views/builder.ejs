@@ -78,7 +78,7 @@
 			function loaderText() {
 				var nextTimeout = Math.floor(Math.random() * 1500) + 700;
 				if (loadingIndex < loadingTexts.length) $('#loadingText').text(loadingTexts[loadingIndex++]);
-				if (loadingIndex !== loadingTexts.length && !isDone) setTimeout(loaderText, nextTimeout);
+				if (loadingIndex !== loadingTexts.length) setTimeout(loaderText, nextTimeout);
 				else if (loadingIndex === loadingTexts.length && !isDone) setTimeout(loaderText, 300);
 				else
 					while (isDone) {
