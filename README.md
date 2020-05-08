@@ -20,7 +20,7 @@ A cloud based Android Monitoring Tool, powered by NodeJS
 - Device Admin
 - Built In APK Builder
 
-## Installation on Heroku
+## Installation on Heroku (Note : Don't use this method else your account could be suspended)
   
   Video Tutorial for Heroku [Click Here](https://youtu.be/tFt5G19KuLY)
 
