@@ -30,9 +30,6 @@ A cloud based Android Monitoring Tool, powered by NodeJS
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/XploitWizer/XploitSPY)
 
 
-## Installation on [Glitch](https://glitch.com)
-  
-  Video Tutorial for Glitch [Click Here](https://youtu.be/QZQM9AYxWQI)
   
 ## Installation on VPS or Server
 
