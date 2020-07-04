@@ -20,6 +20,16 @@ A cloud based Android Monitoring Tool, powered by NodeJS
 - Device Admin
 - Built In APK Builder
 
+
+[![Try in PWD](https://raw.githubusercontent.com/play-with-docker/stacks/master/assets/images/button.png)](https://labs.play-with-docker.com/?stack=https://raw.githubusercontent.com/XploitWizer/XploitSPY/master/app.json)
+
+[![Run on Google Cloud](https://deploy.cloud.run/button.svg)](https://deploy.cloud.run?git_repo=https://github.com/XploitWizer/XploitSPY)
+
+[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3a%2f%2fraw.githubusercontent.com%2fXploitWizer%2fXploitSPY%2fmaster%2fazuredeploy.json)
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/XploitWizer/XploitSPY)
+
+
 ## Installation on [Glitch](https://glitch.com)
   
   Video Tutorial for Glitch [Click Here](https://youtu.be/QZQM9AYxWQI)
@@ -38,13 +48,6 @@ Setps of Installation [Click Here](https://xploitwizer.com/blog/27/how-to-instal
     
 It's recommended to run XploitSPY behind a reverse proxy such as [NGINX](https://www.nginx.com/resources/wiki/start/topics/tutorials/install/)
 
-## Installation on Heroku (Note : Don't use this method else your account could be suspended)
-  
-  Video Tutorial for Heroku [Click Here](https://youtu.be/tFt5G19KuLY)
-
-<a href="https://heroku.com/deploy?template=https://github.com/XploitWizer/XploitSPY">
-  <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
-</a>
 
 ## Buy us a Coffee
    Bitcoin : 3HwzRLbZxFVxyZzLoEHFnoB5RVKfzwxDbf
