@@ -34,14 +34,38 @@ A cloud based Android Monitoring Tool, powered by NodeJS
 ## Installation on VPS or Server
 
 ## Prerequisites 
- - Java Runtime Environment 9 or above
+ - Java Runtime Environment 11 or above
  - NodeJs 
- - A Server 
+ - A Server with Static IP Address
 
-Setps of Installation [Click Here](https://xploitwizer.com/blog/27/how-to-install-xploitspy-on-vps)
- 
- Video Tutorial for VPS or Server [Click Here](https://youtu.be/F0K1IXvdEJk)
+## Installation 
+1. Install JRE 11 
+    - Debian, Ubuntu, Etc
+        - `sudo apt-get install openjdk-11-jre`
+   
+2. Install NodeJS [Instructions Here](https://nodejs.org/en/download/package-manager/) (If you can't figure this out, you shouldn't really be using this)
 
+3. install PM2 
+    - `sudo npm install pm2 -g`
+
+4. Clone the repo
+    - `git clone https://github.com/XploitWizer/XploitSPY.git
+    
+5. Go to server directory
+   - `cd XploitSPY/server/
+
+5. In the server directory, run these commands
+    - `npm install` <- install dependencies
+    - `pm2 start index.js` <-- start the script
+    - `pm2 startup` <- to run XploitSPY on startup
+
+6. Find your public IP ` curl ifconfig.me
+
+7. In your browser navigate to your Server Static IP Address` Ex.: http://192.168.55.203
+
+8. Login details
+     - `Username : admin
+     - `Password : password
     
 It's recommended to run XploitSPY behind a reverse proxy such as [NGINX](https://www.nginx.com/resources/wiki/start/topics/tutorials/install/)
 
