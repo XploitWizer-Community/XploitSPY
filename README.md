@@ -3,6 +3,8 @@
 A cloud based Android Monitoring Tool, powered by NodeJS
 </p>
 
+<a href="#"><img title="Made in INDIA" src="https://img.shields.io/badge/MADE%20IN%20-INDIA-orange?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
+
 ## Features
 - GPS Logging
 - Microphone Recording
