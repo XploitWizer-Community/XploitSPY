@@ -1,6 +1,6 @@
 {
     "name": "xploitspy",
-    "version": "1.0.0",
+    "version": "1.0.0", 
     "description": "XploitSPY - Remote Android Spying Tool",
     "main": "index.js",
     "scripts": {
