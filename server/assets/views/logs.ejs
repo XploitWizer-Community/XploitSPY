@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
 
-<% include partials/head.ejs %>
+<%- include('partials/head.ejs') %>
 
 
 <body>
     <div class="ui container">
-        <% include partials/header.ejs %>
-        <% include partials/disclaimer.ejs %> 
+        <%- include('partials/header.ejs') %>
+        <!-- <%- include('partials/disclaimer.ejs') %> --> 
         <div class="ui segment">
             <div class="logs">
                 <% logs.forEach((log) => { %>
@@ -18,7 +18,7 @@
             </div>
         </div>
     </div>
-    <% include partials/footer.ejs %>
+    <%- include('partials/footer.ejs') %>
 </body>
 
 </html>

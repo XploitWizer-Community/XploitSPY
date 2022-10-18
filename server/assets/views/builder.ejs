@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <html>
-	<% include partials/head.ejs %>
+	<%- include('partials/head.ejs') %>
 
 	<body>
 		<div class="ui container">
-			<% include partials/header.ejs %> <% include partials/disclaimer.ejs %>
+			<%- include('partials/header.ejs') -%> 
+			<!-- <%- include('partials/disclaimer.ejs') -%> -->
 			<div class="ui segment">
 				<div id="dimmer" class="ui dimmer">
 					<div class="ui indeterminate text loader" id="loadingText">Submitting</div>
@@ -98,6 +99,6 @@
 				else showNotification('#f03434', data.error);
 			};
 		</script>
-		<% include partials/footer.ejs %>
+		<%- include('partials/footer.ejs') %>
 	</body>
 </html>
