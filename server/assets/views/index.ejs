@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html>
 
-<% include partials/head.ejs %>
+<% include('partials/head.ejs') %>
 
 
     <body>
         <div class="ui container" style="color: azure; background-color: black;">
-            <% include partials/header.ejs %>
-            <% include partials/disclaimer.ejs %> 
+            <% include('partials/header.ejs') %>
                 <div class="ui segment">
 
                     <h3 class="ui grey dividing header">Online</h3>
@@ -95,7 +94,7 @@
                     </table>
                 </div>
         </div>
-        <% include partials/footer.ejs %>
+        <% include('partials/footer.ejs') %>
     </body>
 
 </html>
