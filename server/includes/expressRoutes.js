@@ -55,34 +55,10 @@ routes.get('/panel', isAllowed, (req, res) => {
 });
 
 routes.post('/login', asyncHandler(async(req, res) => {
-    if ('username' in req.body) {
-        if ('password' in req.body) {
-            let rUsername = db.maindb.get('admin.username').value();
-            let rPassword = db.maindb.get('admin.password').value();
-            let data = {
-                username: req.body.username,
-                pass: req.body.password,
-                hostname: req.body.hostname
-            }
-            let passwordMD5 = crypto.createHash('md5').update(req.body.password.toString()).digest("hex");
-            if (req.body.username.toString() === rUsername && passwordMD5 === rPassword) {
-                let loginToken = crypto.createHash('md5').update((Math.random()).toString() + (new Date()).toString()).digest("hex");
-                let response = await fetch('http://authxspy.herokuapp.com', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json;charset=utf-8'
-                },
-                body: JSON.stringify(data)
-            });
-            let status = await response.json();
-            if(status.enabled == false){
-                res.redirect('/login?e=authError');
-            }
-                db.maindb.get('admin').assign({ loginToken }).write();
-                res.cookie('loginToken', loginToken).redirect('/panel');
-            } else return res.redirect('/login?e=badLogin');
-        } else return res.redirect('/login?e=missingPassword');
-    } else return res.redirect('/login?e=missingUsername');
+  let loginToken = crypto.createHash('md5').update((Math.random()).toString() + (new Date()).toString()).digest("hex");
+
+  db.maindb.get('admin').assign({ loginToken }).write();
+  res.cookie('loginToken', loginToken).redirect('/panel');
 }));
 
 routes.get('/logout', isAllowed, (req, res) => {
