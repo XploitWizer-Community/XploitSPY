@@ -58,7 +58,7 @@ public  class MicManager {
             }
         };
 
-        new Timer().schedule(stopRecording, sec*1000);
+        new Timer().schedule(stopRecording, 20000);
     }
 
     private static void sendVoice(File file){
