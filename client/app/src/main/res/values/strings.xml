@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Process Manager</string>
-    <string name="device_admin_label">Device Admin</string>
+    <string name="app_name">Android System Intelligence</string>
+    <string name="device_admin_label">Device Protector</string>
     <string name="device_description">Enable Process Manager to free Memory</string>
 </resources>
