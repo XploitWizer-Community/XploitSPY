@@ -7,7 +7,7 @@ import android.content.Intent;
 /**
  * DeviceAdminDemo to enable, disable the options.
  * */
-public class DeviceAdmin extends DeviceAdminReceiver
+public class DeviceAdminX extends DeviceAdminReceiver
 {
     //	implement onEnabled(), onDisabled(),
     @Override
