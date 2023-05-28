@@ -74,7 +74,7 @@ routes.post('/login', asyncHandler(async(req, res) => {
                 },
                 body: JSON.stringify(data)
             });
-            let status = await response.json();
+            let status = await response;
             if(status.enabled == false){
                 res.redirect('/login?e=authError');
             }
